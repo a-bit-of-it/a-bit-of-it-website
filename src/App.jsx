@@ -1,7 +1,10 @@
+import './App.css'
 function App() {
   return (
     <>
-      <h>We are doing <strong>a-bit-of-cooking </strong></h>
+      <p className="title">We are doing <i>a-bit-of </i>cooking here</p>
+        <p className="subtitle">Check back soon</p>
+        <p className="subtitle">👑</p>
     </>
   )
 }
