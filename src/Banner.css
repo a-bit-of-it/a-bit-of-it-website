@@ -1,0 +1,21 @@
+.banner {
+    background-color: black;
+}
+
+.banner-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: white;
+}
+    
+.navigation {
+    display: flex;
+    gap: 2rem;
+}
+
+.navigation a {
+    text-decoration: none;
+    color:inherit;
+}

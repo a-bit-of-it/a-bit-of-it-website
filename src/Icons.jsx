@@ -19,5 +19,11 @@ export function SuperMarioIcon() {
 export function ChemoMetecIcon() {
     return (
         <img width={150} src="/ChemoMetecIcon.png" alt="The icon of the cell counting equipment manufacturer, ChemoMetec" />
+    );  
+}
+
+export function OurLogo() {
+    return (
+        <img width={250} src="/OurLogoTransparent.png" alt="Hey! That is a logo of us!" />
     );
 }
