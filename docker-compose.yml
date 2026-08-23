@@ -2,11 +2,3 @@ services:
   frontend:
     image: ${frontend}
     restart: unless-stopped
-    
-  api:
-    image: ${api}
-    restart: unless-stopped
-    
-  db:
-    image: ${db}
-    restart: unless-stopped
