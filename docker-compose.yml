@@ -2,3 +2,9 @@ services:
   frontend:
     image: ${frontend}
     restart: unless-stopped
+    networks:
+      - proxy-net-a-bit-of-it-website
+      
+networks:
+  proxy-net-a-bit-of-it-website:
+    external: true
