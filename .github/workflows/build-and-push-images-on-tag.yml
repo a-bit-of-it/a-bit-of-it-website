@@ -1,0 +1,11 @@
+name: Build and Push Images on Tag
+on:
+  push:
+    tags: ['*']
+
+jobs:
+  build-web:
+    uses: a-bit-of-it/workflows/.github/workflows/build-and-push.yml@main
+    with:
+      component: frontend
+    secrets: inherit
