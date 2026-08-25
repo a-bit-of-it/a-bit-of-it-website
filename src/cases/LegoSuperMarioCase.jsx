@@ -1,13 +1,23 @@
 import {LegoIcon, SuperMarioIcon} from "../Icons.jsx";
+import {BluetoothTech, TechStack, UnityTech} from "./TechStack.jsx";
+import IconRow from "./IconRow.jsx";
+import CaseTitle from "./CaseTitle.jsx";
+import ForTheNerds from "./ForTheNerds.jsx";
 
 export default function LEGOSuperMarioCase (){
     return (
         <>
-            <h1>LEGO Super Mario</h1>
-            <LegoIcon/>
-            <SuperMarioIcon/>
-            <h3>Aiding physical play with a companion app</h3>
-            <p>Tech stack: Unity</p>
+            <IconRow>
+                <LegoIcon/>
+                <SuperMarioIcon/>
+            </IconRow>
+            <CaseTitle title="Learning through play with the LEGO Super Mario Companion App"/>
+            <ForTheNerds text="TODO">
+                <TechStack>
+                    <UnityTech/>
+                    <BluetoothTech/>
+                </TechStack>
+            </ForTheNerds>
         </>
     );
 }
