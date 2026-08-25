@@ -21,6 +21,7 @@ function App() {
               {/*<span>X has 2913 days of experience (yes, we are counting...)</span>*/}
               <LegoHouseCase/>
               <Divider/>
+              
               <LegoMaterialComplianceCase/>
               <Divider/>
               <LegoSuperMarioCase/>
