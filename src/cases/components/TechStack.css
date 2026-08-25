@@ -1,37 +1,3 @@
-.tech-stack-toggle {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    font: inherit;
-}
-
-.tech-stack-chevron {
-    display: inline-block;
-    transition: transform 0.2s ease;
-}
-
-.tech-stack-chevron-open {
-    transform: rotate(180deg);
-}
-
-.tech-stack-collapse {
-    display: grid;
-    grid-template-rows: 0fr;
-    transition: grid-template-rows 0.25s ease;
-}
-
-.tech-stack-collapse-open {
-    grid-template-rows: 1fr;
-}
-
-.tech-stack-collapse-inner {
-    overflow: hidden;
-}
-
 .tech-stack-list {
     display: flex;
     flex-direction: row;

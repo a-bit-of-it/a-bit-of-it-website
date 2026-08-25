@@ -33,8 +33,7 @@
 }
 
 .for-the-nerds-text {
-    padding-top: 0.75rem;
-    color: #555;
+    padding-top: 0;
 }
 
 .tech-stack-list {
@@ -42,7 +41,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
-    padding-top: 0.75rem;
+    padding-top: 0;
+    padding-left: 0;
 }
 
 .tech-stack-item {

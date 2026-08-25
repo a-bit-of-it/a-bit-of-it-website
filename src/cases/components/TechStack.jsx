@@ -19,7 +19,6 @@ export function TechItem({ icon, name })
             <img
                 src={`${TECH_ICON_PATH}/${icon}`}
                 alt={name}
-                className="tech-stack-icon"
                 width={40}
                 height={40}
             />
@@ -44,7 +43,7 @@ export function BluetoothTech() {
 }
 
 export function RabbitMqTech() {
-    return <TechItem icon="RabbitMqIcon.svg" name="RabbitMq" />;
+    return <TechItem icon="RabbitMqIcon.svg" name="RabbitMQ" />;
 }
 
 export function PythonTech() {

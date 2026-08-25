@@ -8,7 +8,8 @@ export default function LegoMaterialComplianceCase() {
             icons={[LegoIcon]}
             from="2025-07-01"
             to="2026-04-01"
-            title="Ensuring the highest of safety standards for the beloved brick"
+            title="Safety standards for the beloved brick"
+            summary=""
             tech="TODO"
             techStack={[ReactTech, AspDotNetTech, MsSqlTech, AzureTech]}
         />

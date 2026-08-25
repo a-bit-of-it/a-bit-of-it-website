@@ -8,7 +8,8 @@ export default function LEGOSuperMarioCase() {
             icons={[LegoIcon, SuperMarioIcon]}
             from="2022-10-01"
             to="2023-10-01"
-            title="Learning through play with the LEGO Super Mario Companion App"
+            title="LEGO Super Mario Companion App"
+            summary=""
             tech="TODO"
             techStack={[UnityTech, BluetoothTech]}
         />
