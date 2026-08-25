@@ -6,7 +6,7 @@ export function LegoIcon() {
 
 export function LegoHouseIcon() {
     return (
-        <img width={275} src="/LegoHouseIcon.png" alt="LEGO House - Home of the Brick icon" />
+        <img width={227} src="/LegoHouseIcon.png" alt="LEGO House - Home of the Brick icon" />
     );
 }
 

@@ -4,14 +4,14 @@ import LegoHouseCase from "./cases/LegoHouseCase";
 import LegoMaterialComplianceCase from "./cases/LegoMaterialComplianceCase";
 import ChemoMetecCase from "./cases/ChemoMetecCase";
 import Banner from "./Banner";
+import Divider from "./Divider.jsx";
 
 function App() {
   return (
       <>
           <Banner/>
           <div className="app">
-              <h1>Let us cook</h1>
-              <h1>Trusted by</h1>
+              {/*<h1>Cases</h1>*/}
               {/*<span>A cool place, with cool psdfsfeople, who do cool stuff</span>*/}
               {/*<span>A cool place, with nice people, who do awesome stuff</span>*/}
               {/*<span>If you are technically inclined, feel free to visit our <a href="https://github.com/a-bit-of-it" target="_blank" rel="noopener noreferrer">GitHub</a> where you can view all our dirty laundry.</span>*/}
@@ -20,8 +20,11 @@ function App() {
               {/*<span>The things we've helped create:</span>*/}
               {/*<span>X has 2913 days of experience (yes, we are counting...)</span>*/}
               <LegoSuperMarioCase/>
+              <Divider/>
               <LegoHouseCase/>
+              <Divider/>
               <LegoMaterialComplianceCase/>
+              <Divider/>
               <ChemoMetecCase/>
           </div>
       </>

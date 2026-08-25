@@ -1,12 +1,24 @@
 import {LegoIcon} from "../Icons.jsx";
+import TechStack, {AspDotNetTech, AzureTech, MsSqlTech, ReactTech} from "./TechStack.jsx";
+import CaseTitle from "./CaseTitle.jsx";
+import CaseSummary from "./CaseSummary.jsx";
+import IconRow from "./IconRow.jsx";
 
 export default function LegoMaterialComplianceCase (){
+    const businessCaseText = "Ensuring the highest standards for the beloved brick";
     return (
         <>
-            <h1>Lego Material & Compliance</h1>
-            <LegoIcon/>
-            <h3>Ensuring the highest standards for the beloved brick</h3>
-            <p>Tech stack: React, ASP.NET, MSSQL</p>
+            <CaseTitle title="Lego Material & Compliance"/>
+            <IconRow>
+                <LegoIcon/>
+            </IconRow>
+            <CaseSummary text={businessCaseText}/>
+            <TechStack>
+                <ReactTech/>
+                <AspDotNetTech/>
+                <MsSqlTech/>
+                <AzureTech/>
+            </TechStack>
         </>
     );
 }
