@@ -3,8 +3,8 @@ services:
     image: ${frontend}
     restart: unless-stopped
     networks:
-      - proxy-net-a-bit-of-it-website
+      - proxy-net-a-bit-of-it-website-frontend
       
 networks:
-  proxy-net-a-bit-of-it-website:
+  proxy-net-a-bit-of-it-website-frontend:
     external: true
