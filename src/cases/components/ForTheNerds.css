@@ -1,4 +1,4 @@
-.tech-stack-toggle {
+.for-the-nerds-toggle {
     display: flex;
     align-items: center;
     gap: 0.4rem;
@@ -9,40 +9,48 @@
     font: inherit;
 }
 
-.tech-stack-chevron {
+.for-the-nerds-chevron {
     display: inline-block;
-    transition: transform 0.2s ease;
+    transition: transform 0.1s ease;
 }
 
-.tech-stack-chevron-open {
+.for-the-nerds-chevron-open {
     transform: rotate(180deg);
 }
 
-.tech-stack-collapse {
+.for-the-nerds-collapse {
     display: grid;
     grid-template-rows: 0fr;
-    transition: grid-template-rows 0.25s ease;
+    transition: grid-template-rows 0.1s ease;
 }
 
-.tech-stack-collapse-open {
+.for-the-nerds-collapse-inner {
+    overflow: hidden;
+}
+
+.for-the-nerds-collapse-open {
     grid-template-rows: 1fr;
 }
 
-.tech-stack-collapse-inner {
-    overflow: hidden;
+.for-the-nerds-text {
+    padding-top: 0;
+}
+
+.for-the-nerds-technology-used {
+    font-weight: bold;
 }
 
 .tech-stack-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1rem;
-    padding-top: 0.75rem;
+    gap: 0;
+    padding-top: 0;
+    padding-left: 0;
 }
 
 .tech-stack-item {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.5rem;
 }
