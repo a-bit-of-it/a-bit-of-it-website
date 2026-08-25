@@ -19,11 +19,11 @@ function App() {
               {/*<span>We can do all the AI you want!</span>*/}
               {/*<span>The things we've helped create:</span>*/}
               {/*<span>X has 2913 days of experience (yes, we are counting...)</span>*/}
-              <LegoSuperMarioCase/>
-              <Divider/>
               <LegoHouseCase/>
               <Divider/>
               <LegoMaterialComplianceCase/>
+              <Divider/>
+              <LegoSuperMarioCase/>
               <Divider/>
               <ChemoMetecCase/>
           </div>

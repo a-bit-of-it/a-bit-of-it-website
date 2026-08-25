@@ -1,20 +1,18 @@
 import './TechStack.css'
 
-export default function TechStack({ children })
+const TECH_ICON_PATH = "/tech";
+
+
+export function TechStack({ children })
 {
     return (
-        <div className="tech-stack">
-            <span className="tech-stack-title">For nerds</span>
-            <ul className="tech-stack-list">
-                {children}
-            </ul>
-        </div>
+        <ul className="tech-stack-list">
+            {children}
+        </ul>
     );
 }
 
-const TECH_ICON_PATH = "/tech";
-
-function TechItem({ icon, name })
+export function TechItem({ icon, name })
 {
     return (
         <li className="tech-stack-item">
@@ -29,7 +27,6 @@ function TechItem({ icon, name })
         </li>
     );
 }
-
 export function PostgreSqlTech() {
     return <TechItem icon="PostgresqlIcon.svg" name="PostgreSQL" />;
 }
