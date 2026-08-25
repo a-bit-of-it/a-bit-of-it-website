@@ -10,7 +10,7 @@ export default function ChemoMetecCase() {
             to="Present"
             title="Turning medical news into sales"
             summary={summary}
-            tech="TODO"
+            tech={tech}
             techStack={[ReactTech, PythonTech, PostgreSqlTech, AiTech]}
         />
     );
@@ -20,4 +20,4 @@ const summary = "ChemoMetec is a leading manufacturer of automated cell analysis
     "ChemoMetec needed an automated system for keeping tracking of the fast-moving news within the industry - news ChemoMetec uses to help sell their analysis equipment to prospective customers. " +
     "AI agents could more quickly and reliably find great customers and help ChemoMetec sell their stuff. ";
 
-
+const tech = "A frontend written in React, a backend written in Python, connecting to a PostgreSQL database all hosted on a on-prem server.";

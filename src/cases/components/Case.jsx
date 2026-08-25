@@ -17,7 +17,7 @@ export default function Case({ icons, from, to, title, tech, techStack, summary 
             <div className="case-info">
                 <CaseTitle title={title} />
                 <FromToRow from={from} to={to} />
-                {summary && <CaseSummary text={summary} />}
+                <CaseSummary text={summary} />
             <ForTheNerds text={tech}>
                 <TechStack>
                     {techStack.map((Tech, i) => (

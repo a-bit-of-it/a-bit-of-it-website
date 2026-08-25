@@ -13,11 +13,12 @@ export default function ForTheNerds({ text, children })
                     ▾
                 </span>
             </button>
-
+            
             <div className={`for-the-nerds-collapse ${isOpen ? "for-the-nerds-collapse-open" : ""}`}>
                 <div className="for-the-nerds-collapse-inner">
-                    <p className="for-the-nerds-text">{text}</p>
+                    <span className="for-the-nerds-technology-used">Technologies used:</span>
                     {children}
+                    <span className="for-the-nerds-text">{text}</span>
                 </div>
             </div>
         </div>

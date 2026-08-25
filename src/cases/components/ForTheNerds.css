@@ -24,23 +24,27 @@
     transition: grid-template-rows 0.1s ease;
 }
 
-.for-the-nerds-collapse-open {
-    grid-template-rows: 1fr;
-}
-
 .for-the-nerds-collapse-inner {
     overflow: hidden;
+}
+
+.for-the-nerds-collapse-open {
+    grid-template-rows: 1fr;
 }
 
 .for-the-nerds-text {
     padding-top: 0;
 }
 
+.for-the-nerds-technology-used {
+    font-weight: bold;
+}
+
 .tech-stack-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0;
     padding-top: 0;
     padding-left: 0;
 }
