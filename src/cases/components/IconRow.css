@@ -3,5 +3,11 @@
     flex-direction: row;
     align-items: center;
     gap: 1.25rem;
-    padding-top: 1rem;
+}
+
+.icon-row img {
+    height: 40px;
+    width: auto;
+    max-width: 140px;
+    object-fit: contain;
 }

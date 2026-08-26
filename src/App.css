@@ -1,6 +1,6 @@
 .app {
-    padding: 1rem;
-    background-color: #656675;
+    padding: 0 1rem;
+    background-color: var(--color-cream);
 }
 
 body {

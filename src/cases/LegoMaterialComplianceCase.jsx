@@ -9,6 +9,7 @@ export default function LegoMaterialComplianceCase() {
             from="2025-07-01"
             to="2026-04-01"
             title="Meeting the highest safety standards"
+            images={["/CaseTEMP.jpg", "/CaseTEMP.jpg"]}
             summary={summary}
             tech={tech}
             techStack={[ReactTech, AspDotNetTech, MsSqlTech, AzureTech]}

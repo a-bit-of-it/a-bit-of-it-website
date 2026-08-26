@@ -1,12 +1,30 @@
 .for-the-nerds-toggle {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    background: none;
+    background-color: color-mix(in srgb, currentColor 6%, transparent);
     border: none;
-    padding: 0;
+    border-radius: 999px;
+    padding: 0.5rem 1rem;
+    color: inherit;
     cursor: pointer;
     font: inherit;
+    transition: background-color 0.2s ease;
+}
+
+.for-the-nerds-toggle:hover,
+.for-the-nerds-toggle:focus-visible {
+    background-color: color-mix(in srgb, currentColor 10%, transparent);
+}
+
+.for-the-nerds-title {
+    justify-content: end;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    opacity: 0.85;
+    transition: color 0.2s ease, opacity 0.2s ease;
 }
 
 .for-the-nerds-chevron {
@@ -16,6 +34,12 @@
 
 .for-the-nerds-chevron-open {
     transform: rotate(180deg);
+}
+
+.for-the-nerds-toggle:hover .for-the-nerds-title,
+.for-the-nerds-toggle:focus-visible .for-the-nerds-title {
+    color: var(--case-accent, var(--color-accent));
+    opacity: 1;
 }
 
 .for-the-nerds-collapse {
@@ -32,25 +56,22 @@
     grid-template-rows: 1fr;
 }
 
-.for-the-nerds-text {
-    padding-top: 0;
+.for-the-nerds-panel {
+    margin-top: 0.75rem;
+    padding: 1.25rem 1.5rem;
+    border-radius: 1rem;
+    background-color: color-mix(in srgb, currentColor 6%, transparent);
 }
 
 .for-the-nerds-technology-used {
-    font-weight: bold;
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
 }
 
-.tech-stack-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0;
-    padding-top: 0;
-    padding-left: 0;
-}
-
-.tech-stack-item {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+.for-the-nerds-text {
+    display: block;
+    margin-top: 0.5rem;
+    opacity: 0.85;
+    line-height: 1.6;
 }

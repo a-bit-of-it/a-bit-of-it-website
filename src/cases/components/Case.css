@@ -1,5 +1,71 @@
+.case {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    grid-template-rows: auto auto auto;
+    align-items: start;
+    gap: clamp(2rem, 5vw, 4rem);
+    padding: clamp(2rem, 4vw, 3.5rem);
+    border-radius: 1.75rem;
+    background-color: #ffffff;
+    border: 1px solid color-mix(in srgb, var(--color-ink) 10%, transparent);
+}
+
+.case-header {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.case-header .case-title {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.case-header .icon-row {
+    flex: 0 0 auto;
+}
+
+@media (max-width: 480px) {
+    .case-header {
+        flex-wrap: wrap;
+    }
+}
+
 .case-info {
+    grid-column: 1;
+    grid-row: 2;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.75rem;
+}
+
+.case-images {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.for-the-nerds {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+@media (max-width: 860px) {
+    .case {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .case-header,
+    .case-info,
+    .case-images,
+    .for-the-nerds {
+        grid-column: 1;
+        grid-row: auto;
+    }
 }

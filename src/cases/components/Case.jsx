@@ -5,19 +5,24 @@ import CaseTitle from "./CaseTitle.jsx";
 import ForTheNerds from "./ForTheNerds.jsx";
 import {TechStack} from "./TechStack.jsx";
 import CaseSummary from "./CaseSummary.jsx";
+import CaseImages from "./CaseImages.jsx";
 
-export default function Case({ icons, from, to, title, tech, techStack, summary }) {
+export default function Case({ icons, from, to, title, tech, techStack, summary, images }) {
     return (
-        <>
-            <IconRow>
-                {icons.map((Icon, i) => (
-                    <Icon key={i} />
-                ))}
-            </IconRow>
-            <div className="case-info">
+        <article className="case">
+            <div className="case-header">
                 <CaseTitle title={title} />
+                <IconRow>
+                    {icons.map((Icon, i) => (
+                        <Icon key={i} />
+                    ))}
+                </IconRow>
+            </div>
+            <div className="case-info">
                 <FromToRow from={from} to={to} />
                 <CaseSummary text={summary} />
+            </div>
+            <CaseImages images={images} />
             <ForTheNerds text={tech}>
                 <TechStack>
                     {techStack.map((Tech, i) => (
@@ -25,8 +30,6 @@ export default function Case({ icons, from, to, title, tech, techStack, summary 
                     ))}
                 </TechStack>
             </ForTheNerds>
-            </div>
-
-        </>
+        </article>
     );
 }

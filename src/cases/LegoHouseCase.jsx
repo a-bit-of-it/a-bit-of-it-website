@@ -10,6 +10,7 @@ export default function LegoHouseCase() {
             from="2023-03-01"
             to="2025-02-01"
             title="Digital rebuild of LEGO House"
+            images={["/CaseTEMP.jpg", "/CaseTEMP.jpg"]}
             summary={summary}
             tech={tech}
             techStack={[UnityTech, AspDotNetTech, AzureTech, RabbitMqTech, MsSqlTech]}

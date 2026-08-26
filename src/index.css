@@ -1,9 +1,12 @@
 :root {
     --color-ink: #0a0a0a;
+    --color-ink-soft: #14173a;
     --color-cream: #f5f1e8;
     --color-cream-rgb: 245, 241, 232;
     --color-accent: #aab8f2;
     --color-accent-rgb: 170, 184, 242;
+    --color-accent-deep: #4a52a0;
+    --color-accent-tint: #e6e9fb;
 }
 
 body {
