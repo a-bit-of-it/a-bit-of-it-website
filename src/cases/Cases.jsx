@@ -7,7 +7,7 @@ import Divider from "../Divider.jsx";
 
 export default function Cases () {
     return (
-        <div className="cases">
+        <div className="cases" id="cases">
             <h1>Cases - (sorted by coolest)</h1>
             <LegoHouseCase/>
             <Divider/>
