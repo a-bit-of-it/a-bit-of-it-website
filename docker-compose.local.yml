@@ -1,0 +1,14 @@
+services:
+  frontend:
+    build:
+      context: ./Frontend
+    restart: unless-stopped
+    ports:
+      - "5173:80"
+
+  api:
+    build:
+      context: ./Api
+    restart: unless-stopped
+    ports:
+      - "7051:8080"

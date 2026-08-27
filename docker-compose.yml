@@ -1,20 +1,23 @@
 services:
   frontend:
-    build:
-      context: ./Frontend
+    image: ${frontend}
     restart: unless-stopped
+    networks:
+      - proxy-net
+    labels:
+      caddy: ${DOMAIN}
+      caddy.reverse_proxy: "{{upstreams 80}}"
 
   api:
-    build:
-      context: ./Api
+    image: ${api}
     restart: unless-stopped
+    networks:
+      - proxy-net
+    labels:
+      caddy: ${DOMAIN}
+      caddy.handle_path: /api/*
+      caddy.handle_path.reverse_proxy: "{{upstreams 8080}}"
 
-  nginx:
-    build:
-      context: ./nginx
-    restart: unless-stopped
-    ports:
-      - "80:80"
-    depends_on:
-      - frontend
-      - api
+networks:
+  proxy-net:
+    external: true
