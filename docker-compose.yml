@@ -14,6 +14,11 @@ services:
     restart: unless-stopped
     networks:
       - proxy-net
+    environment:
+      - Pushover__Token=${Pushover__Token}
+      - Pushover__UserToken=${Pushover__UserToken}
+    depends_on:
+      - db
     labels:
       caddy: a-bit-of-it.com, a-bit-of-it.dk
       caddy.handle: /api/*
