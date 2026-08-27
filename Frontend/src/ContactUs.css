@@ -1,0 +1,116 @@
+.contact-us {
+    max-width: 1100px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    h1 {
+        margin: 0;
+    }
+}
+
+.contact-us-subtitle {
+    margin: 0;
+    max-width: 46ch;
+    opacity: 0.75;
+    line-height: 1.6;
+}
+
+.contact-us-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    max-width: 640px;
+}
+
+.contact-us-row {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.contact-us-row .contact-us-field {
+    flex: 1 1 220px;
+}
+
+.contact-us-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.contact-us-field input,
+.contact-us-field textarea {
+    font: inherit;
+    color: inherit;
+    padding: 0.7rem 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid color-mix(in srgb, currentColor 15%, transparent);
+    background-color: color-mix(in srgb, currentColor 4%, transparent);
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.contact-us-field textarea {
+    resize: vertical;
+    min-height: 120px;
+    line-height: 1.5;
+}
+
+.contact-us-field input:focus-visible,
+.contact-us-field textarea:focus-visible {
+    outline: none;
+    border-color: var(--color-accent-deep);
+    background-color: var(--color-accent-tint);
+}
+
+.contact-us-submit {
+    align-self: flex-start;
+    border: none;
+    border-radius: 999px;
+    padding: 0.75rem 1.75rem;
+    background-color: var(--color-accent-deep);
+    color: var(--color-cream);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.contact-us-submit:hover:not(:disabled),
+.contact-us-submit:focus-visible:not(:disabled) {
+    background-color: var(--color-ink-soft);
+}
+
+.contact-us-submit:active:not(:disabled) {
+    transform: scale(0.98);
+}
+
+.contact-us-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.contact-us-status {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.contact-us-status-success {
+    color: var(--color-accent-deep);
+}
+
+.contact-us-status-error {
+    color: #b3261e;
+}
+
+@media (max-width: 560px) {
+    .contact-us-row {
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+}
