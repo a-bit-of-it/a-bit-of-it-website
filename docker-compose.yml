@@ -1,10 +1,20 @@
 services:
   frontend:
-    image: ${frontend}
+    build:
+      context: ./Frontend
     restart: unless-stopped
-    networks:
-      - proxy-net-a-bit-of-it-website-frontend
-      
-networks:
-  proxy-net-a-bit-of-it-website-frontend:
-    external: true
+
+  api:
+    build:
+      context: ./Api
+    restart: unless-stopped
+
+  nginx:
+    build:
+      context: ./nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    depends_on:
+      - frontend
+      - api

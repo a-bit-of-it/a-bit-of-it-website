@@ -1,12 +1,12 @@
 export async function getWeatherForecast() {
-  const response = await fetch("https://localhost:7051/api/contact");
+  const response = await fetch("/api/contact");
   const data = await response.json();
   console.log(data);
   return data;
 }
 
 export async function submitContact({ name, email, inquiry }) {
-  const response = await fetch("https://localhost:7051/api/contact", {
+  const response = await fetch("/api/contact", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
