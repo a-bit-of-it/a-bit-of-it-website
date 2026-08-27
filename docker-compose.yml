@@ -1,27 +1,17 @@
 services:
   frontend:
-    image: ${frontend}
+    build:
+      context: ./Frontend
     restart: unless-stopped
-    networks:
-      - proxy-net
-    labels:
-      caddy: a-bit-of-it.com, a-bit-of-it.dk
-      caddy.handle: /*
-      caddy.handle.reverse_proxy: "{{upstreams 80}}"
+    ports:
+      - "5173:80"
 
   api:
-    image: ${api}
+    build:
+      context: ./Api
     restart: unless-stopped
-    networks:
-      - proxy-net
+    ports:
+      - "7051:8080"
     environment:
       - Pushover__Token=${Pushover__Token}
       - Pushover__UserToken=${Pushover__UserToken}
-    labels:
-      caddy: a-bit-of-it.com, a-bit-of-it.dk
-      caddy.handle: /api/*
-      caddy.handle.reverse_proxy: "{{upstreams 8080}}"
-
-networks:
-  proxy-net:
-    external: true

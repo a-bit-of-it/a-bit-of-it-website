@@ -2,17 +2,25 @@
 
 namespace Api.Infrastructure;
 
-public class PushoverNotificationService(HttpClient client, Config config) : INotificationService
+public class PushoverNotificationService(HttpClient client, Config config, ILogger<PushoverNotificationService> logger) : INotificationService
 {
     public async Task Push(string message)
     {
-        var values = new Dictionary<string, string>()
+        try
         {
-            ["token"] = config.Pushover.Token,
-            ["user"] = config.Pushover.UserToken,
-            ["message"] = message
-        };
-        
-        await client.PostAsync("https://api.pushover.net/1/messages.json", new FormUrlEncodedContent(values));
+            var values = new Dictionary<string, string>()
+            {
+                ["token"] = config.Pushover.Token,
+                ["user"] = config.Pushover.UserToken,
+                ["message"] = message
+            };
+
+            await client.PostAsync("https://api.pushover.net/1/messages.json", new FormUrlEncodedContent(values));
+        }
+        catch (Exception e)
+        {
+            logger.LogError(e, "Pushover notification service failed");
+        }
+    
     }
 }

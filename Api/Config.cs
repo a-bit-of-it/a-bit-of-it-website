@@ -2,11 +2,11 @@
 
 public class Config
 {
-    public Pushover Pushover { get; set; }
+    public required Pushover Pushover { get; set; }
 }
 
 public class Pushover
 {
-    public string Token { get; set; }
-    public string UserToken { get; set; }
+    public required string Token { get; set; }
+    public required string UserToken { get; set; }
 }
