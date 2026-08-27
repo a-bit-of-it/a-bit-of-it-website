@@ -6,7 +6,8 @@ services:
       - proxy-net
     labels:
       caddy: a-bit-of-it.com, a-bit-of-it.dk
-      caddy.reverse_proxy: "{{upstreams 80}}"
+      caddy.handle: /*
+      caddy.handle.reverse_proxy: "{{upstreams 80}}"
 
   api:
     image: ${api}
@@ -15,9 +16,9 @@ services:
       - proxy-net
     labels:
       caddy: a-bit-of-it.com, a-bit-of-it.dk
-      caddy.handle_path: /api/*
+      caddy.handle: /api/*
       caddy.handle.reverse_proxy: "{{upstreams 8080}}"
-      
+
 networks:
   proxy-net:
     external: true
