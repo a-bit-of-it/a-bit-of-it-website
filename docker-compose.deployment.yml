@@ -1,6 +1,6 @@
 services:
   frontend:
-    image: $[frontend]
+    image: ${frontend}
     restart: unless-stopped
     networks:
       - proxy-net
@@ -10,13 +10,12 @@ services:
       caddy.handle.reverse_proxy: "{{upstreams 80}}"
 
   api:
-    image: $[api]
+    image: ${api}
     restart: unless-stopped
     networks:
       - proxy-net
-    environment:
-      - Pushover__Token=${Pushover__Token}
-      - Pushover__UserToken=${Pushover__UserToken}
+    env_file:
+      - .env
     labels:
       caddy: a-bit-of-it.com, a-bit-of-it.dk
       caddy.handle: /api/*
