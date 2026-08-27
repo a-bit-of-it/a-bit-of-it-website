@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./ContactUs.css";
 import { submitContact } from "./services/contactService";
 
 export default function ContactUs ()
@@ -24,42 +25,57 @@ export default function ContactUs ()
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <label>
-                Name
-                <input
-                    type="text"
-                    value={name}
-                    onChange={(event) => setName(event.target.value)}
-                    required
-                />
-            </label>
+        <div className="contact-us" id="contact">
+            <h1>Get in touch</h1>
+            <p className="contact-us-subtitle">
+                Got a project in mind, or just want to say hi? Send us a message and we'll get back to you.
+            </p>
 
-            <label>
-                Email
-                <input
-                    type="email"
-                    value={email}
-                    onChange={(event) => setEmail(event.target.value)}
-                    required
-                />
-            </label>
+            <form className="contact-us-form" onSubmit={handleSubmit}>
+                <div className="contact-us-row">
+                    <label className="contact-us-field">
+                        Name
+                        <input
+                            type="text"
+                            value={name}
+                            onChange={(event) => setName(event.target.value)}
+                            required
+                        />
+                    </label>
 
-            <label>
-                Inquiry
-                <textarea
-                    value={inquiry}
-                    onChange={(event) => setInquiry(event.target.value)}
-                    required
-                />
-            </label>
+                    <label className="contact-us-field">
+                        Email
+                        <input
+                            type="email"
+                            value={email}
+                            onChange={(event) => setEmail(event.target.value)}
+                            required
+                        />
+                    </label>
+                </div>
 
-            <button type="submit" disabled={status === "submitting"}>
-                {status === "submitting" ? "Sending..." : "Send"}
-            </button>
+                <label className="contact-us-field">
+                    Inquiry
+                    <textarea
+                        value={inquiry}
+                        onChange={(event) => setInquiry(event.target.value)}
+                        required
+                    />
+                </label>
 
-            {status === "success" && <p>Thanks, your message was sent.</p>}
-            {status === "error" && <p>Something went wrong, please try again.</p>}
-        </form>
+                <button type="submit" className="contact-us-submit" disabled={status === "submitting"}>
+                    {status === "submitting" ? "Sending..." : "Send message"}
+                </button>
+
+                <p className="contact-us-status" role="status" aria-live="polite">
+                    {status === "success" && (
+                        <span className="contact-us-status-success">Thanks, your message was sent.</span>
+                    )}
+                    {status === "error" && (
+                        <span className="contact-us-status-error">Something went wrong, please try again.</span>
+                    )}
+                </p>
+            </form>
+        </div>
     );
 }

@@ -1,10 +1,12 @@
+using Api.Application;
 using Api.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers;
 
+[ApiController]
 [Route("api/[controller]")]
-public class ContactController : ControllerBase
+public class ContactController (ContactService contactService) : ControllerBase
 {
     [HttpGet]
     public IActionResult HelloWorld()
@@ -14,8 +16,19 @@ public class ContactController : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult Submit(ContactRequest request)
+    public async Task<IActionResult> Submit([FromBody] ContactRequest request)
     {
+        if (string.IsNullOrWhiteSpace(request.Email))
+            return BadRequest();
+        
+        if (string.IsNullOrWhiteSpace(request.Name))
+            return BadRequest();
+
+        if (string.IsNullOrWhiteSpace(request.Inquiry))
+            return BadRequest();
+        
+        await contactService.CreateContactAsync(request.Name, request.Email, request.Inquiry);
+        
         return Ok();
     }
 }
