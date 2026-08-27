@@ -8,10 +8,12 @@ jobs:
     uses: a-bit-of-it/workflows/.github/workflows/build-and-push.yml@v1
     with:
       component: frontend
+      context: Frontend
     secrets: inherit
 
   build-api:
     uses: a-bit-of-it/workflows/.github/workflows/build-and-push.yml@v1
     with:
       component: api
+      context: Api
     secrets: inherit
