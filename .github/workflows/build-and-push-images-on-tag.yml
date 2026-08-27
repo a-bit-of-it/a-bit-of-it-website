@@ -9,3 +9,9 @@ jobs:
     with:
       component: frontend
     secrets: inherit
+
+  build-api:
+    uses: a-bit-of-it/workflows/.github/workflows/build-and-push.yml@v1
+    with:
+      component: api
+    secrets: inherit

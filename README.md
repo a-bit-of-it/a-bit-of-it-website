@@ -1,3 +1,0 @@
-# Usage: Public.
-
-# Tech: React.

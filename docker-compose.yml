@@ -3,8 +3,21 @@ services:
     image: ${frontend}
     restart: unless-stopped
     networks:
-      - proxy-net-a-bit-of-it-website-frontend
-      
+      - proxy-net
+    labels:
+      caddy: ${DOMAIN}
+      caddy.reverse_proxy: "{{upstreams 80}}"
+
+  api:
+    image: ${api}
+    restart: unless-stopped
+    networks:
+      - proxy-net
+    labels:
+      caddy: ${DOMAIN}
+      caddy.handle_path: /api/*
+      caddy.handle_path.reverse_proxy: "{{upstreams 8080}}"
+
 networks:
-  proxy-net-a-bit-of-it-website-frontend:
+  proxy-net:
     external: true
