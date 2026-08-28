@@ -1,5 +1,4 @@
-﻿using Api.Infrastructure;
-using Api.Models;
+﻿using Api.Models;
 
 namespace Api.Application;
 

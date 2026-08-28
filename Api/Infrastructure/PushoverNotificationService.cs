@@ -2,16 +2,16 @@
 
 namespace Api.Infrastructure;
 
-public class PushoverNotificationService(HttpClient client, Config config, ILogger<PushoverNotificationService> logger) : INotificationService
+public class PushoverNotificationService(HttpClient client, Config config) : INotificationService
 {
     public async Task Push(string message)
     {
-        var values = new Dictionary<string, string>()
+        var values = new Dictionary<string, string>
         {
             ["token"] = config.Pushover.Token,
             ["user"] = config.Pushover.UserToken,
             ["message"] = message,
-            ["sound"] = "bugle",
+            ["sound"] = "bugle"
             // ["priority"] = 2
         };
 

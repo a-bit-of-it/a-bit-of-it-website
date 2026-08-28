@@ -1,6 +1,6 @@
 using Api.Models;
 
-namespace Api.Infrastructure;
+namespace Api.Application;
 
 public interface IInquiryRepository
 {

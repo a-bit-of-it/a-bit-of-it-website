@@ -2,8 +2,8 @@ namespace Api.Models;
 
 public class InquiryEntity
 {
-    public int Id { get; set; }
-    public required string Name { get; set; }
-    public required string Email { get; set; }
-    public required string Inquiry { get; set; }
+    public int Id { get; init; }
+    public required string Name { get; init; }
+    public required string Email { get; init; }
+    public required string Inquiry { get; init; }
 }
