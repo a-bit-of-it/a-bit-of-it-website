@@ -14,6 +14,7 @@ services:
     restart: unless-stopped
     networks:
       - proxy-net
+      - db-net
     env_file:
       - .env
     labels:
@@ -24,3 +25,6 @@ services:
 networks:
   proxy-net:
     external: true
+  db-net:
+    external: true
+  
