@@ -6,7 +6,7 @@ public class ContactService (INotificationService notificationService, IInquiryR
 {
     public async Task CreateContactAsync(string name, string email, string inquiry)
     {
-        await inquiryRepository.AddAsync(new InquiryEntity { Name = name, Email = email, Inquiry = inquiry });
+        await inquiryRepository.AddAsync(new InquiryEntity { Name = name, Email = email, Inquiry = inquiry, Timestamp = DateTime.UtcNow });
 
         await notificationService.Push("You got a new inquiry!");
     }

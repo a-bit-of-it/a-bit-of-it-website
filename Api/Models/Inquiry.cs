@@ -6,4 +6,5 @@ public class InquiryEntity
     public required string Name { get; init; }
     public required string Email { get; init; }
     public required string Inquiry { get; init; }
+    public required DateTime Timestamp { get; init; }
 }
