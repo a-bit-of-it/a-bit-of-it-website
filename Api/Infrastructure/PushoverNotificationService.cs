@@ -6,21 +6,22 @@ public class PushoverNotificationService(HttpClient client, Config config, ILogg
 {
     public async Task Push(string message)
     {
-        try
+        var values = new Dictionary<string, string>()
         {
-            var values = new Dictionary<string, string>()
-            {
-                ["token"] = config.Pushover.Token,
-                ["user"] = config.Pushover.UserToken,
-                ["message"] = message
-            };
+            ["token"] = config.Pushover.Token,
+            ["user"] = config.Pushover.UserToken,
+            ["message"] = message,
+            ["sound"] = "bugle",
+            // ["priority"] = 2
+        };
 
-            await client.PostAsync("https://api.pushover.net/1/messages.json", new FormUrlEncodedContent(values));
-        }
-        catch (Exception e)
+        var response = await client.PostAsync("https://api.pushover.net/1/messages.json", new FormUrlEncodedContent(values));
+
+        if (!response.IsSuccessStatusCode)
         {
-            logger.LogError(e, "Pushover notification service failed");
+            var error =  await response.Content.ReadAsStringAsync();
+            
+            throw new Exception("Calling Pushover API failed: " + error);
         }
-    
     }
 }

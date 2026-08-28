@@ -1,6 +1,7 @@
 using Api;
 using Api.Application;
 using Api.Infrastructure;
+using Api.Middleware;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,6 +23,8 @@ builder.Services.AddDbContext<AppDbContext>(options => options
 builder.Services.AddScoped<IInquiryRepository, InquiryRepository>();
 
 var app = builder.Build();
+
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 using (var scope = app.Services.CreateScope())
 {

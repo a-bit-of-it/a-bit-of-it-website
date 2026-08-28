@@ -12,7 +12,7 @@
 
 .contact-us-subtitle {
     margin: 0;
-    max-width: 46ch;
+    /*max-width: 46ch;*/
     opacity: 0.75;
     line-height: 1.6;
 }

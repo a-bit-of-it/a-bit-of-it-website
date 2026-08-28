@@ -9,6 +9,6 @@ public class ContactService (INotificationService notificationService, IInquiryR
     {
         await inquiryRepository.AddAsync(new InquiryEntity { Name = name, Email = email, Inquiry = inquiry });
 
-        await notificationService.Push("Somebody sent you a message " + name + email + inquiry);
+        await notificationService.Push("You got a new inquiry!");
     }
 }
