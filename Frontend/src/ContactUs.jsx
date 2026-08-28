@@ -40,6 +40,7 @@ export default function ContactUs ()
                             value={name}
                             onChange={(event) => setName(event.target.value)}
                             required
+                            maxLength={200}
                         />
                     </label>
 
@@ -50,6 +51,7 @@ export default function ContactUs ()
                             value={email}
                             onChange={(event) => setEmail(event.target.value)}
                             required
+                            maxLength={320}
                         />
                     </label>
                 </div>
@@ -60,6 +62,7 @@ export default function ContactUs ()
                         value={inquiry}
                         onChange={(event) => setInquiry(event.target.value)}
                         required
+                        maxLength={10000}
                     />
                 </label>
 
