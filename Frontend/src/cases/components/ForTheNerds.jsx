@@ -18,7 +18,7 @@ export default function ForTheNerds({ text, children }) {
             <div className={`for-the-nerds-collapse ${isOpen ? "for-the-nerds-collapse-open" : ""}`}>
                 <div className="for-the-nerds-collapse-inner">
                     <div className="for-the-nerds-panel">
-                        <span className="for-the-nerds-technology-used">Technologies used:</span>
+                        <span className="for-the-nerds-technology-used">{t('cases.technology-used')}:</span>
                         {children}
                         <span className="for-the-nerds-text">{text}</span>
                     </div>
