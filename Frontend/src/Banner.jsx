@@ -5,7 +5,7 @@ export default function Banner() {
     return (
         <header className="banner">
             <div className="banner-content">
-                <a href="#" className="banner-logo">a bit of it</a>
+                <a href="#" className="banner-logo">a bit of IT</a>
                 <div className="banner-actions">
                     <nav className="navigation">
                         <a href="#cases">Cases</a>
