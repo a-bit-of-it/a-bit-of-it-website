@@ -24,6 +24,12 @@
     text-decoration: none;
 }
 
+.banner-actions {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
 .navigation {
     display: flex;
     gap: 2rem;
@@ -54,6 +60,11 @@
         flex-direction: column;
         gap: 0.85rem;
         padding: 1rem;
+    }
+
+    .banner-actions {
+        flex-direction: column;
+        gap: 0.85rem;
     }
 
     .navigation {

@@ -1,0 +1,32 @@
+.language-switch {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.language-switch-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem;
+    background: none;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s ease, border-color 0.2s ease;
+}
+
+.language-switch-button:hover,
+.language-switch-button:focus-visible {
+    opacity: 1;
+}
+
+.language-switch-button[aria-pressed="true"] {
+    opacity: 1;
+    border-color: var(--color-accent);
+}
+
+.language-switch-button img {
+    display: block;
+    border-radius: 50%;
+}
