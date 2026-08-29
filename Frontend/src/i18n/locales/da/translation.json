@@ -1,8 +1,37 @@
 ﻿{
+  "banner": {
+    "cases": "Projekter",
+    "who-we-are": "Hvem er vi",
+    "get-in-touch": "Kontakt os"
+  },
+  
   "hero": {
     "kicker": "Cool people. Cool tech.",
     "headline": "Vi sælger ikke software. Vi skaber løsninger.",
     "subline": "Siden her er ved at blive bygget",
     "cta": "Se hvad vi har skabt"
+  },
+
+  "cases": {
+    "header": "Projekter",
+    "geeks": "For nørder",
+    "legohouse":
+    {
+      "header": "Digital genopbygning af LEGO House",
+      "summary": "...",
+      "tech": "..."
+    }
+  },
+  
+  "get-in-touch": {
+    "header": "Kontakt os",
+    "cta": "Har du et projekt i tankerne eller har du bare lyst til at sige hej? Send os en besked og vi vender tilbage inden for 24 timer.",
+    "name": "Navn",
+    "email": "Email",
+    "inquiry": "Besked",
+    "send": "Send besked",
+    "sending": "Sender...",
+    "sent": "Tak! Vi har modtaget din besked.",
+    "something-went-wrong": "Noget gik galt. Prøv igen."
   }
 }

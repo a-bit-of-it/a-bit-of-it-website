@@ -1,14 +1,15 @@
 import './ForTheNerds.css';
 import {useState} from "react";
+import {useTranslation} from "react-i18next";
 
-export default function ForTheNerds({ text, children })
-{
+export default function ForTheNerds({ text, children }) {
+    const { t } = useTranslation();
     const [isOpen, setIsOpen] = useState(false);
 
     return (
         <div className="for-the-nerds">
             <button type="button" className="for-the-nerds-toggle" onClick={() => setIsOpen((prev) => !prev)} aria-expanded={isOpen}>
-                <span className="for-the-nerds-title">For the nerds</span>
+                <span className="for-the-nerds-title">{t('cases.geeks')}</span>
                 <span className={`for-the-nerds-chevron ${isOpen ? "for-the-nerds-chevron-open" : ""}`}>
                     ▾
                 </span>
