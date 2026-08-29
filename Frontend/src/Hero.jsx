@@ -7,13 +7,10 @@ export default function Hero() {
     return (
         <section className="hero">
             <div className="hero-content">
-                <p>{t('welcome.title')}</p>
-                <p className="hero-kicker">Cool people. Cool tech.</p>
-                <h1 className="hero-headline">We do not sell software. We create solutions.</h1>
-                <p className="hero-subline">
-                    Site is under heavy construction
-                </p>
-                <a href="#cases" className="hero-cta">See what we've built</a>
+                <p className="hero-kicker">{t('hero.kicker')}</p>
+                <h1 className="hero-headline">{t('hero.headline')}</h1>
+                <p className="hero-subline">{t('hero.subline')}</p>
+                <a href="#cases" className="hero-cta">{t('hero.cta')}</a>
             </div>
         </section>
     );
