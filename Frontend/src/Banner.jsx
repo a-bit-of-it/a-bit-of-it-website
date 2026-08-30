@@ -12,7 +12,7 @@ export default function Banner() {
                 <div className="banner-actions">
                     <nav className="navigation">
                         <a href="#cases">{t('banner.cases')}</a>
-                        <a href="#about">{t('banner.who-we-are')}</a>
+                        <a href="#who-we-are">{t('banner.who-we-are')}</a>
                         <a href="#contact">{t('banner.get-in-touch')}</a>
                     </nav>
                     <LanguageSwitch />
