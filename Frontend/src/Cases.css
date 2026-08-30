@@ -1,3 +1,4 @@
 .cases {
-    background: linear-gradient(to bottom, var(--color-cream), var(--color-accent-tint) 4rem);
+    /*background: linear-gradient(to bottom, var(--color-cream), var(--color-accent-tint) 3rem);*/
+    background-color: var(--color-accent-tint);
 }

@@ -1,5 +1,6 @@
 .why-we-exist {
-    background: linear-gradient(to bottom, var(--color-cream), var(--color-accent-tint) 4rem);
+    /*background: linear-gradient(to bottom, var(--color-cream), var(--color-accent-tint) 3rem);*/
+    background-color: var(--color-accent-tint);
 }
 
 .why-we-exist-subtitle {
@@ -13,7 +14,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    padding: 1rem 0;
 }
 
 .team-card {
