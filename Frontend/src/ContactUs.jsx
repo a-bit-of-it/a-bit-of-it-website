@@ -68,7 +68,7 @@ export default function ContactUs () {
                     />
                 </label>
 
-                <button type="submit" className="contact-us-submit" disabled={status === "submitting"}>
+                <button type="submit" className="contact-us-submit btn-primary" disabled={status === "submitting"}>
                     {status === "submitting" ? t('get-in-touch.sending') : t('get-in-touch.send')}
                 </button>
 

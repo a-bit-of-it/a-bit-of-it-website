@@ -10,7 +10,7 @@ export default function Hero() {
                 <p className="hero-kicker">{t('hero.kicker')}</p>
                 <h1 className="hero-headline">{t('hero.headline')}</h1>
                 <p className="hero-subline">{t('hero.subline')}</p>
-                <a href="#cases" className="hero-cta">{t('hero.cta')}</a>
+                <a href="#cases" className="btn-primary">{t('hero.cta')}</a>
             </div>
         </section>
     );

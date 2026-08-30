@@ -20,7 +20,7 @@ export default function Services () {
                 ))}
             </div>
 
-            <a href="#contact" className="services-cta">{t('services.cta')}</a>
+            <a href="#contact" className="services-cta btn-primary">{t('services.cta')}</a>
         </div>
     );
 }
