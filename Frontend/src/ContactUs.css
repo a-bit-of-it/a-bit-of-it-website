@@ -1,6 +1,6 @@
 .contact-us {
-    /*background: linear-gradient(to bottom, var(--color-accent-tint), var(--color-cream) 3rem);*/
-    background-color: var(--color-cream);
+    background: linear-gradient(to bottom, var(--color-accent-tint), var(--color-cream) 3rem);
+    /*background-color: var(--color-cream);*/
 }
 
 .contact-us-subtitle {

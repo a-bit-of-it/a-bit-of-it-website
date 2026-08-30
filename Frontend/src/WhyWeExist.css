@@ -1,6 +1,6 @@
 .why-we-exist {
-    /*background: linear-gradient(to bottom, var(--color-cream), var(--color-accent-tint) 3rem);*/
-    background-color: var(--color-accent-tint);
+    background: linear-gradient(to bottom, var(--color-cream), var(--color-accent-tint) 3rem);
+    /*background-color: var(--color-accent-tint);*/
 }
 
 .why-we-exist-subtitle {
