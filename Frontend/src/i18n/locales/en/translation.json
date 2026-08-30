@@ -44,16 +44,16 @@
   
   "why-we-exist": {
     "header": "Why we exist",
-    "subtitle": "Small Danish team, working to create cool shit. We keep it real, big enthusiasm. Here's who's actually behind the screen.",
+    "subtitle": "We are a small Danish team. We exist because we are breaking free from the classic corporate ideologies. We want to enable cool people, create cool stuff by providing them with the solutions they need.",
     "mathias": {
       "name": "Mathias",
-      "role": "Founder & Developer",
-      "bio": "Builds the software, writes the code, and drinks more coffee than is probably wise."
+      "role": "Developer",
+      "bio": "Mathias builds the software and has more than {X} years, {Y} months and {Z} days of experience... Yes we did count!"
     },
     "lumi": {
       "name": "Lumi",
-      "role": "Chief Morale Officer",
-      "bio": "In charge of moral support, snack breaks, and rigorous testing of the office floor."
+      "role": "Morale booster",
+      "bio": "Lumi, meaning light, is our guiding star. He doesn't know much of IT, but he is always there and reminds os of what is important in life."
     }
   },
 

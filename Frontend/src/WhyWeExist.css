@@ -1,13 +1,13 @@
-.who-we-are {
+.why-we-exist {
     max-width: 1100px;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-.who-we-are-subtitle {
+.why-we-exist-subtitle {
     margin: 0;
-    max-width: 60ch;
+    /*max-width: 60ch;*/
     opacity: 0.75;
     line-height: 1.6;
 }
