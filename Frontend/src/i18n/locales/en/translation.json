@@ -14,7 +14,7 @@
   
   "services": {
     "header": "What we can do for you",
-    "subtitle": "Our cases show large, ambitious projects, but plenty of what we do is a much smaller lift. Whether you're a local business that needs a website or a sharper way to use your data, we'd love to help.",
+    "subtitle": "Our cases show a bit of what we can do, but we can do a bit of everything, really. Whether you're a local business that needs a website or are missing a tool in your processes.",
     "website": {
       "title": "Websites",
       "description": "From a WordPress site you can manage yourself to a fully custom build, we'll help you figure out what actually fits your business."
@@ -44,7 +44,7 @@
   
   "why-we-exist": {
     "header": "Why we exist",
-    "subtitle": "We are a small Danish team. We exist because we are breaking free from the classic corporate ideologies. We want to enable cool people, create cool stuff by providing them with the solutions they need. You can read more about our mission {here}",
+    "subtitle": "We are a small Danish team. We exist because we are breaking free from the classic corporate ideologies. We want to enable cool people, create cool stuff and solve the problems they need solving. You can read more about our mission <missionLink>here</missionLink>.",
     "mathias": {
       "name": "Mathias",
       "role": "Problem solver",
@@ -55,6 +55,11 @@
       "role": "Morale booster",
       "bio": "Lumi, meaning light, is our guiding star. He doesn't know much of IT, but he is always there and reminds os of what is important in life."
     }
+  },
+
+  "mission": {
+    "header": "Our mission",
+    "body": "This is a placeholder mission page. The real story of why a-bit-of-IT exists goes here soon."
   },
 
   "get-in-touch": {

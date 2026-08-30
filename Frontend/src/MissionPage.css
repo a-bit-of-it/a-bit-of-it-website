@@ -1,0 +1,20 @@
+.mission-page {
+    max-width: 1100px;
+    min-height: 60vh;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: var(--color-cream);
+}
+
+.mission-page h1 {
+    margin: 0;
+}
+
+.mission-page p {
+    margin: 0;
+    max-width: 60ch;
+    opacity: 0.75;
+    line-height: 1.6;
+}

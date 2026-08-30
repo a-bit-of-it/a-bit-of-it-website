@@ -1,5 +1,6 @@
 import './WhyWeExist.css'
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const MATHIAS_START_DATE = new Date(2018, 8, 1);
 
@@ -34,7 +35,9 @@ export default function WhyWeExist () {
     return (
         <div className="why-we-exist" id="why-we-exist">
             <h1>{t('why-we-exist.header')}</h1>
-            <p className="why-we-exist-subtitle">{t('why-we-exist.subtitle')}</p>
+            <p className="why-we-exist-subtitle">
+                <Trans i18nKey="why-we-exist.subtitle" components={{ missionLink: <Link to="/mission"/> }} />
+            </p>
 
             <div className="team-grid">
                 {team.map(({ key, image, bioValues }) => (
