@@ -28,59 +28,61 @@ export default function ContactUs () {
 
     return (
         <div className="contact-us" id="contact">
-            <h1>{t('get-in-touch.header')}</h1>
-            <p className="contact-us-subtitle">
-                {t('get-in-touch.cta')}
-            </p>
-
-            <form className="contact-us-form" onSubmit={handleSubmit}>
-                <div className="contact-us-row">
-                    <label className="contact-us-field">
-                        {t('get-in-touch.name')}
-                        <input
-                            type="text"
-                            value={name}
-                            onChange={(event) => setName(event.target.value)}
-                            required
-                            maxLength={200}
-                        />
-                    </label>
-
-                    <label className="contact-us-field">
-                        {t('get-in-touch.email')}
-                        <input
-                            type="email"
-                            value={email}
-                            onChange={(event) => setEmail(event.target.value)}
-                            required
-                            maxLength={320}
-                        />
-                    </label>
-                </div>
-
-                <label className="contact-us-field">
-                    {t('get-in-touch.inquiry')}
-                    <textarea
-                        value={inquiry}
-                        onChange={(event) => setInquiry(event.target.value)}
-                        required
-                        maxLength={10000}
-                    />
-                </label>
-
-                <button type="submit" className="contact-us-submit btn-primary" disabled={status === "submitting"}>
-                    {status === "submitting" ? t('get-in-touch.sending') : t('get-in-touch.send')}
-                </button>
-
-                <p className="contact-us-status" role="status" aria-live="polite">
-                    {status === "success" && (
-                        <span className="contact-us-status-success"> {t('get-in-touch.sent')}</span>
-                    )}
-                    {status === "error" && (
-                        <span className="contact-us-status-error"> {t('get-in-touch.something-went-wrong')}</span>
-                    )}
+            <div className="section-inner">
+                <h1>{t('get-in-touch.header')}</h1>
+                <p className="contact-us-subtitle">
+                    {t('get-in-touch.cta')}
                 </p>
-            </form>
+
+                <form className="contact-us-form" onSubmit={handleSubmit}>
+                    <div className="contact-us-row">
+                        <label className="contact-us-field">
+                            {t('get-in-touch.name')}
+                            <input
+                                type="text"
+                                value={name}
+                                onChange={(event) => setName(event.target.value)}
+                                required
+                                maxLength={200}
+                            />
+                        </label>
+
+                        <label className="contact-us-field">
+                            {t('get-in-touch.email')}
+                            <input
+                                type="email"
+                                value={email}
+                                onChange={(event) => setEmail(event.target.value)}
+                                required
+                                maxLength={320}
+                            />
+                        </label>
+                    </div>
+
+                    <label className="contact-us-field">
+                        {t('get-in-touch.inquiry')}
+                        <textarea
+                            value={inquiry}
+                            onChange={(event) => setInquiry(event.target.value)}
+                            required
+                            maxLength={10000}
+                        />
+                    </label>
+
+                    <button type="submit" className="contact-us-submit btn-primary" disabled={status === "submitting"}>
+                        {status === "submitting" ? t('get-in-touch.sending') : t('get-in-touch.send')}
+                    </button>
+
+                    <p className="contact-us-status" role="status" aria-live="polite">
+                        {status === "success" && (
+                            <span className="contact-us-status-success"> {t('get-in-touch.sent')}</span>
+                        )}
+                        {status === "error" && (
+                            <span className="contact-us-status-error"> {t('get-in-touch.something-went-wrong')}</span>
+                        )}
+                    </p>
+                </form>
+            </div>
         </div>
     );
 }

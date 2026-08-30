@@ -1,7 +1,5 @@
 .contact-us {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    background: linear-gradient(to bottom, var(--color-accent-tint), var(--color-cream) 4rem);
 }
 
 .contact-us-subtitle {
