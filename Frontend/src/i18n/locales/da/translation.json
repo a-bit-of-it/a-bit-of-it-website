@@ -7,7 +7,7 @@
   
   "hero": {
     "kicker": "Cool people. Cool tech.",
-    "headline": "Vi sælger ikke software. Vi skaber løsninger.",
+    "headline": "Vi sælger ikke software. Vi løser problemer.",
     "subline": "Siden her er ved at blive bygget",
     "cta": "Se hvad vi har skabt"
   },
@@ -42,8 +42,8 @@
     }
   },
 
-  "who-we-are": {
-    "header": "Hvem er vi",
+  "why-we-exist": {
+    "header": "Hvorfor vi findes",
     "subtitle": "Lille team, stort engagement. Her er hvem der faktisk sidder bag skærmen.",
     "mathias": {
       "name": "Mathias",

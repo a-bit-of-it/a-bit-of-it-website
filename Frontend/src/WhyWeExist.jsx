@@ -1,4 +1,4 @@
-import './WhoWeAre.css'
+import './WhyWeExist.css'
 import { useTranslation } from "react-i18next";
 
 const team = [
@@ -6,12 +6,12 @@ const team = [
     { key: "lumi", image: "/LumiCropped.jpg" },
 ];
 
-export default function WhoWeAre () {
+export default function WhyWeExist () {
     const { t } = useTranslation();
 
     return (
         <div className="who-we-are" id="who-we-are">
-            <h1>{t('who-we-are.header')}</h1>
+            <h1>{t('why-we-exist.header')}</h1>
             <p className="who-we-are-subtitle">{t('who-we-are.subtitle')}</p>
 
             <div className="team-grid">

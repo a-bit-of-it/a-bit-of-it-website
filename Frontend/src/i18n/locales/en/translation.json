@@ -7,9 +7,9 @@
   
   "hero": {
     "kicker": "Cool people. Cool tech.",
-    "headline": "We do not sell software. We create solutions.",
-    "subline": "Site is under heavy construction",
-    "cta": "See what we've built" 
+    "headline": "We do not sell software. We solve problems.",
+    "subline": "Every detail accounted for. Every idea, realized.",
+    "cta": "See what we can do for you" 
   },
   
   "services": {
@@ -42,9 +42,9 @@
     }
   },
   
-  "who-we-are": {
-    "header": "Who we are",
-    "subtitle": "Small team, big enthusiasm. Here's who's actually behind the screen.",
+  "why-we-exist": {
+    "header": "Why we exist",
+    "subtitle": "Small Danish team, working to create cool shit. We keep it real, big enthusiasm. Here's who's actually behind the screen.",
     "mathias": {
       "name": "Mathias",
       "role": "Founder & Developer",

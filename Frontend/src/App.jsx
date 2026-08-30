@@ -1,10 +1,10 @@
 import './App.css'
 import Banner from "./Banner";
 import Hero from "./Hero.jsx";
-import WhoWeAre from "./WhoWeAre.jsx";
 import Services from "./Services.jsx";
 import Cases from "./Cases.jsx";
 import ContactUs from "./ContactUs.jsx";
+import WhyWeExist from "./WhyWeExist.jsx";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
               <Services/>
               <Cases/>
               <ContactUs/>
-              <WhoWeAre/>
+              <WhyWeExist/>
           </div>
       </>
   )
