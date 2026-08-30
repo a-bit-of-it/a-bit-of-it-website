@@ -7,6 +7,7 @@ export default function WhoWeAre () {
     return (
         <div className="who-we-are" id="who-we-are">
             <h1>{t('who-we-are.header')}</h1>
+            <img key="lumi" src="/Lumi.jpg" alt="" />
         </div>
     );
 }
