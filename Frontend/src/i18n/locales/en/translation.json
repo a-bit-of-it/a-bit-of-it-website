@@ -1,8 +1,76 @@
 ﻿{
+  "banner": {
+    "cases": "Cases",
+    "who-we-are": "Who we are",
+    "get-in-touch": "Get in touch"
+  },
+  
   "hero": {
     "kicker": "Cool people. Cool tech.",
-    "headline": "We do not sell software. We create solutions.",
-    "subline": "Site is under heavy construction",
-    "cta": "See what we've built" 
+    "headline": "We do not sell software. We solve problems.",
+    "subline": "Every detail accounted for. Every idea, realized.",
+    "cta": "See what we can do for you" 
+  },
+  
+  "services": {
+    "header": "What we can do for you",
+    "subtitle": "Our cases show a bit of what we can do, but we can do a bit of everything, really. Whether you're a local business that needs a website or are missing a tool in your processes.",
+    "website": {
+      "title": "Websites",
+      "description": "From a WordPress site you can manage yourself to a fully custom build, we'll help you figure out what actually fits your business."
+    },
+    "ai": {
+      "title": "AI systems",
+      "description": "Practical uses of AI in your day-to-day, from automating repetitive work to smarter tools for your team and customers."
+    },
+    "bespoke": {
+      "title": "Bespoke solutions",
+      "description": "Got something specific in mind that doesn't fit a category? Tell us about it, that's usually the fun part."
+    },
+    "cta": "Let's talk about your project"
+  },
+
+  "cases": {
+    "header": "Cases",
+    "geeks": "For the geeks",
+    "technology-used": "Technologies used",
+    "legohouse":
+    {
+      "header": "Digital rebuild of LEGO House",
+      "summary": "LEGO House, Denmark, opened in 2017 with 30+ software experiences centered around the physical LEGO brick. Experiences were built in isolation - code, and infrastructure duplicated with no shared technical foundation. Guests were unhappy with the quality of the experiences, so by taking the software that worked, improving or replacing what didn't, LEGO House underwent a digital rebuild. Floor staff now have more time to interact with their guests, and are empowered to handle basic software and hardware failures themselves, using an iOS app to manage failing edge devices without involving maintenance staff. Developers now have a shared, battle-tested platform to integrate future experiences into.",
+      "tech": "All experiences were built using the Unity game engine. Enabling guest-checkins, photo/video capture, observability, and edge device interaction, each experience integrated by RabbitMQ with a shared platform, written in ASP.NET, hosted in Azure Container Apps."
+    }
+  },
+  
+  "why-we-exist": {
+    "header": "Why we exist",
+    "subtitle": "We are a small Danish team. We exist because we are breaking free from the classic corporate ideologies. We want to enable cool people, create cool stuff and solve the problems they need solving. You can read more about our mission <missionLink>here</missionLink>.",
+    "mathias": {
+      "name": "Mathias",
+      "role": "Problem solver",
+      "bio": "Mathias loves technology and has solved problems for exactly {{X}} years, {{Y}} months and {{Z}} days...\nYes we really did count!"
+    },
+    "lumi": {
+      "name": "Lumi",
+      "role": "Morale booster",
+      "bio": "Lumi, meaning light, is our guiding star. He doesn't know much of IT, but he is always there and reminds os of what is important in life."
+    }
+  },
+
+  "mission": {
+    "header": "Our mission",
+    "body": "This is a placeholder mission page. The real story of why a-bit-of-IT exists goes here soon."
+  },
+
+  "get-in-touch": {
+    "header": "Get in touch",
+    "cta": "Got a project in mind, or just want to say hi? Send us a message and we'll get back to you within 24 hours.",
+    "name": "Name",
+    "email": "Email",
+    "inquiry": "Inquiry",
+    "send": "Send message",
+    "sending": "Sending...",
+    "sent": "Thank you! We have received your inquiry.",
+    "something-went-wrong": "Something went wrong, please try again."
   }
 }

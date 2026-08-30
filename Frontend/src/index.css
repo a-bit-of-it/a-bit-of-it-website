@@ -12,3 +12,35 @@
 body {
     font-family: Poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 }
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.85rem 1.75rem;
+    border: none;
+    border-radius: 999px;
+    background-color: var(--color-accent-deep);
+    color: var(--color-cream);
+    font: inherit;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-primary:hover:not(:disabled),
+.btn-primary:focus-visible:not(:disabled) {
+    background-color: var(--color-ink-soft);
+}
+
+.btn-primary:active:not(:disabled) {
+    transform: scale(0.98);
+}
+
+.btn-primary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

@@ -1,21 +1,37 @@
+import { Routes, Route } from "react-router-dom";
 import './App.css'
 import Banner from "./Banner";
 import Hero from "./Hero.jsx";
-import WhoWeAre from "./WhoWeAre.jsx";
+import Services from "./Services.jsx";
 import Cases from "./Cases.jsx";
 import ContactUs from "./ContactUs.jsx";
+import WhyWeExist from "./WhyWeExist.jsx";
+import MissionPage from "./MissionPage.jsx";
+
+function HomePage() {
+  return (
+      <>
+          <Hero/>
+
+          <div className="app">
+              <Services/>
+              <Cases/>
+              <ContactUs/>
+              <WhyWeExist/>
+          </div>
+      </>
+  )
+}
 
 function App() {
   return (
       <>
           <Banner/>
-          <Hero/>
 
-          <div className="app">
-              <Cases/>
-              <ContactUs/>
-              <WhoWeAre/>
-          </div>
+          <Routes>
+              <Route path="/" element={<HomePage/>}/>
+              <Route path="/mission" element={<MissionPage/>}/>
+          </Routes>
       </>
   )
 }

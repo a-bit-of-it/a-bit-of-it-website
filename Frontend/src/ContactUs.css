@@ -1,13 +1,8 @@
 .contact-us {
     max-width: 1100px;
-    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-
-    h1 {
-        margin: 0;
-    }
 }
 
 .contact-us-subtitle {
@@ -69,29 +64,6 @@
 
 .contact-us-submit {
     align-self: flex-start;
-    border: none;
-    border-radius: 999px;
-    padding: 0.75rem 1.75rem;
-    background-color: var(--color-accent-deep);
-    color: var(--color-cream);
-    font: inherit;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.1s ease;
-}
-
-.contact-us-submit:hover:not(:disabled),
-.contact-us-submit:focus-visible:not(:disabled) {
-    background-color: var(--color-ink-soft);
-}
-
-.contact-us-submit:active:not(:disabled) {
-    transform: scale(0.98);
-}
-
-.contact-us-submit:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
 }
 
 .contact-us-status {

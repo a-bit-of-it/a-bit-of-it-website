@@ -1,9 +1,11 @@
 import { useState } from "react";
 import "./ContactUs.css";
 import { submitContact } from "./services/contactService";
+import {useTranslation} from "react-i18next";
 
-export default function ContactUs ()
-{
+export default function ContactUs () {
+    const { t } = useTranslation();
+
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [inquiry, setInquiry] = useState("");
@@ -26,15 +28,15 @@ export default function ContactUs ()
 
     return (
         <div className="contact-us" id="contact">
-            <h1>Get in touch</h1>
+            <h1>{t('get-in-touch.header')}</h1>
             <p className="contact-us-subtitle">
-                Got a project in mind, or just want to say hi? Send us a message and we'll get back to you.
+                {t('get-in-touch.cta')}
             </p>
 
             <form className="contact-us-form" onSubmit={handleSubmit}>
                 <div className="contact-us-row">
                     <label className="contact-us-field">
-                        Name
+                        {t('get-in-touch.name')}
                         <input
                             type="text"
                             value={name}
@@ -45,7 +47,7 @@ export default function ContactUs ()
                     </label>
 
                     <label className="contact-us-field">
-                        Email
+                        {t('get-in-touch.email')}
                         <input
                             type="email"
                             value={email}
@@ -57,7 +59,7 @@ export default function ContactUs ()
                 </div>
 
                 <label className="contact-us-field">
-                    Inquiry
+                    {t('get-in-touch.inquiry')}
                     <textarea
                         value={inquiry}
                         onChange={(event) => setInquiry(event.target.value)}
@@ -66,16 +68,16 @@ export default function ContactUs ()
                     />
                 </label>
 
-                <button type="submit" className="contact-us-submit" disabled={status === "submitting"}>
-                    {status === "submitting" ? "Sending..." : "Send message"}
+                <button type="submit" className="contact-us-submit btn-primary" disabled={status === "submitting"}>
+                    {status === "submitting" ? t('get-in-touch.sending') : t('get-in-touch.send')}
                 </button>
 
                 <p className="contact-us-status" role="status" aria-live="polite">
                     {status === "success" && (
-                        <span className="contact-us-status-success">Thanks, your message was sent.</span>
+                        <span className="contact-us-status-success"> {t('get-in-touch.sent')}</span>
                     )}
                     {status === "error" && (
-                        <span className="contact-us-status-error">Something went wrong, please try again.</span>
+                        <span className="contact-us-status-error"> {t('get-in-touch.something-went-wrong')}</span>
                     )}
                 </p>
             </form>
