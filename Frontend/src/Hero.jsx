@@ -8,7 +8,10 @@ export default function Hero() {
         <section className="hero">
             <div className="hero-content">
                 {/*<p className="hero-kicker">{t('hero.kicker')}</p>*/}
-                <h1 className="hero-headline">{t('hero.headline')}</h1>
+                <h1 className="hero-headline">
+                    <span>{t('hero.headline1')}</span>
+                    <span>{t('hero.headline2')}</span>
+                </h1>
                 <p className="hero-subline">{t('hero.subline')}</p>
                 <a href="#cases" className="btn-primary">{t('hero.cta')}</a>
             </div>

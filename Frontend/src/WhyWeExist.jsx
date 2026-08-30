@@ -34,20 +34,22 @@ export default function WhyWeExist () {
 
     return (
         <div className="why-we-exist" id="why-we-exist">
-            <h1>{t('why-we-exist.header')}</h1>
-            <p className="why-we-exist-subtitle">
-                <Trans i18nKey="why-we-exist.subtitle" components={{ missionLink: <Link to="/mission"/> }} />
-            </p>
+            <div className="section-inner">
+                <h1>{t('why-we-exist.header')}</h1>
+                <p className="why-we-exist-subtitle">
+                    <Trans i18nKey="why-we-exist.subtitle" components={{ missionLink: <Link to="/mission"/> }} />
+                </p>
 
-            <div className="team-grid">
-                {team.map(({ key, image, bioValues }) => (
-                    <div className="team-card" key={key}>
-                        <img className="team-card-photo" src={image} alt={t(`why-we-exist.${key}.name`)} />
-                        <h3>{t(`why-we-exist.${key}.name`)}</h3>
-                        <span className="team-card-role">{t(`why-we-exist.${key}.role`)}</span>
-                        <p>{t(`why-we-exist.${key}.bio`, bioValues)}</p>
-                    </div>
-                ))}
+                <div className="team-grid">
+                    {team.map(({ key, image, bioValues }) => (
+                        <div className="team-card" key={key}>
+                            <img className="team-card-photo" src={image} alt={t(`why-we-exist.${key}.name`)} />
+                            <h3>{t(`why-we-exist.${key}.name`)}</h3>
+                            <span className="team-card-role">{t(`why-we-exist.${key}.role`)}</span>
+                            <p>{t(`why-we-exist.${key}.bio`, bioValues)}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     );

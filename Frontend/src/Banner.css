@@ -57,19 +57,28 @@
 
 @media (max-width: 560px) {
     .banner-content {
-        flex-direction: column;
-        gap: 0.85rem;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-areas: "logo lang";
+        align-items: center;
+        gap: 0.85rem 1rem;
         padding: 1rem;
     }
 
+    .banner-logo {
+        grid-area: logo;
+    }
+
     .banner-actions {
-        flex-direction: column;
-        gap: 0.85rem;
+        display: contents;
+    }
+
+    .language-switch {
+        grid-area: lang;
+        justify-self: end;
     }
 
     .navigation {
-        gap: 1.25rem;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: none;
     }
 }

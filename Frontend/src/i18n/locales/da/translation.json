@@ -7,7 +7,8 @@
   
   "hero": {
     "kicker": "Cool people. Cool tech.",
-    "headline": "Vi sælger ikke software. Vi løser problemer.",
+    "headline1": "Vi sælger ikke software.",
+    "headline2": "Vi løser problemer.",
     "subline": "Siden her er ved at blive bygget",
     "cta": "Se hvad vi har skabt"
   },

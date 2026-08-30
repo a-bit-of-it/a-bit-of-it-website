@@ -1,8 +1,6 @@
 .contact-us {
-    max-width: 1100px;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    background: linear-gradient(to bottom, var(--color-accent-tint), var(--color-cream) 3rem);
+    /*background-color: var(--color-cream);*/
 }
 
 .contact-us-subtitle {
@@ -70,6 +68,10 @@
     margin: 0;
     font-size: 0.9rem;
     font-weight: 500;
+}
+
+.contact-us-status:empty {
+    display: none;
 }
 
 .contact-us-status-success {

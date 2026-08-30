@@ -10,11 +10,13 @@ export default function Cases () {
 
     return (
         <div className="cases" id="cases">
-            <h1>{t('cases.header')}</h1>
-            <LegoHouseCase/>
-            <LegoMaterialComplianceCase/>
-            <LEGOSuperMarioCase/>
-            <ChemoMetecCase/>
+            <div className="section-inner">
+                <h1>{t('cases.header')}</h1>
+                <LegoHouseCase/>
+                <LegoMaterialComplianceCase/>
+                <LEGOSuperMarioCase/>
+                <ChemoMetecCase/>
+            </div>
         </div>
     )
 }

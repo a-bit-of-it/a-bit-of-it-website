@@ -1,8 +1,6 @@
 .why-we-exist {
-    max-width: 1100px;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    background: linear-gradient(to bottom, var(--color-cream), var(--color-accent-tint) 3rem);
+    /*background-color: var(--color-accent-tint);*/
 }
 
 .why-we-exist-subtitle {
@@ -16,7 +14,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    padding: 1rem 0;
 }
 
 .team-card {
