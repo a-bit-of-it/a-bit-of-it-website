@@ -48,7 +48,7 @@
     "mathias": {
       "name": "Mathias",
       "role": "Stifter & udvikler",
-      "bio": "Bygger softwaren, skriver koden og drikker nok mere kaffe, end der er sundt."
+      "bio": "Mathias bygger softwaren og har mere end {{X}} år, {{Y}} måneder og {{Z}} dage erfaring...\nJa, vi talte efter!"
     },
     "lumi": {
       "name": "Lumi",

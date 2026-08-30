@@ -78,4 +78,5 @@
     opacity: 0.75;
     line-height: 1.6;
     font-size: 0.9rem;
+    white-space: pre-line;
 }

@@ -44,11 +44,11 @@
   
   "why-we-exist": {
     "header": "Why we exist",
-    "subtitle": "We are a small Danish team. We exist because we are breaking free from the classic corporate ideologies. We want to enable cool people, create cool stuff by providing them with the solutions they need.",
+    "subtitle": "We are a small Danish team. We exist because we are breaking free from the classic corporate ideologies. We want to enable cool people, create cool stuff by providing them with the solutions they need. You can read more about our mission {here}",
     "mathias": {
       "name": "Mathias",
-      "role": "Developer",
-      "bio": "Mathias builds the software and has more than {X} years, {Y} months and {Z} days of experience... Yes we did count!"
+      "role": "Problem solver",
+      "bio": "Mathias loves technology and has solved problems for exactly {{X}} years, {{Y}} months and {{Z}} days...\nYes we really did count!"
     },
     "lumi": {
       "name": "Lumi",
