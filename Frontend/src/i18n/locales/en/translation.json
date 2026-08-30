@@ -43,7 +43,18 @@
   },
   
   "who-we-are": {
-    "header": "Who we are"
+    "header": "Who we are",
+    "subtitle": "Small team, big enthusiasm. Here's who's actually behind the screen.",
+    "mathias": {
+      "name": "Mathias",
+      "role": "Founder & Developer",
+      "bio": "Builds the software, writes the code, and drinks more coffee than is probably wise."
+    },
+    "lumi": {
+      "name": "Lumi",
+      "role": "Chief Morale Officer",
+      "bio": "In charge of moral support, snack breaks, and rigorous testing of the office floor."
+    }
   },
 
   "get-in-touch": {

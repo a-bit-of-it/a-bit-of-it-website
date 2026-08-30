@@ -43,7 +43,18 @@
   },
 
   "who-we-are": {
-    "header": "Hvem er vi"
+    "header": "Hvem er vi",
+    "subtitle": "Lille team, stort engagement. Her er hvem der faktisk sidder bag skærmen.",
+    "mathias": {
+      "name": "Mathias",
+      "role": "Stifter & udvikler",
+      "bio": "Bygger softwaren, skriver koden og drikker nok mere kaffe, end der er sundt."
+    },
+    "lumi": {
+      "name": "Lumi",
+      "role": "Chief Morale Officer",
+      "bio": "Står for moralsk opbakning, snackpauser og grundig test af kontorgulvet."
+    }
   },
   
   "get-in-touch": {
