@@ -2,20 +2,15 @@ import { useState } from "react";
 import "./ContactUs.css";
 import { submitContact } from "./services/contactService";
 import {useTranslation} from "react-i18next";
+import { useInquiry } from "./InquiryContext.jsx";
 
-export default function ContactUs ({ prefill }) {
+export default function ContactUs () {
     const { t } = useTranslation();
+    const { inquiry, setInquiry } = useInquiry();
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
-    const [inquiry, setInquiry] = useState("");
     const [status, setStatus] = useState("idle");
-    const [appliedPrefillTs, setAppliedPrefillTs] = useState(null);
-
-    if (prefill && prefill.ts !== appliedPrefillTs) {
-        setAppliedPrefillTs(prefill.ts);
-        setInquiry(prefill.text);
-    }
 
     async function handleSubmit(event) {
         event.preventDefault();

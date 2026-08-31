@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import './App.css'
 import Banner from "./Banner";
@@ -9,23 +8,20 @@ import ContactUs from "./ContactUs.jsx";
 import WhyWeExist from "./WhyWeExist.jsx";
 import MissionPage from "./MissionPage.jsx";
 import GithubLink from "./GithubLink.jsx";
+import { InquiryProvider } from "./InquiryContext.jsx";
 
 function HomePage() {
-  const [inquiryPrefill, setInquiryPrefill] = useState(null);
-
-  function handleSelectService(text) {
-    setInquiryPrefill({ text, ts: Date.now() });
-  }
-
   return (
       <>
           <Hero/>
 
           <div className="app">
-              <Services onSelectService={handleSelectService}/>
-              <Cases/>
-              <ContactUs prefill={inquiryPrefill}/>
-              <WhyWeExist/>
+              <InquiryProvider>
+                  <Services/>
+                  <Cases/>
+                  <ContactUs/>
+                  <WhyWeExist/>
+              </InquiryProvider>
           </div>
       </>
   )

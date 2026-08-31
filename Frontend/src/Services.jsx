@@ -1,13 +1,15 @@
 import './Services.css'
 import { useTranslation } from "react-i18next";
+import { useInquiry } from "./InquiryContext.jsx";
 
-export default function Services ({ onSelectService }) {
+export default function Services () {
     const { t } = useTranslation();
+    const { setInquiry } = useInquiry();
 
     const offerings = ["website", "ai", "bespoke"];
 
     function handleSelect(key) {
-        onSelectService(t(`services.${key}.prefill`));
+        setInquiry(t(`services.${key}.prefill`));
         document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
     }
 
