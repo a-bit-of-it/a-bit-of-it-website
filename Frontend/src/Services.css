@@ -25,6 +25,11 @@
     gap: 0.5rem;
 }
 
+.services-card-cta {
+    margin-top: 0.75rem;
+    align-self: flex-start;
+}
+
 .services-card h3 {
     margin: 0;
     font-size: 1.05rem;

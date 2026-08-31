@@ -3,13 +3,19 @@ import "./ContactUs.css";
 import { submitContact } from "./services/contactService";
 import {useTranslation} from "react-i18next";
 
-export default function ContactUs () {
+export default function ContactUs ({ prefill }) {
     const { t } = useTranslation();
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [inquiry, setInquiry] = useState("");
     const [status, setStatus] = useState("idle");
+    const [appliedPrefillTs, setAppliedPrefillTs] = useState(null);
+
+    if (prefill && prefill.ts !== appliedPrefillTs) {
+        setAppliedPrefillTs(prefill.ts);
+        setInquiry(prefill.text);
+    }
 
     async function handleSubmit(event) {
         event.preventDefault();

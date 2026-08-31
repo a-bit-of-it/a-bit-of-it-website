@@ -18,16 +18,20 @@
     "subtitle": "For you, IT is a hassle... For us IT is our passion, so let us help you on your way.",
     "website": {
       "title": "Websites",
-      "description": "Do you want to establish an internet presence? Do you want a website you can manage yourself? WordPress or Shopify may be the platforms you are looking for. If you just want to focus on your business, then we will handle the technical part for you."
+      "description": "Do you want to establish an internet presence? Do you want a website you can manage yourself? WordPress or Shopify may be the platforms you are looking for. If you just want to focus on your own business, then let us handle the technical part for you.",
+      "prefill": "Hi, I'd like a beautiful website for my business. Here's a bit about what I'm looking for: "
     },
     "ai": {
       "title": "AI systems",
-      "description": "Practical uses of AI in your day-to-day, from automating repetitive work to smarter tools for your team and customers."
+      "description": "Practical uses of AI in your day-to-day, from automating repetitive work to smarter tools for your team and customers.",
+      "prefill": "Hi, I'm interested in using AI to make my day-to-day work easier. Here's what I'd like to automate or improve: "
     },
     "bespoke": {
       "title": "Custom solutions",
-      "description": "Got something specific in mind that doesn't fit a category? Tell us about it, that's usually the fun part."
+      "description": "Got something specific in mind that doesn't fit a category? Tell us about it, that's usually the fun part.",
+      "prefill": "Hi, I have a custom project in mind that doesn't quite fit a category. Here's what I'm thinking: "
     },
+    "select-cta": "I want this solved",
     "cta": "Let's talk about your project"
   },
 
