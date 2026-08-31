@@ -21,6 +21,8 @@ export default function Services () {
                     ))}
                 </div>
 
+                <p>Some text here?</p>
+
                 <a href="#contact" className="services-cta btn-primary">{t('services.cta')}</a>
             </div>
         </div>

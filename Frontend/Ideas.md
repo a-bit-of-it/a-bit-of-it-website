@@ -18,3 +18,6 @@ Robots.txt?
 
 Our mission:
 Gøre op mod dyr software. 75% af prisen på software går til ikke-udviklere. Det går vel til dyr husleje, ikke-direkte-værdiskabende personale og til CEO'ens Aston Martin, som står i stuen... som ikke kan komme ud... Altså... Huset er bygget op omkring den... Vi vil hellere hyre de ekstra dygtige udviklere, men samtidig gi' dem langt den støreste del af pengekagen. Skal vist forfines lidt hehe
+
+
+Github link

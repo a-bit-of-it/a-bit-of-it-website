@@ -7,6 +7,7 @@ import Cases from "./Cases.jsx";
 import ContactUs from "./ContactUs.jsx";
 import WhyWeExist from "./WhyWeExist.jsx";
 import MissionPage from "./MissionPage.jsx";
+import GithubLink from "./GithubLink.jsx";
 
 function HomePage() {
   return (
@@ -32,6 +33,8 @@ function App() {
               <Route path="/" element={<HomePage/>}/>
               <Route path="/mission" element={<MissionPage/>}/>
           </Routes>
+
+          <GithubLink/>
       </>
   )
 }
