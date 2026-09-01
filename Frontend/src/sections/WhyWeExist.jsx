@@ -56,7 +56,7 @@ export default function WhyWeExist () {
                 {/*</p>*/}
                 <div className = "values">
                     <p>
-                        We are a small team from Aalborg, Denmark. who wants to enable cool people build their cool ideas.
+                        We are a small team from Aalborg, Denmark, who wants to enable cool people build their cool ideas.
                     </p>
                     <p>
                         We give small business owners, selling clothes out of their garage, the website of their dreams.
