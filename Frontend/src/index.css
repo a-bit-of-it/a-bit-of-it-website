@@ -33,7 +33,7 @@ body {
 
 .btn-primary:hover:not(:disabled),
 .btn-primary:focus-visible:not(:disabled) {
-    background-color: var(--color-ink-soft);
+    background-color: color-mix(in srgb, var(--color-accent-deep) 75%, black);
 }
 
 .btn-primary:active:not(:disabled) {
@@ -65,8 +65,7 @@ body {
 
 .btn-secondary:hover,
 .btn-secondary:focus-visible {
-    background-color: var(--color-accent-deep);
-    color: var(--color-cream);
+    background-color: color-mix(in srgb, var(--color-accent-deep) 25%, transparent);
 }
 
 .btn-secondary:active {
