@@ -1,10 +1,10 @@
 import { useState } from "react";
-import "./ContactUs.css";
+import "./GetInTouch.css";
 import {useTranslation} from "react-i18next";
 import {submitContact} from "../services/contactService.js";
 import {useInquiry} from "../InquiryContext.jsx";
 
-export default function ContactUs () {
+export default function GetInTouch () {
     const { t } = useTranslation();
     const { inquiry, setInquiry, inquiryRef } = useInquiry();
 
