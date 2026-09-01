@@ -63,7 +63,9 @@
     "send": "Send message",
     "sending": "Sending...",
     "sent": "Thank you! We have received your inquiry.",
-    "something-went-wrong": "Something went wrong, please try again."
+    "something-went-wrong": "Something went wrong, please try again.",
+    "field-required": "This field is required.",
+    "invalid-email": "Please enter a valid email address."
   },
   
   "why-we-exist": {

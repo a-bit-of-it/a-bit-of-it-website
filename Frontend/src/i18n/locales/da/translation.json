@@ -62,7 +62,9 @@
     "send": "Send besked",
     "sending": "Sender...",
     "sent": "Tak! Vi har modtaget din besked.",
-    "something-went-wrong": "Noget gik galt. Prøv igen."
+    "something-went-wrong": "Noget gik galt. Prøv igen.",
+    "field-required": "Dette felt er påkrævet.",
+    "invalid-email": "Indtast venligst en gyldig e-mailadresse."
   },
 
   "why-we-exist": {
