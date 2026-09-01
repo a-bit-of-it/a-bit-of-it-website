@@ -1,12 +1,22 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useCallback, useContext, useRef, useState } from "react";
 
 const InquiryContext = createContext(null);
 
 export function InquiryProvider({ children }) {
     const [inquiry, setInquiry] = useState("");
+    const inquiryRef = useRef(null);
+
+    // When called, this inputs a default "inquiry template" into our get in touch section
+    // It also auto-selects the input field, such that the user is ready to type without manually focusing on the textarea
+    const selectInquiry = useCallback((value) => {
+        setInquiry(value);
+        const node = inquiryRef.current;
+        node?.focus({ preventScroll: true });
+        node?.select();
+    }, []);
 
     return (
-        <InquiryContext.Provider value={{ inquiry, setInquiry }}>
+        <InquiryContext.Provider value={{ inquiry, setInquiry, selectInquiry, inquiryRef }}>
             {children}
         </InquiryContext.Provider>
     );

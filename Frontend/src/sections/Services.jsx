@@ -5,12 +5,12 @@ import {useInquiry} from "../InquiryContext.jsx";
 
 export default function Services () {
     const { t } = useTranslation();
-    const { setInquiry } = useInquiry();
+    const { selectInquiry } = useInquiry();
 
     const offerings = ["website", "ai", "bespoke"];
 
     function handleSelect(key) {
-        setInquiry(t(`services.${key}.prefill`));
+        selectInquiry(t(`services.${key}.prefill`));
         scrollToSection('contact');
     }
 
@@ -32,7 +32,7 @@ export default function Services () {
                     ))}
                 </div>
 
-                <a href="#contact" className="services-cta btn-primary" onClick={scrollToSectionOnClick('contact')}>{t('services.cta')}</a>
+                {/*<a href="#contact" className="services-cta btn-primary" onClick={scrollToSectionOnClick('contact')}>{t('services.cta')}</a>*/}
             </div>
         </div>
     );
