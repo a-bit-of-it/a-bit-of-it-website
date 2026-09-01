@@ -4,7 +4,6 @@
 
 .services-subtitle {
     margin: 0;
-    /*max-width: 60ch;*/
     opacity: 0.75;
     line-height: 1.6;
 }
@@ -50,10 +49,6 @@
     background-color: color-mix(in srgb, currentColor 4%, transparent);
     flex-direction: column;
     gap: 1rem;
-}
-
-.services-card--bespoke {
-    padding: 2rem;
 }
 
 .services-card--bespoke h3 {
@@ -108,13 +103,6 @@ a.services-card-examples:hover,
 a.services-card-examples:focus-visible {
     text-decoration: underline;
 }
-
-/*.services-card-load-time {*/
-/*    margin: 0;*/
-
-/*    font-weight: 600;*/
-/*    color: var(--color-accent-deep);*/
-/*}*/
 
 .services-card-cta {
     margin-top: auto;

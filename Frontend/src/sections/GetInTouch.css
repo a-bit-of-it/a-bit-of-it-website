@@ -1,6 +1,6 @@
 .contact-us {
-    background: linear-gradient(to bottom, var(--color-accent-tint), var(--color-cream) 2.5rem);
-    /*background-color: var(--color-cream);*/
+    /*background: linear-gradient(to bottom, var(--color-accent-tint), var(--color-cream) 2.5rem);*/
+    background-color: var(--color-cream);
 }
 
 .contact-us-subtitle {
@@ -57,6 +57,22 @@
     outline: none;
     border-color: var(--color-accent-deep);
     background-color: var(--color-accent-tint);
+}
+
+.contact-us-required {
+    color: var(--color-accent-deep);
+}
+
+.contact-us-field--invalid input,
+.contact-us-field--invalid textarea {
+    border-color: #b3261e;
+    background-color: color-mix(in srgb, #b3261e 6%, transparent);
+}
+
+.contact-us-field-error {
+    color: #b3261e;
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 
 .contact-us-submit {

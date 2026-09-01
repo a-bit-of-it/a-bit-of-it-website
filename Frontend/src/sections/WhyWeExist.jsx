@@ -47,16 +47,16 @@ export default function WhyWeExist () {
     ];
 
     return (
-        <div className="why-we-exist" id="why-we-exist">
+        <div className="why-we-exist">
             <div className="section-inner">
-                <h1>{t('why-we-exist.header')}</h1>
+                <h1 id="why-we-exist">{t('why-we-exist.header')}</h1>
                 {/*<p className="why-we-exist-subtitle">*/}
                 {/*    /!*{t('why-we-exist.subtitle')}*!/*/}
                 {/*    /!*<Trans i18nKey="why-we-exist.subtitle" components={{ missionLink: <Link to="/mission"/> }} />*!/*/}
                 {/*</p>*/}
                 <div className = "values">
                     <p>
-                        We are a small team from Aalborg, Denmark. who wants to enable cool people build their cool ideas.
+                        We are a small team from Aalborg, Denmark, who wants to enable cool people build their cool ideas.
                     </p>
                     <p>
                         We give small business owners, selling clothes out of their garage, the website of their dreams.

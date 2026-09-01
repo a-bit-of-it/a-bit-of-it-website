@@ -3,34 +3,32 @@
     flex-direction: column;
 }
 
+.app > *:last-child {
+    min-height: 100vh;
+}
+
 .section-inner {
     max-width: 1100px;
     margin: 0 auto;
-    padding-top: 3rem;
-    padding-bottom: 1rem;
+    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-.app > *:first-child > .section-inner {
-    padding-top: 4rem;
-}
-
 .app h1 {
     color: var(--color-ink);
     margin: 0;
-    margin-top: -0.18em;
     line-height: 1;
 }
 
 @media (max-width: 560px) {
     .section-inner {
-        padding: 3rem 1rem;
+        /*padding: 1rem 1rem;*/
     }
 
     .app > *:first-child > .section-inner {
-        padding-top: 4rem;
+        /*padding-top: 1rem;*/
     }
 }
 
