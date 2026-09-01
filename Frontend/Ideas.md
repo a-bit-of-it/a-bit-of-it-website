@@ -9,6 +9,10 @@ Break cases into several parts?:
 Maybe a section: "What we can create for you?"
 * Måske appeal til det danske, småselvstændige virksomheder: de skal bare ha' en hjemmeside med/uden wordpress, thats it
 
+We value transparency. Have a look at our github, if you are so inclined
+
+We do not use cookies or any form of tracking non-sense
+
 Tilføj Umami
 
 Hvad med SEO?
