@@ -2,12 +2,14 @@ import './Banner.css'
 import LanguageSwitch from './LanguageSwitch.jsx'
 import {useTranslation} from "react-i18next";
 import { scrollToSectionOnClick } from "./scrollToSection.js";
+import { useHideOnScroll } from "./useHideOnScroll.js";
 
 export default function Banner() {
     const { t } = useTranslation();
+    const hidden = useHideOnScroll();
 
     return (
-        <header className="banner">
+        <header className={`banner${hidden ? ' banner--hidden' : ''}`}>
             <div className="banner-content">
                 <a href="#" className="banner-logo">a bit of IT</a>
                 <div className="banner-actions">

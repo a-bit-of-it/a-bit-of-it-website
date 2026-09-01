@@ -26,11 +26,11 @@
 
 @media (max-width: 560px) {
     .section-inner {
-        padding: 3rem 1rem;
+        padding: 1rem 1rem;
     }
 
     .app > *:first-child > .section-inner {
-        padding-top: 4rem;
+        padding-top: 1rem;
     }
 }
 
