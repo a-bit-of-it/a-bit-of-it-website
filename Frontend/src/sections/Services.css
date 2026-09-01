@@ -64,32 +64,20 @@
     font-size: 1.05rem;
 }
 
-.services-card-examples-label {
+.services-card-examples {
     margin: 0;
-    font-size: 0.75rem;
+    opacity: 1;
+    /*font-size: 0.8rem;*/
     font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    opacity: 0.6;
-}
-
-.services-card-examples ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin: 0.5rem 0 0;
-    padding: 0;
-    list-style: none;
-}
-
-.services-card-examples li {
-    padding: 0.35rem 0.85rem;
-    border-radius: 999px;
-    background-color: color-mix(in srgb, var(--color-accent-deep) 12%, transparent);
     color: var(--color-accent-deep);
-    font-size: 0.8rem;
-    font-weight: 600;
 }
+
+/*.services-card-load-time {*/
+/*    margin: 0;*/
+
+/*    font-weight: 600;*/
+/*    color: var(--color-accent-deep);*/
+/*}*/
 
 .services-card-cta {
     margin-top: auto;

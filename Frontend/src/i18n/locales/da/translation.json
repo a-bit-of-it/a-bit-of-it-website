@@ -19,19 +19,19 @@
     "website": {
       "title": "Hjemmesider",
       "description": "Fra en WordPress-side, du selv kan redigere, til en helt skræddersyet løsning, vi hjælper med at finde ud af, hvad der faktisk passer til jeres virksomhed.",
-      "prefill": "Hej, jeg vil gerne have en flot hjemmeside til min virksomhed. Her er lidt om hvad jeg leder efter: "
+      "prefill": "Hej, jeg vil gerne have en flot hjemmeside til min virksomhed. Her er lidt om hvad jeg leder efter: ",
+      "load-time": "Vil du have en hurtig hjemmeside? Denne side tog kun {{time}} ms om at loade."
     },
     "ai": {
       "title": "AI-systemer",
       "description": "Praktisk brug af AI i hverdagen, fra automatisering af rutineopgaver til smartere værktøjer for jeres medarbejdere og kunder.",
-      "prefill": "Hej, jeg er interesseret i at bruge AI til at gøre min hverdag lettere. Her er hvad jeg gerne vil automatisere eller forbedre: "
+      "prefill": "Hej, jeg er interesseret i at bruge AI til at gøre min hverdag lettere. Her er hvad jeg gerne vil automatisere eller forbedre: ",
+      "examples": ["Chatbots & assistenter", "Dokument- og dataudtræk", "Automatiske rapporter", "Smart søgning", "Automatisering af arbejdsgange"]
     },
     "bespoke": {
       "title": "Skræddersyede løsninger",
       "description": "Har du noget specifikt i tankerne, der ikke passer ind i en kategori? Fortæl os om det, det er som regel den sjove del.",
-      "prefill": "Hej, jeg har et specifikt projekt i tankerne, der ikke rigtig passer ind i en kategori. Her er hvad jeg tænker: ",
-      "examples-label": "Det kunne for eksempel være:",
-      "examples": ["Interne værktøjer", "Automatisering", "Integrationer & API'er", "Dashboards", "Prototyper"]
+      "prefill": "Hej, jeg har et specifikt projekt i tankerne, der ikke rigtig passer ind i en kategori. Her er hvad jeg tænker: "
     },
     "select-cta": "Det her vil jeg gerne have løst",
     "cta": "Lad os tale om jeres projekt"
