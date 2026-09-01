@@ -7,8 +7,6 @@ export default function Services () {
     const { t } = useTranslation();
     const { selectInquiry } = useInquiry();
 
-    const offerings = ["website", "ai", "bespoke"];
-
     function handleSelect(key) {
         selectInquiry(t(`services.${key}.prefill`));
         scrollToSection('contact');
@@ -21,18 +19,39 @@ export default function Services () {
                 <p className="services-subtitle">{t('services.subtitle')}</p>
 
                 <div className="services-grid">
-                    {offerings.map((key) => (
-                        <div className="services-card" key={key}>
-                            <h3>{t(`services.${key}.title`)}</h3>
-                            <p>{t(`services.${key}.description`)}</p>
-                            <button type="button" className="services-card-cta btn-secondary" onClick={() => handleSelect(key)}>
-                                {t('services.select-cta')}
-                            </button>
-                        </div>
-                    ))}
-                </div>
+                    <div className="services-card services-card--ai">
+                        <h3>{t('services.ai.title')}</h3>
+                        <p>{t('services.ai.description')}</p>
+                        <button type="button" className="services-card-cta btn-secondary" onClick={() => handleSelect('ai')}>
+                            {t('services.select-cta')}
+                        </button>
+                    </div>
+                    
+                    <div className="services-card services-card--bespoke">
+                        <h3>{t('services.bespoke.title')}</h3>
+                        <p>{t('services.bespoke.description')}</p>
+                        {/*<div className="services-card-examples">*/}
+                        {/*    <p className="services-card-examples-label">{t('services.bespoke.examples-label')}</p>*/}
+                        {/*    <ul>*/}
+                        {/*        {t('services.bespoke.examples', { returnObjects: true }).map((example) => (*/}
+                        {/*            <li key={example}>{example}</li>*/}
+                        {/*        ))}*/}
+                        {/*    </ul>*/}
+                        {/*</div>*/}
+                        <p>sdf</p>
+                        <button type="button" className="services-card-cta btn-secondary" onClick={() => handleSelect('bespoke')}>
+                            {t('services.select-cta')}
+                        </button>
+                    </div>
 
-                {/*<a href="#contact" className="services-cta btn-primary" onClick={scrollToSectionOnClick('contact')}>{t('services.cta')}</a>*/}
+                    <div className="services-card services-card--website">
+                        <h3>{t('services.website.title')}</h3>
+                        <p>{t('services.website.description')}</p>
+                        <button type="button" className="services-card-cta btn-secondary" onClick={() => handleSelect('website')}>
+                            {t('services.select-cta')}
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     );

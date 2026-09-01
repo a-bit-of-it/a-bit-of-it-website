@@ -29,7 +29,9 @@
     "bespoke": {
       "title": "Skræddersyede løsninger",
       "description": "Har du noget specifikt i tankerne, der ikke passer ind i en kategori? Fortæl os om det, det er som regel den sjove del.",
-      "prefill": "Hej, jeg har et specifikt projekt i tankerne, der ikke rigtig passer ind i en kategori. Her er hvad jeg tænker: "
+      "prefill": "Hej, jeg har et specifikt projekt i tankerne, der ikke rigtig passer ind i en kategori. Her er hvad jeg tænker: ",
+      "examples-label": "Det kunne for eksempel være:",
+      "examples": ["Interne værktøjer", "Automatisering", "Integrationer & API'er", "Dashboards", "Prototyper"]
     },
     "select-cta": "Det her vil jeg gerne have løst",
     "cta": "Lad os tale om jeres projekt"

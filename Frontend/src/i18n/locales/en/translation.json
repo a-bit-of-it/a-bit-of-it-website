@@ -29,7 +29,9 @@
     "bespoke": {
       "title": "Custom solutions",
       "description": "Got something specific in mind that doesn't fit a category? Tell us about it, that's usually the fun part.",
-      "prefill": "Hi, I have a custom project in mind that doesn't quite fit a category. Here's what I'm thinking: "
+      "prefill": "Hi, I have a custom project in mind that doesn't quite fit a category. Here's what I'm thinking: ",
+      "examples-label": "A few things this could look like:",
+      "examples": ["Internal tools", "Automations", "Integrations & APIs", "Dashboards", "Prototypes"]
     },
     "select-cta": "I want this solved",
     "cta": "Let's talk about your project"
