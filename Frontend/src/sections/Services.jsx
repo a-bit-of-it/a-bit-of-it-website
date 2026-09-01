@@ -1,5 +1,5 @@
 import './Services.css'
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import {scrollToSection, scrollToSectionOnClick} from "../scrollToSection.js";
 import {useInquiry} from "../InquiryContext.jsx";
 import {usePageLoadTime} from "../usePageLoadTime.js";
@@ -24,9 +24,6 @@ export default function Services () {
                     <div className="services-card services-card--ai">
                         <h3>{t('services.ai.title')}</h3>
                         <p>{t('services.ai.description')}</p>
-                        <p className="services-card-examples">
-                            {t('services.ai.examples', { returnObjects: true }).join(' · ')}
-                        </p>
                         <button type="button" className="services-card-cta btn-secondary" onClick={() => handleSelect('ai')}>
                             {t('services.ai-select-cta')}
                         </button>
@@ -34,7 +31,12 @@ export default function Services () {
                     
                     <div className="services-card services-card--bespoke">
                         <h3>{t('services.bespoke.title')}</h3>
-                        <p>{t('services.bespoke.description')}</p>
+                        <p>
+                            <Trans
+                                i18nKey="services.bespoke.description"
+                                components={{ casesLink: <a href="#cases" onClick={scrollToSectionOnClick('cases')} className="services-card-inline-link" /> }}
+                            />
+                        </p>
                         <button type="button" className="services-card-cta btn-secondary" onClick={() => handleSelect('bespoke')}>
                             {t('services.bespoke-select-cta')}
                         </button>

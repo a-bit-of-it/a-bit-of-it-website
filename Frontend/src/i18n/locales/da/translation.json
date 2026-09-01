@@ -24,13 +24,12 @@
     },
     "ai": {
       "title": "AI-systemer",
-      "description": "Praktisk brug af AI i hverdagen, fra automatisering af rutineopgaver til smartere værktøjer for jeres medarbejdere og kunder.",
-      "prefill": "Hej, jeg er interesseret i at bruge AI til at gøre min hverdag lettere. Her er hvad jeg gerne vil automatisere eller forbedre: ",
-      "examples": ["Chatbots & assistenter", "Dokument- og dataudtræk", "Automatiske rapporter", "Smart søgning", "Automatisering af arbejdsgange"]
+      "description": "Praktisk brug af AI i hverdagen. Tænk chatbots, der rent faktisk hjælper jeres kunder, værktøjer der trækker tallene ud af en bunke dokumenter, rapporter der skriver sig selv, smartere søgning i jeres data, og de kedelige, gentagne opgaver, der bare kører i baggrunden, så jeres team slipper for dem.",
+      "prefill": "Hej, jeg er interesseret i at bruge AI til at gøre min hverdag lettere. Her er hvad jeg gerne vil automatisere eller forbedre: "
     },
     "bespoke": {
       "title": "Skræddersyede løsninger",
-      "description": "Har du noget specifikt i tankerne, der ikke passer ind i en kategori? Fortæl os om det, det er som regel den sjove del.",
+      "description": "Har du noget specifikt i tankerne, der ikke passer ind i en kategori? Fortæl os om det, det er som regel den sjove del — eller <casesLink>se hvad vi har bygget</casesLink> for inspiration.",
       "prefill": "Hej, jeg har et specifikt projekt i tankerne, der ikke rigtig passer ind i en kategori. Her er hvad jeg tænker: "
     },
     "select-cta": "Det her vil jeg gerne have løst",

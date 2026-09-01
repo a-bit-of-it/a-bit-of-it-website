@@ -72,6 +72,22 @@
     color: var(--color-accent-deep);
 }
 
+.services-card-inline-link {
+    color: var(--color-accent-deep);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
+a.services-card-examples {
+    text-decoration: none;
+    width: fit-content;
+}
+
+a.services-card-examples:hover,
+a.services-card-examples:focus-visible {
+    text-decoration: underline;
+}
+
 /*.services-card-load-time {*/
 /*    margin: 0;*/
 
