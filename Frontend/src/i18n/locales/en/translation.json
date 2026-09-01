@@ -1,7 +1,7 @@
 ﻿{
   "banner": {
     "cases": "Cases",
-    "who-we-are": "Who we are",
+    "why-we-exist": "Why we exist",
     "get-in-touch": "Get in touch"
   },
   
@@ -9,25 +9,29 @@
     "kicker": "Cool people. Cool tech.",
     "headline1": "We do not sell software.",
     "headline2": "We solve problems.",
-    "subline": "Every detail accounted for. Every idea, realized.",
+    "subline": "All your ideas, realized.",
     "cta": "See what we can do for you" 
   },
   
   "services": {
-    "header": "What we can do for you",
-    "subtitle": "Our cases show a bit of what we can do, but we can do a bit of everything, really. Whether you're a local business that needs a website or are missing a tool in your processes.",
+    "header": "Got a problem you want solved?",
+    "subtitle": "For you, IT is a hassle... For us IT is our passion, so let us help you on your way.",
     "website": {
       "title": "Websites",
-      "description": "From a WordPress site you can manage yourself to a fully custom build, we'll help you figure out what actually fits your business."
+      "description": "Do you want to establish an internet presence? Do you want a website you can manage yourself? WordPress or Shopify may be the platforms you are looking for. If you just want to focus on your own business, then let us handle the technical part for you.",
+      "prefill": "Hi, I'd like a beautiful website for my business. Here's a bit about what I'm looking for: "
     },
     "ai": {
       "title": "AI systems",
-      "description": "Practical uses of AI in your day-to-day, from automating repetitive work to smarter tools for your team and customers."
+      "description": "Practical uses of AI in your day-to-day, from automating repetitive work to smarter tools for your team and customers.",
+      "prefill": "Hi, I'm interested in using AI to make my day-to-day work easier. Here's what I'd like to automate or improve: "
     },
     "bespoke": {
-      "title": "Bespoke solutions",
-      "description": "Got something specific in mind that doesn't fit a category? Tell us about it, that's usually the fun part."
+      "title": "Custom solutions",
+      "description": "Got something specific in mind that doesn't fit a category? Tell us about it, that's usually the fun part.",
+      "prefill": "Hi, I have a custom project in mind that doesn't quite fit a category. Here's what I'm thinking: "
     },
+    "select-cta": "I want this solved",
     "cta": "Let's talk about your project"
   },
 
@@ -49,7 +53,7 @@
     "mathias": {
       "name": "Mathias",
       "role": "Problem solver",
-      "bio": "Mathias loves technology and has solved problems for exactly {{X}} years, {{Y}} months and {{Z}} days...\nYes we really did count!"
+      "bio": "Mathias loves technology and has solved problems for exactly {{X}} years, {{Y}} months and {{Z}} days...\nYes we really do count!"
     },
     "lumi": {
       "name": "Lumi",

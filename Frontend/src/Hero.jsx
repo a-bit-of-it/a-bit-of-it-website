@@ -1,5 +1,6 @@
 import './Hero.css'
 import { useTranslation } from 'react-i18next';
+import { scrollToSectionOnClick } from "./scrollToSection.js";
 
 export default function Hero() {
     const { t } = useTranslation();
@@ -13,7 +14,7 @@ export default function Hero() {
                     <span>{t('hero.headline2')}</span>
                 </h1>
                 <p className="hero-subline">{t('hero.subline')}</p>
-                <a href="#cases" className="btn-primary">{t('hero.cta')}</a>
+                <a href="#cases" className="btn-primary" onClick={scrollToSectionOnClick('cases')}>{t('hero.cta')}</a>
             </div>
         </section>
     );

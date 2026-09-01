@@ -1,14 +1,15 @@
 import { useState } from "react";
 import "./ContactUs.css";
-import { submitContact } from "./services/contactService";
 import {useTranslation} from "react-i18next";
+import {submitContact} from "../services/contactService.js";
+import {useInquiry} from "../InquiryContext.jsx";
 
 export default function ContactUs () {
     const { t } = useTranslation();
+    const { inquiry, setInquiry, inquiryRef } = useInquiry();
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
-    const [inquiry, setInquiry] = useState("");
     const [status, setStatus] = useState("idle");
 
     async function handleSubmit(event) {
@@ -35,6 +36,18 @@ export default function ContactUs () {
                 </p>
 
                 <form className="contact-us-form" onSubmit={handleSubmit}>
+
+                    <label className="contact-us-field">
+                        {t('get-in-touch.inquiry')}
+                        <textarea
+                            ref={inquiryRef}
+                            value={inquiry}
+                            onChange={(event) => setInquiry(event.target.value)}
+                            required
+                            maxLength={10000}
+                        />
+                    </label>
+
                     <div className="contact-us-row">
                         <label className="contact-us-field">
                             {t('get-in-touch.name')}
@@ -58,16 +71,6 @@ export default function ContactUs () {
                             />
                         </label>
                     </div>
-
-                    <label className="contact-us-field">
-                        {t('get-in-touch.inquiry')}
-                        <textarea
-                            value={inquiry}
-                            onChange={(event) => setInquiry(event.target.value)}
-                            required
-                            maxLength={10000}
-                        />
-                    </label>
 
                     <button type="submit" className="contact-us-submit btn-primary" disabled={status === "submitting"}>
                         {status === "submitting" ? t('get-in-touch.sending') : t('get-in-touch.send')}

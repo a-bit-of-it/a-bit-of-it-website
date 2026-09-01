@@ -16,13 +16,18 @@
 }
 
 .services-card {
+    display: flex;
     padding: 1.5rem;
     border-radius: 0.75rem;
     border: 1px solid color-mix(in srgb, currentColor 15%, transparent);
     background-color: color-mix(in srgb, currentColor 4%, transparent);
-    display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
+}
+
+.services-card-cta {
+    margin-top: auto;
+    align-self: flex-start;
 }
 
 .services-card h3 {
