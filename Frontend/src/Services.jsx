@@ -1,6 +1,7 @@
 import './Services.css'
 import { useTranslation } from "react-i18next";
 import { useInquiry } from "./InquiryContext.jsx";
+import { scrollToSection, scrollToSectionOnClick } from "./scrollToSection.js";
 
 export default function Services () {
     const { t } = useTranslation();
@@ -10,7 +11,7 @@ export default function Services () {
 
     function handleSelect(key) {
         setInquiry(t(`services.${key}.prefill`));
-        document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+        scrollToSection('contact');
     }
 
     return (
@@ -35,7 +36,7 @@ export default function Services () {
                     ))}
                 </div>
 
-                <a href="#contact" className="services-cta btn-primary">{t('services.cta')}</a>
+                <a href="#contact" className="services-cta btn-primary" onClick={scrollToSectionOnClick('contact')}>{t('services.cta')}</a>
             </div>
         </div>
     );
