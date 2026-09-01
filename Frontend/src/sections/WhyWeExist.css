@@ -1,6 +1,6 @@
 .why-we-exist {
-    background: linear-gradient(to bottom, var(--color-cream), var(--color-accent-tint) 3rem);
-    /*background-color: var(--color-accent-tint);*/
+    /*background: linear-gradient(to bottom, var(--color-cream), var(--color-accent-tint) 2.5rem);*/
+    background-color: var(--color-accent-tint);
 }
 
 .why-we-exist-subtitle {
@@ -8,6 +8,10 @@
     /*max-width: 60ch;*/
     opacity: 0.75;
     line-height: 1.6;
+}
+
+.values {
+    
 }
 
 .values-grid {
@@ -36,6 +40,10 @@
     opacity: 0.75;
     line-height: 1.6;
     font-size: 0.95rem;
+}
+
+.values-card .github-link {
+    margin-top: auto;
 }
 
 .team-grid {

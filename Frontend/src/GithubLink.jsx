@@ -12,7 +12,7 @@ export default function GithubLink() {
             <svg className="github-link-icon" width="20" height="20" viewBox="0 0 19 19" aria-hidden="true">
                 <use href="/icons.svg#github-icon" />
             </svg>
-            GitHub
+            a-bit-of-it
         </a>
     );
 }

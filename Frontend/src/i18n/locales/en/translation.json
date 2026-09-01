@@ -15,7 +15,7 @@
   
   "services": {
     "header": "Got a problem you want solved?",
-    "subtitle": "For you, IT is a hassle... For us IT is our passion, so let us help you on your way.",
+    "subtitle": "You bring us the problem, we figure out the solution.",
     "website": {
       "title": "Websites",
       "description": "Do you want to establish an internet presence? Do you want a website you can manage yourself? WordPress or Shopify may be the platforms you are looking for. If you just want to focus on your own business, then let us handle the technical part for you.",
@@ -49,7 +49,7 @@
 
   "get-in-touch": {
     "header": "Get in touch",
-    "cta": "Got a project in mind, or just want to say hi? Send us a message and we'll get back to you within 24 hours.",
+    "cta": "Got a project in mind? Tell us about it! We will get back to you within 24 hours.",
     "name": "Name",
     "email": "Email",
     "inquiry": "Inquiry",

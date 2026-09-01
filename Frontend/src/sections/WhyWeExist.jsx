@@ -50,22 +50,41 @@ export default function WhyWeExist () {
         <div className="why-we-exist" id="why-we-exist">
             <div className="section-inner">
                 <h1>{t('why-we-exist.header')}</h1>
-                <p className="why-we-exist-subtitle">
-                    {t('why-we-exist.subtitle')}
-                    {/*<Trans i18nKey="why-we-exist.subtitle" components={{ missionLink: <Link to="/mission"/> }} />*/}
-                </p>
-
-                <div className="values-card">
-                    <h3>Transparency</h3>
-                    <p>We believe in developing honest software and showing transparency in our work. We invite everyone to view and scrutinize the code behind our solutions (GitHub link).</p>
-                    <GithubLink/>
+                {/*<p className="why-we-exist-subtitle">*/}
+                {/*    /!*{t('why-we-exist.subtitle')}*!/*/}
+                {/*    /!*<Trans i18nKey="why-we-exist.subtitle" components={{ missionLink: <Link to="/mission"/> }} />*!/*/}
+                {/*</p>*/}
+                <div className = "values">
+                    <p>
+                        We are a small team from Aalborg, Denmark. who wants to enable cool people build their cool ideas.
+                    </p>
+                    <p>
+                        We give small business owners, selling clothes out of their garage, the website of their dreams.
+                        We give the 500 person company, working to eliminate poverty, a state of the art cashflow system. 
+                        We solve real problems, large and small, then step out of their way. 
+                    </p>
+                    <div className = "value">
+                        <h3>Transparency</h3>
+                        <p>We believe in developing honest software and showing transparency in our work.
+                            We invite everyone with technical interest to scrutinize the code behind our solutions.</p>
+                        <GithubLink/>
+                    </div>
+                    
+                    <div className = "value">
+                        <h3>Fairness</h3>
+                        <p>
+                            We believe the value created by our work should be shared fairly.
+                            A fair model means better value for customers and better compensation for those that choose to work for us.
+                        </p>
+                    </div>
+                    
+                    <div className = "value">
+                        <h3>Freedom</h3>
+                        <p> We believe that excellent problem solving skills require no office or daily commute. 
+                            It requires trust. 
+                            We enable those who choose to work for us with the freedom of working from wherever they like.</p>
+                    </div>
                 </div>
-
-                <div className="values-card">
-                    <h3>Freedom</h3>
-                    <p>"We believe in working from home. Excellent problem solving skills require no office or daily commute. It requires trust</p>
-                </div>
-
 
                 
 
