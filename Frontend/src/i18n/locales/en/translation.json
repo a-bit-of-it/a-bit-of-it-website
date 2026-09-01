@@ -9,30 +9,37 @@
     "kicker": "Cool people. Cool tech.",
     "headline1": "We do not sell software.",
     "headline2": "We solve problems.",
-    "subline": "All your ideas, realized.",
-    "cta": "See what we can do for you" 
+    "subline": "When only the best solution is good enough.",
+    "cta": "Let us solve yours" 
   },
   
   "services": {
     "header": "Got a problem you want solved?",
-    "subtitle": "For you, IT is a hassle... For us IT is our passion, so let us help you on your way.",
-    "website": {
-      "title": "Websites",
-      "description": "Do you want to establish an internet presence? Do you want a website you can manage yourself? WordPress or Shopify may be the platforms you are looking for. If you just want to focus on your own business, then let us handle the technical part for you.",
-      "prefill": "Hi, I'd like a beautiful website for my business. Here's a bit about what I'm looking for: "
-    },
+    "subtitle": "No problem is too small or too big. You bring us the problem, we bring you the solution.",
     "ai": {
       "title": "AI systems",
-      "description": "Practical uses of AI in your day-to-day, from automating repetitive work to smarter tools for your team and customers.",
-      "prefill": "Hi, I'm interested in using AI to make my day-to-day work easier. Here's what I'd like to automate or improve: "
+      "example1": "An AI accounting agent that reconciles invoices and flags anomalies before your bookkeeper even logs in.",
+      "example2": "An AI support agent that answers the repeat questions instantly, day or night, so your team only handles the tricky ones.",
+      "example3": "An AI research agent that turns a stack of documents into clean, searchable answers in seconds.",
+      "prefill": "Hi, I'm interested in using AI to make my day-to-day work easier. Here's what I'd like to automate or improve: ",
+      "cta": "Help me create an AI system..."
+    },
+    "website": {
+      "title": "Websites",
+      "p1": "Perhaps you have the perfect website in mind but just need someone to build it for you?",
+      "p2": "Maybe you have heard of tools like WordPress or Shopify and are interested in managing your own website?",
+      "p3": "Regardless of your needs, let us take care of the technical part and help you on your way.",
+      "prefill": "Hi, I'd like a beautiful website for my business. Here's a bit about what I'm looking for: ",
+      "load-time": "If you need a fast website, we can help too. This one only took {{time}}ms to load.",
+      "cta": "Help me build a website that..."
     },
     "bespoke": {
       "title": "Custom solutions",
-      "description": "Got something specific in mind that doesn't fit a category? Tell us about it, that's usually the fun part.",
-      "prefill": "Hi, I have a custom project in mind that doesn't quite fit a category. Here's what I'm thinking: "
-    },
-    "select-cta": "I want this solved",
-    "cta": "Let's talk about your project"
+      "p1": "Got something specific in mind? Our speciality is building something unique.",
+      "p2": "Take a look at the other unique problems we have already solved - then let's talk about yours.",
+      "prefill": "Hi, I have a custom project in mind that doesn't quite fit a category. Here's what I'm thinking: ",
+      "cta": "Show me what you've built"
+    }
   },
 
   "cases": {
@@ -46,10 +53,22 @@
       "tech": "All experiences were built using the Unity game engine. Enabling guest-checkins, photo/video capture, observability, and edge device interaction, each experience integrated by RabbitMQ with a shared platform, written in ASP.NET, hosted in Azure Container Apps."
     }
   },
+
+  "get-in-touch": {
+    "header": "Get in touch",
+    "cta": "Got a project in mind? Tell us about it! We will get back to you within 24 hours.",
+    "name": "Name",
+    "email": "Email",
+    "inquiry": "Inquiry",
+    "send": "Send message",
+    "sending": "Sending...",
+    "sent": "Thank you! We have received your inquiry.",
+    "something-went-wrong": "Something went wrong, please try again."
+  },
   
   "why-we-exist": {
     "header": "Why we exist",
-    "subtitle": "We are a small Danish team. We exist because we are breaking free from the classic corporate ideologies. We want to enable cool people, create cool stuff and solve the problems they need solving. You can read more about our mission <missionLink>here</missionLink>.",
+    "subtitle": "We are a small Danish team. We want to enable cool people to realize their cool ideas - solve real problems, then step out of their way.",
     "mathias": {
       "name": "Mathias",
       "role": "Problem solver",
@@ -60,22 +79,5 @@
       "role": "Morale booster",
       "bio": "Lumi, meaning light, is our guiding star. He doesn't know much of IT, but he is always there and reminds os of what is important in life."
     }
-  },
-
-  "mission": {
-    "header": "Our mission",
-    "body": "This is a placeholder mission page. The real story of why a-bit-of-IT exists goes here soon."
-  },
-
-  "get-in-touch": {
-    "header": "Get in touch",
-    "cta": "Got a project in mind, or just want to say hi? Send us a message and we'll get back to you within 24 hours.",
-    "name": "Name",
-    "email": "Email",
-    "inquiry": "Inquiry",
-    "send": "Send message",
-    "sending": "Sending...",
-    "sent": "Thank you! We have received your inquiry.",
-    "something-went-wrong": "Something went wrong, please try again."
   }
 }

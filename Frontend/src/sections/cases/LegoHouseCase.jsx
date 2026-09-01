@@ -1,7 +1,7 @@
-import {LegoHouseIcon, LegoIcon} from "../Icons.jsx";
-import {AspDotNetTech, AzureTech, MsSqlTech, RabbitMqTech, ReactTech, UnityTech} from "./components/TechStack.jsx";
+import {AspDotNetTech, AzureTech, MsSqlTech, RabbitMqTech, UnityTech} from "./components/TechStack.jsx";
 import Case from "./components/Case.jsx";
-import {useTranslation} from "react-i18next"; 
+import {useTranslation} from "react-i18next";
+import {LegoHouseIcon, LegoIcon} from "../../Icons.jsx"; 
 
 export default function LegoHouseCase() {
     const { t } = useTranslation();

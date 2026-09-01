@@ -11,8 +11,35 @@
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "ai website"
+        "bespoke      website";
     gap: 1.25rem;
+}
+
+.services-card--bespoke {
+    grid-area: bespoke;
+}
+
+.services-card--ai {
+    grid-area: ai;
+}
+
+.services-card--website {
+    grid-area: website;
+}
+
+@media (max-width: 720px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "ai"
+            "website"
+            "bespoke";
+    }
 }
 
 .services-card {
@@ -25,9 +52,78 @@
     gap: 1rem;
 }
 
+.services-card--bespoke {
+    padding: 2rem;
+}
+
+.services-card--bespoke h3 {
+    font-size: 1.4rem;
+}
+
+.services-card--bespoke p {
+    font-size: 1.05rem;
+}
+
+.ai-examples {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+}
+
+.ai-example {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.ai-examples svg {
+    flex-shrink: 0;
+    color: var(--color-accent-deep);
+}
+
+.ai-examples p {
+    margin: 0;
+}
+
+.services-card-examples {
+    margin: 0;
+    opacity: 1;
+    /*font-size: 0.8rem;*/
+    font-weight: 600;
+    color: var(--color-accent-deep);
+}
+
+.services-card-inline-link {
+    color: var(--color-accent-deep);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
+a.services-card-examples {
+    text-decoration: none;
+    width: fit-content;
+}
+
+a.services-card-examples:hover,
+a.services-card-examples:focus-visible {
+    text-decoration: underline;
+}
+
+/*.services-card-load-time {*/
+/*    margin: 0;*/
+
+/*    font-weight: 600;*/
+/*    color: var(--color-accent-deep);*/
+/*}*/
+
 .services-card-cta {
     margin-top: auto;
     align-self: flex-start;
+}
+
+.services-card--ai .services-card-cta,
+.services-card--bespoke .services-card-cta {
+    margin-top: 0.75rem;
 }
 
 .services-card h3 {
