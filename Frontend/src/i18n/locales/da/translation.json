@@ -26,12 +26,15 @@
     },
     "ai": {
       "title": "AI-systemer",
-      "description": "Praktisk brug af AI i hverdagen. Tænk chatbots, der rent faktisk hjælper jeres kunder, værktøjer der trækker tallene ud af en bunke dokumenter, rapporter der skriver sig selv, smartere søgning i jeres data, og de kedelige, gentagne opgaver, der bare kører i baggrunden, så jeres team slipper for dem.",
+      "example1": "En AI-bogholderagent, der afstemmer fakturaer og markerer uregelmæssigheder, før din bogholder overhovedet er logget på.",
+      "example2": "En AI-supportagent, der svarer på de gentagne spørgsmål med det samme, dag og nat, så jeres team kun skal håndtere de svære.",
+      "example3": "En AI-researchagent, der forvandler en bunke dokumenter til rene, søgbare svar på få sekunder.",
       "prefill": "Hej, jeg er interesseret i at bruge AI til at gøre min hverdag lettere. Her er hvad jeg gerne vil automatisere eller forbedre: "
     },
     "bespoke": {
       "title": "Skræddersyede løsninger",
-      "description": "Har du noget specifikt i tankerne, der ikke passer ind i en kategori? Fortæl os om det, det er som regel den sjove del — eller <casesLink>se hvad vi har bygget</casesLink> for inspiration.",
+      "p1": "Har du noget specifikt i tankerne, der ikke passer ind i en kategori? Fortæl os om det — det er som regel den sjove del.",
+      "p2": "Vi har genopbygget softwaren bag LEGO House, bygget en bluetooth-forbundet companion-app til LEGO's samarbejde med Nintendo, og leveret et AI-system, der omdanner branchenyheder til salgsemner for en producent af medicinsk udstyr. <casesLink>Se hvad vi har bygget</casesLink> — og lad os så snakke om dit projekt.",
       "prefill": "Hej, jeg har et specifikt projekt i tankerne, der ikke rigtig passer ind i en kategori. Her er hvad jeg tænker: "
     },
     "select-cta": "Det her vil jeg gerne have løst",

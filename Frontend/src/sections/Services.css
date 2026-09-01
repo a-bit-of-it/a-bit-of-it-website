@@ -12,7 +12,7 @@
 .services-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: auto auto;
     grid-template-areas:
         "ai website"
         "bespoke      website";
@@ -37,8 +37,8 @@
         grid-template-rows: auto;
         grid-template-areas:
             "ai"
-            "bespoke"
-            "website";
+            "website"
+            "bespoke";
     }
 }
 
@@ -62,6 +62,27 @@
 
 .services-card--bespoke p {
     font-size: 1.05rem;
+}
+
+.ai-examples {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+}
+
+.ai-example {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.ai-examples svg {
+    flex-shrink: 0;
+    color: var(--color-accent-deep);
+}
+
+.ai-examples p {
+    margin: 0;
 }
 
 .services-card-examples {
@@ -98,6 +119,11 @@ a.services-card-examples:focus-visible {
 .services-card-cta {
     margin-top: auto;
     align-self: flex-start;
+}
+
+.services-card--ai .services-card-cta,
+.services-card--bespoke .services-card-cta {
+    margin-top: 0.75rem;
 }
 
 .services-card h3 {
