@@ -47,6 +47,18 @@
     }
   },
 
+  "get-in-touch": {
+    "header": "Kontakt os",
+    "cta": "Har du et projekt i tankerne eller har du bare lyst til at sige hej? Send os en besked og vi vender tilbage inden for 24 timer.",
+    "name": "Navn",
+    "email": "Email",
+    "inquiry": "Besked",
+    "send": "Send besked",
+    "sending": "Sender...",
+    "sent": "Tak! Vi har modtaget din besked.",
+    "something-went-wrong": "Noget gik galt. Prøv igen."
+  },
+
   "why-we-exist": {
     "header": "Hvorfor vi findes",
     "subtitle": "Lille team, stort engagement. Her er hvem der faktisk sidder bag skærmen. Du kan læse mere om vores mission <missionLink>her</missionLink>.",
@@ -60,22 +72,5 @@
       "role": "Chief Morale Officer",
       "bio": "Står for moralsk opbakning, snackpauser og grundig test af kontorgulvet."
     }
-  },
-  
-  "mission": {
-    "header": "Vores mission",
-    "body": "Dette er en midlertidig missionsside. Den rigtige historie om hvorfor a-bit-of-IT findes, kommer her snart."
-  },
-
-  "get-in-touch": {
-    "header": "Kontakt os",
-    "cta": "Har du et projekt i tankerne eller har du bare lyst til at sige hej? Send os en besked og vi vender tilbage inden for 24 timer.",
-    "name": "Navn",
-    "email": "Email",
-    "inquiry": "Besked",
-    "send": "Send besked",
-    "sending": "Sender...",
-    "sent": "Tak! Vi har modtaget din besked.",
-    "something-went-wrong": "Noget gik galt. Prøv igen."
   }
 }

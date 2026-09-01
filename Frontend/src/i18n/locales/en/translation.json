@@ -9,7 +9,7 @@
     "kicker": "Cool people. Cool tech.",
     "headline1": "We do not sell software.",
     "headline2": "We solve problems.",
-    "subline": "All your ideas, realized.",
+    "subline": "Let us make all your ideas come true.",
     "cta": "See what we can do for you" 
   },
   
@@ -46,26 +46,6 @@
       "tech": "All experiences were built using the Unity game engine. Enabling guest-checkins, photo/video capture, observability, and edge device interaction, each experience integrated by RabbitMQ with a shared platform, written in ASP.NET, hosted in Azure Container Apps."
     }
   },
-  
-  "why-we-exist": {
-    "header": "Why we exist",
-    "subtitle": "We are a small Danish team. We exist because we are breaking free from the classic corporate ideologies. We want to enable cool people, create cool stuff and solve the problems they need solving. You can read more about our mission <missionLink>here</missionLink>.",
-    "mathias": {
-      "name": "Mathias",
-      "role": "Problem solver",
-      "bio": "Mathias loves technology and has solved problems for exactly {{X}} years, {{Y}} months and {{Z}} days...\nYes we really do count!"
-    },
-    "lumi": {
-      "name": "Lumi",
-      "role": "Morale booster",
-      "bio": "Lumi, meaning light, is our guiding star. He doesn't know much of IT, but he is always there and reminds os of what is important in life."
-    }
-  },
-
-  "mission": {
-    "header": "Our mission",
-    "body": "This is a placeholder mission page. The real story of why a-bit-of-IT exists goes here soon."
-  },
 
   "get-in-touch": {
     "header": "Get in touch",
@@ -77,5 +57,20 @@
     "sending": "Sending...",
     "sent": "Thank you! We have received your inquiry.",
     "something-went-wrong": "Something went wrong, please try again."
+  },
+  
+  "why-we-exist": {
+    "header": "Why we exist",
+    "subtitle": "We are a small Danish team. We want to enable cool people to realize their cool ideas - solve real problems, then step out of their way.",
+    "mathias": {
+      "name": "Mathias",
+      "role": "Problem solver",
+      "bio": "Mathias loves technology and has solved problems for exactly {{X}} years, {{Y}} months and {{Z}} days...\nYes we really do count!"
+    },
+    "lumi": {
+      "name": "Lumi",
+      "role": "Morale booster",
+      "bio": "Lumi, meaning light, is our guiding star. He doesn't know much of IT, but he is always there and reminds os of what is important in life."
+    }
   }
 }

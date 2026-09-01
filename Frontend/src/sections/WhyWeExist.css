@@ -10,6 +10,34 @@
     line-height: 1.6;
 }
 
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+}
+
+.values-card {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid color-mix(in srgb, currentColor 15%, transparent);
+    background-color: color-mix(in srgb, currentColor 4%, transparent);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.values-card h3 {
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.values-card p {
+    margin: 0;
+    opacity: 0.75;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
 .team-grid {
     display: flex;
     flex-wrap: wrap;
