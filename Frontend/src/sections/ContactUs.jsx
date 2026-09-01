@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./ContactUs.css";
-import { submitContact } from "./services/contactService";
 import {useTranslation} from "react-i18next";
-import { useInquiry } from "./InquiryContext.jsx";
+import {submitContact} from "../services/contactService.js";
+import {useInquiry} from "../InquiryContext.jsx";
 
 export default function ContactUs () {
     const { t } = useTranslation();

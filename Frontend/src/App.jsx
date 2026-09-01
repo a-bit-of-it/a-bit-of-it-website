@@ -2,13 +2,12 @@ import { Routes, Route } from "react-router-dom";
 import './App.css'
 import Banner from "./Banner";
 import Hero from "./Hero.jsx";
-import Services from "./Services.jsx";
-import Cases from "./Cases.jsx";
-import ContactUs from "./ContactUs.jsx";
-import WhyWeExist from "./WhyWeExist.jsx";
-import MissionPage from "./MissionPage.jsx";
 import GithubLink from "./GithubLink.jsx";
 import { InquiryProvider } from "./InquiryContext.jsx";
+import Services from "./sections/Services.jsx";
+import Cases from "./Cases.jsx";
+import ContactUs from "./sections/ContactUs.jsx";
+import WhyWeExist from "./sections/WhyWeExist.jsx";
 
 function HomePage() {
   return (
@@ -34,7 +33,6 @@ function App() {
 
           <Routes>
               <Route path="/" element={<HomePage/>}/>
-              <Route path="/mission" element={<MissionPage/>}/>
           </Routes>
 
           <GithubLink/>

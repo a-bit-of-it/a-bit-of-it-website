@@ -1,7 +1,7 @@
 import './Services.css'
 import { useTranslation } from "react-i18next";
-import { useInquiry } from "./InquiryContext.jsx";
-import { scrollToSection, scrollToSectionOnClick } from "./scrollToSection.js";
+import {scrollToSection, scrollToSectionOnClick} from "../scrollToSection.js";
+import {useInquiry} from "../InquiryContext.jsx";
 
 export default function Services () {
     const { t } = useTranslation();
@@ -25,11 +25,7 @@ export default function Services () {
                         <div className="services-card" key={key}>
                             <h3>{t(`services.${key}.title`)}</h3>
                             <p>{t(`services.${key}.description`)}</p>
-                            <button
-                                type="button"
-                                className="services-card-cta btn-secondary"
-                                onClick={() => handleSelect(key)}
-                            >
+                            <button type="button" className="services-card-cta btn-secondary" onClick={() => handleSelect(key)}>
                                 {t('services.select-cta')}
                             </button>
                         </div>
