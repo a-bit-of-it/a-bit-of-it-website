@@ -10,6 +10,7 @@ export default function GetInTouch () {
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
+    const [company, setCompany] = useState("");
     const [status, setStatus] = useState("idle");
 
     async function handleSubmit(event) {
@@ -66,6 +67,17 @@ export default function GetInTouch () {
                                 type="email"
                                 value={email}
                                 onChange={(event) => setEmail(event.target.value)}
+                                required
+                                maxLength={320}
+                            />
+                        </label>
+
+                        <label className="contact-us-field">
+                            {t('get-in-touch.company')}
+                            <input
+                                type="text"
+                                value={company}
+                                onChange={(event) => setCompany(event.target.value)}
                                 required
                                 maxLength={320}
                             />

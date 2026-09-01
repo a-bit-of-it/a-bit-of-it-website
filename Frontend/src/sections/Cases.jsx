@@ -9,9 +9,9 @@ export default function Cases () {
     const { t } = useTranslation();
 
     return (
-        <div className="cases" id="cases">
+        <div className="cases">
             <div className="section-inner">
-                <h1>{t('cases.header')}</h1>
+                <h1 id="cases">{t('cases.header')}</h1>
                 <LegoHouseCase/>
                 <LegoMaterialComplianceCase/>
                 <LEGOSuperMarioCase/>
