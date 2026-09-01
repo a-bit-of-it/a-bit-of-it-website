@@ -44,10 +44,12 @@ export default function Services () {
 
                     <div className="services-card services-card--website">
                         <h3>{t('services.website.title')}</h3>
-                        <p>{t('services.website.description')}</p>
+                        <p>{t('services.website.p1')}</p>
+                        <p>{t('services.website.p2')}</p>
                         {loadTimeMs !== null && (
                             <p className="services-card-examples">{t('services.website.load-time', { time: loadTimeMs })}</p>
                         )}
+                        <p>{t('services.website.p3')}</p>
                         <button type="button" className="services-card-cta btn-secondary" onClick={() => handleSelect('website')}>
                             {t('services.website-select-cta')}
                         </button>

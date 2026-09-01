@@ -15,12 +15,14 @@
   
   "services": {
     "header": "Got a problem you want solved?",
-    "subtitle": "You bring us the problem, we figure out the solution.",
+    "subtitle": "No problem is too small or too big. You bring us the problem, we bring you the solution.",
     "website": {
       "title": "Websites",
-      "description": "Do you want to establish an internet presence? Do you want a website you can manage yourself? WordPress or Shopify may be the platforms you are looking for. If you just want to focus on your own business, then let us handle the technical part for you.",
+      "p1": "Perhaps you have the perfect website in mind but just need someone to build it for you?",
+      "p2": "Maybe you have heard of tools like WordPress or Shopify and are interested in managing your own website?",
+      "p3": "Regardless of your needs, let us take care of the technical part and help you on your way.",
       "prefill": "Hi, I'd like a beautiful website for my business. Here's a bit about what I'm looking for: ",
-      "load-time": "Do you need a fast website? This one only took {{time}}ms to load."
+      "load-time": "If you need a fast website, we can help too. This one only took {{time}}ms to load."
     },
     "ai": {
       "title": "AI systems",
