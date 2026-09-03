@@ -17,7 +17,7 @@ export default function Banner() {
                     <nav className="navigation">
                         <a href="#cases" onClick={scrollToSectionOnClick('cases')}>{t('banner.cases')}</a>
                         <Link to="/mission">{t('banner.why-we-exist')}</Link>
-                        <a href="#contact" onClick={scrollToSectionOnClick('contact')}>{t('banner.get-in-touch')}</a>
+                        <Link to="/contact">{t('banner.get-in-touch')}</Link>
                     </nav>
                     <LanguageSwitch />
                 </div>

@@ -1,7 +1,8 @@
 import './Services.css'
 import '../App.css'
 import { Trans, useTranslation } from "react-i18next";
-import {scrollToSection, scrollToSectionOnClick} from "../scrollToSection.js";
+import { useNavigate } from "react-router-dom";
+import {scrollToSectionOnClick} from "../scrollToSection.js";
 import {useInquiry} from "../InquiryContext.jsx";
 import {usePageLoadTime} from "../usePageLoadTime.js";
 
@@ -53,10 +54,11 @@ export default function Services () {
     const { t } = useTranslation();
     const { selectInquiry } = useInquiry();
     const loadTimeMs = usePageLoadTime();
+    const navigate = useNavigate();
 
     function handleSelect(key) {
         selectInquiry(t(`services.${key}.prefill`));
-        scrollToSection('contact');
+        navigate('/contact');
     }
 
     return (

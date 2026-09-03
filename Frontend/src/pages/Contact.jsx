@@ -1,15 +1,13 @@
 import Banner from "../Banner";
-import Hero from "../Hero.jsx";
-import Sections from "../sections/Sections.jsx";
+import GetInTouch from "../sections/GetInTouch.jsx";
 import Footer from "../Footer.jsx";
 
-export default function Home() {
+export default function Contact() {
     return (
         <>
             <Banner/>
-            <Hero/>
             <div className="app">
-                <Sections/>
+                <GetInTouch/>
             </div>
             <Footer/>
         </>
