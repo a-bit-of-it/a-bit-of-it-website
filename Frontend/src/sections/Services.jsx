@@ -58,7 +58,7 @@ export default function Services () {
     const navigate = useNavigate();
 
     function handleSelect(key) {
-        selectInquiry(t(`services.${key}.prefill`));
+        // selectInquiry(t(`services.${key}.prefill`));
         navigate('/contact');
     }
 
