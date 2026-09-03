@@ -4,7 +4,8 @@
   "banner": {
     "cases": "Projekter",
     "who-we-are": "Hvem er vi",
-    "get-in-touch": "Kontakt os"
+    "get-in-touch": "Kontakt os",
+    "menu": "Menu"
   },
   
   "hero": {
@@ -35,7 +36,7 @@
     "bespoke": {
       "title": "Skræddersyede løsninger",
       "p1": "Har du noget specifikt i tankerne, der ikke passer ind i en kategori? Fortæl os om det — det er som regel den sjove del.",
-      "p2": "Vi har genopbygget softwaren bag LEGO House, bygget en bluetooth-forbundet companion-app til LEGO's samarbejde med Nintendo, og leveret et AI-system, der omdanner branchenyheder til salgsemner for en producent af medicinsk udstyr. <casesLink>Se hvad vi har bygget</casesLink> — og lad os så snakke om dit projekt.",
+      "p2": "Vi har genopbygget softwaren bag LEGO House, bygget en bluetooth-forbundet companion-app til LEGO's samarbejde med Nintendo, og leveret et AI-system, der omdanner branchenyheder til salgsemner for en producent af medicinsk udstyr.",
       "prefill": "Hej, jeg har et specifikt projekt i tankerne, der ikke rigtig passer ind i en kategori. Her er hvad jeg tænker: "
     },
     "select-cta": "Det her vil jeg gerne have løst",

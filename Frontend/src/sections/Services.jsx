@@ -1,9 +1,11 @@
 import './Services.css'
 import '../App.css'
 import { Trans, useTranslation } from "react-i18next";
-import {scrollToSection, scrollToSectionOnClick} from "../scrollToSection.js";
+import { useNavigate } from "react-router-dom";
+import {scrollToSectionOnClick} from "../scrollToSection.js";
 import {useInquiry} from "../InquiryContext.jsx";
 import {usePageLoadTime} from "../usePageLoadTime.js";
+import SectionHeading from "./SectionHeading.jsx";
 
 const svgIconProps = {
     width: 28,
@@ -53,17 +55,17 @@ export default function Services () {
     const { t } = useTranslation();
     const { selectInquiry } = useInquiry();
     const loadTimeMs = usePageLoadTime();
+    const navigate = useNavigate();
 
     function handleSelect(key) {
-        selectInquiry(t(`services.${key}.prefill`));
-        scrollToSection('contact');
+        // selectInquiry(t(`services.${key}.prefill`));
+        navigate('/contact');
     }
 
     return (
         <div className="services" >
             <div className="section">
-                <h1 className="section-header" id="services">{t('services.header')} </h1>
-                <p className="section-subtitle">{t('services.subtitle')}</p>
+                <SectionHeading id="services" header={t('services.header')} subtitle={t('services.subtitle')} />
 
                 <div className="services-grid">
                     <div className="services-card services-card--ai">
@@ -82,18 +84,12 @@ export default function Services () {
                                 <p>{t('services.ai.example3')}</p>
                             </div>
                         </div>
-                        <button type="button" className="services-card-cta btn-secondary" onClick={() => handleSelect('ai')}>
-                            {t('services.ai.cta')}
-                        </button>
                     </div>
                     
                     <div className="services-card services-card--bespoke">
                         <h3>{t('services.bespoke.title')}</h3>
                         <p>{t('services.bespoke.p1')}</p>
                         <p>{t('services.bespoke.p2')}</p>
-                        <button type="button" className="services-card-cta btn-primary" onClick={scrollToSectionOnClick('cases')}>
-                            {t('services.bespoke.cta')}
-                        </button>
                     </div>
 
                     <div className="services-card services-card--website">
@@ -104,10 +100,10 @@ export default function Services () {
                             <p className="highlight">{t('services.website.load-time', { time: loadTimeMs })}</p>
                         )}
                         <p>{t('services.website.p3')}</p>
-                        <button type="button" className="services-card-cta btn-secondary" onClick={() => handleSelect('website')}>
-                            {t('services.website.cta')}
-                        </button>
                     </div>
+                    <button type="button" className="services-card-cta btn-primary" onClick={() => handleSelect('website')}>
+                        {t('get-in-touch.header')}
+                    </button>
                 </div>
             </div>
         </div>

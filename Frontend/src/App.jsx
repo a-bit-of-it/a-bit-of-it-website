@@ -1,24 +1,19 @@
 import './App.css'
-import Banner from "./Banner";
-import Hero from "./Hero.jsx";
+import { Routes, Route } from "react-router-dom";
 import { InquiryProvider } from "./InquiryContext.jsx";
-import Cases from "./sections/Cases.jsx";
-import Services from "./sections/Services.jsx";
-import GetInTouch from "./sections/GetInTouch.jsx";
-import WhyWeExist from "./sections/WhyWeExist.jsx";
-import Sections from "./sections/Sections.jsx";
+import Home from "./pages/Home.jsx";
+import Purpose from "./pages/Purpose.jsx";
+import Contact from "./pages/Contact.jsx";
 
 function App() {
   return (
-      <>
-          <Banner/>
-          <Hero/>
-          <div className="app">
-              <InquiryProvider>
-                  <Sections/>
-              </InquiryProvider>
-          </div>
-      </>
+      <InquiryProvider>
+          <Routes>
+              <Route path="/*" element={<Home/>} />
+              <Route path="/purpose" element={<Purpose/>} />
+              <Route path="/contact" element={<Contact/>} />
+          </Routes>
+      </InquiryProvider>
   )
 }
 

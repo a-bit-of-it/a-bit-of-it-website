@@ -2,6 +2,7 @@ import './WhyWeExist.css'
 import { Trans, useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import GithubLink from "../GithubLink.jsx";
+import SectionHeading from "./SectionHeading.jsx";
 
 const MATHIAS_START_DATE = new Date(2018, 8, 1);
 
@@ -52,10 +53,15 @@ export default function WhyWeExist () {
     return (
         <div className="why-we-exist">
             <div className="section">
-                <h1 className="section-header" id="why-we-exist">{t('why-we-exist.header')}</h1>
-                <p className="section-subtitle">We are a small team from Aalborg, Denmark, who wants to enable cool people build their cool ideas. We give small business owners, selling clothes out of their garage, the website of their dreams.
-                    We give the 500 person company, working to eliminate poverty, a state of the art cashflow system.
-                    We solve real problems, large and small, then step out of their way. </p>
+                <SectionHeading
+                    id="why-we-exist"
+                    header={t('why-we-exist.header')}
+                    subtitle={
+                        "We are a small team from Aalborg, Denmark, who wants to enable cool people build their cool ideas. We give small business owners, selling clothes out of their garage, the website of their dreams. " +
+                        "We give the 500 person company, working to eliminate poverty, a state of the art cashflow system. " +
+                        "We solve real problems, large and small, then step out of their way."
+                    }
+                />
                 <div className = "values">
                     <div className = "value">
                         <h3>Transparency</h3>

@@ -91,6 +91,7 @@ a.services-card-examples:focus-visible {
 }
 
 .services-card-cta {
+    width: fit-content;
     margin-top: auto;
     align-self: flex-start;
 }

@@ -3,13 +3,14 @@
   
   "banner": {
     "cases": "Cases",
-    "why-we-exist": "Why we exist",
-    "get-in-touch": "Get in touch"
+    "why-we-exist": "Our purpose",
+    "get-in-touch": "Get in touch",
+    "menu": "Menu"
   },
   
   "hero": {
-    "headline1": "We do not sell software.",
-    "headline2": "We solve problems.",
+    "headline1": "We do not build software",
+    "headline2": "We solve problems",
     "subline": "",
     "cta": "Let's solve yours" 
   },
@@ -31,7 +32,7 @@
   },
   
   "services": {
-    "header": "Need a problem solved?",
+    "header": "Need your problem solved?",
     "subtitle": "No problem is too small or too big. You bring us the problem, we bring you the solution.",
     "ai": {
       "title": "AI systems",
@@ -74,7 +75,7 @@
   },
   
   "why-we-exist": {
-    "header": "Why we exist",
+    "header": "Our purpose",
     "subtitle": "We are a small Danish team. We want to enable cool people to realize their cool ideas - solve real problems, then step out of their way.",
     "mathias": {
       "name": "Mathias",

@@ -1,14 +1,23 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./GetInTouch.css";
 import {useTranslation} from "react-i18next";
 import {submitContact} from "../services/contactService.js";
 import {useInquiry} from "../InquiryContext.jsx";
+import SectionHeading from "./SectionHeading.jsx";
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export default function GetInTouch () {
     const { t } = useTranslation();
     const { inquiry, setInquiry, inquiryRef } = useInquiry();
+
+    useEffect(() => {
+        if (inquiry) {
+            inquiryRef.current?.focus({ preventScroll: true });
+            inquiryRef.current?.select();
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -60,8 +69,7 @@ export default function GetInTouch () {
     return (
         <div className="contact-us" id="contact">
             <div className="section">
-                <h1 className="section-header">{t('get-in-touch.header')}</h1>
-                <p className="section-subtitle">{t('get-in-touch.subtitle')}</p>
+                <SectionHeading header={t('get-in-touch.header')} subtitle={t('get-in-touch.subtitle')} />
 
                 <form className="contact-us-form" onSubmit={handleSubmit} noValidate>
 

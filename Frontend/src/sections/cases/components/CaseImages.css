@@ -19,6 +19,8 @@
 .case-image:only-child {
     max-width: 100%;
     aspect-ratio: auto;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 @media (max-width: 480px) {

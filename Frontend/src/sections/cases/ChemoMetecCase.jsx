@@ -7,7 +7,7 @@ export default function ChemoMetecCase() {
         <Case
             icons={[ChemoMetecIcon]}
             title="Turning medical news into sales"
-            images={["/CaseTEMP.jpg", "/CaseTEMP.jpg"]}
+            images={[]}
             problem={problem}
             solution={solution}
             tech={tech}
