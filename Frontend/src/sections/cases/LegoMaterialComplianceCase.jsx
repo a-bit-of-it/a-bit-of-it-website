@@ -7,7 +7,7 @@ export default function LegoMaterialComplianceCase() {
         <Case
             icons={[LegoIcon]}
             title="Meeting the highest safety standards"
-             images={[]}
+            images={[]}
             problem={problem}
             solution={solution}
             tech={tech}
