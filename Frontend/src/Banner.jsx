@@ -15,8 +15,8 @@ export default function Banner() {
                 <Link to="/" className="banner-logo">{t('name')}</Link>
                 <div className="banner-actions">
                     <nav className="navigation">
-                        <a href="#cases" onClick={scrollToSectionOnClick('cases')}>{t('banner.cases')}</a>
-                        <Link to="/mission">{t('banner.why-we-exist')}</Link>
+                        {/*<a href="#cases" onClick={scrollToSectionOnClick('cases')}>{t('banner.cases')}</a>*/}
+                        <Link to="/purpose">{t('banner.why-we-exist')}</Link>
                         <Link to="/contact">{t('banner.get-in-touch')}</Link>
                     </nav>
                     <LanguageSwitch />
