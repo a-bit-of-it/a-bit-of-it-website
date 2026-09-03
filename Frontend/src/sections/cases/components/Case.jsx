@@ -10,9 +10,7 @@ import CaseImages from "./CaseImages.jsx";
 export default function Case({ icons, title, tech, techStack, problem, solution, images, backgroundImage }) {
     return (
         <article
-            className="case"
-            // style={backgroundImage ? { '--case-bg-image': `url(${backgroundImage})` } : undefined}
-        >
+            className="case">
             <div className="case-header">
                 <CaseTitle title={title} />
                 <IconRow>
