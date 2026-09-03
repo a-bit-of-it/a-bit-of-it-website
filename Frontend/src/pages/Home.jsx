@@ -5,13 +5,13 @@ import Footer from "../Footer.jsx";
 
 export default function Home() {
     return (
-        <>
+        <div className="page">
             <Banner/>
             <Hero/>
             <div className="app">
                 <Sections/>
             </div>
             <Footer/>
-        </>
+        </div>
     );
 }

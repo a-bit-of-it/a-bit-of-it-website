@@ -7,6 +7,12 @@
     gap: 1.5rem;
 }
 
+.section-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 .section-header {
     color: var(--color-ink);
     margin: 0;

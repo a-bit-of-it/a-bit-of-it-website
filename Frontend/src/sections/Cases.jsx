@@ -1,5 +1,6 @@
 import './Cases.css'
 import './Sections.css'
+import SectionHeading from "./SectionHeading.jsx";
 import LegoHouseCase from "./cases/LegoHouseCase.jsx";
 import LEGOSuperMarioCase from "./cases/LegoSuperMarioCase.jsx";
 import LegoMaterialComplianceCase from "./cases/LegoMaterialComplianceCase.jsx";
@@ -12,8 +13,7 @@ export default function Cases () {
     return (
         <div className="cases">
             <div className="section">
-                <h1 className="section-header" id="cases">{t('cases.header')}</h1>
-                <p className="section-subtitle">{t('cases.subtitle')} </p>
+                <SectionHeading id="cases" header={t('cases.header')} subtitle={t('cases.subtitle')} />
                 <LegoHouseCase/>
                 <LEGOSuperMarioCase/>
                 <LegoMaterialComplianceCase/>

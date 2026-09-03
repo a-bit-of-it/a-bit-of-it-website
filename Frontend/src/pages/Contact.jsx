@@ -4,12 +4,12 @@ import Footer from "../Footer.jsx";
 
 export default function Contact() {
     return (
-        <>
+        <div className="page">
             <Banner/>
             <div className="app">
                 <GetInTouch/>
             </div>
             <Footer/>
-        </>
+        </div>
     );
 }

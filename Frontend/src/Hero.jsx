@@ -12,8 +12,8 @@ export default function Hero() {
                     <span>{t('hero.headline1')}</span>
                     <span>{t('hero.headline2')}</span>
                 </h1>
-                <p className="hero-subline">{t('hero.subline')}</p>
-                <a className="btn-primary" onClick={scrollToSectionOnClick('services')}>{t('hero.cta')}</a>
+                {/*<p className="hero-subline">{t('hero.subline')}</p>*/}
+                {/*<a className="btn-primary" onClick={scrollToSectionOnClick('services')}>{t('hero.cta')}</a>*/}
             </div>
         </section>
     );

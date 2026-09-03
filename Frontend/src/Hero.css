@@ -23,6 +23,7 @@
 
 .hero-headline span {
     display: block;
+    white-space: nowrap;
 }
 
 .hero-subline {

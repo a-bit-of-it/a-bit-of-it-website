@@ -3,6 +3,7 @@ import "./GetInTouch.css";
 import {useTranslation} from "react-i18next";
 import {submitContact} from "../services/contactService.js";
 import {useInquiry} from "../InquiryContext.jsx";
+import SectionHeading from "./SectionHeading.jsx";
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -68,8 +69,7 @@ export default function GetInTouch () {
     return (
         <div className="contact-us" id="contact">
             <div className="section">
-                <h1 className="section-header">{t('get-in-touch.header')}</h1>
-                <p className="section-subtitle">{t('get-in-touch.subtitle')}</p>
+                <SectionHeading header={t('get-in-touch.header')} subtitle={t('get-in-touch.subtitle')} />
 
                 <form className="contact-us-form" onSubmit={handleSubmit} noValidate>
 
