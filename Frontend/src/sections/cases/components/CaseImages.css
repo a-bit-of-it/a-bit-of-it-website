@@ -9,10 +9,16 @@
     display: block;
     flex: 1 1 0;
     min-width: 0;
+    max-width: calc((100% - clamp(1rem, 2vw, 1.5rem)) / 2);
     aspect-ratio: 4 / 3;
     object-fit: cover;
     border-radius: 1rem;
     box-shadow: 0 6px 12px rgba(10, 10, 10, 0.25);
+}
+
+.case-image:only-child {
+    max-width: 100%;
+    aspect-ratio: auto;
 }
 
 @media (max-width: 480px) {
@@ -22,5 +28,9 @@
 
     .case-images {
         flex-direction: column;
+    }
+
+    .case-image {
+        max-width: 100%;
     }
 }

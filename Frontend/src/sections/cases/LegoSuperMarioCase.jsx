@@ -7,7 +7,7 @@ export default function LEGOSuperMarioCase() {
         <Case
             icons={[LegoIcon, SuperMarioIcon]}
             title="LEGO Super Mario Companion App"
-            images={["/CaseTEMP.jpg", "/CaseTEMP.jpg"]}
+            images={["/LSMApp.jpg"]}
             problem={problem}
             solution={solution}
             tech={tech}
