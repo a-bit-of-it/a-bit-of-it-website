@@ -6,8 +6,6 @@ export default function LEGOSuperMarioCase() {
     return (
         <Case
             icons={[LegoIcon, SuperMarioIcon]}
-            from="2022-10-01"
-            to="2023-10-01"
             title="LEGO Super Mario Companion App"
             images={["/CaseTEMP.jpg", "/CaseTEMP.jpg"]}
             summary={summary}

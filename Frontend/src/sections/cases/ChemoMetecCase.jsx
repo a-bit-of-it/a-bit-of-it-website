@@ -6,8 +6,6 @@ export default function ChemoMetecCase() {
     return (
         <Case
             icons={[ChemoMetecIcon]}
-            from="2026-07-01"
-            to="Present"
             title="Turning medical news into sales"
             images={["/CaseTEMP.jpg", "/CaseTEMP.jpg"]}
             summary={summary}

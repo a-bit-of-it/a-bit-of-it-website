@@ -1,13 +1,12 @@
 import './Case.css'
 import IconRow from "./IconRow.jsx";
-import FromToRow from "./FromToRow.jsx";
 import CaseTitle from "./CaseTitle.jsx";
 import ForTheNerds from "./ForTheNerds.jsx";
 import {TechStack} from "./TechStack.jsx";
 import CaseSummary from "./CaseSummary.jsx";
 import CaseImages from "./CaseImages.jsx";
 
-export default function Case({ icons, from, to, title, tech, techStack, summary, images }) {
+export default function Case({ icons, title, tech, techStack, summary, images }) {
     return (
         <article className="case">
             <div className="case-header">

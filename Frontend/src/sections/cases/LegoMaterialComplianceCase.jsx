@@ -6,8 +6,6 @@ export default function LegoMaterialComplianceCase() {
     return (
         <Case
             icons={[LegoIcon]}
-            from="2025-07-01"
-            to="2026-04-01"
             title="Meeting the highest safety standards"
             images={["/CaseTEMP.jpg", "/CaseTEMP.jpg"]}
             summary={summary}
