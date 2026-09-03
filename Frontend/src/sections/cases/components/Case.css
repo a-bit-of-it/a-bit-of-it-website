@@ -1,9 +1,7 @@
 .case {
-    display: grid;
-    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-    grid-template-rows: auto auto auto;
-    align-items: start;
-    gap: clamp(2rem, 5vw, 4rem);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.5rem, 3vw, 2.5rem);
     padding: clamp(2rem, 4vw, 3.5rem);
     border-radius: 1.75rem;
     background-color: #ffffff;
@@ -11,8 +9,6 @@
 }
 
 .case-header {
-    grid-column: 1 / -1;
-    grid-row: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,37 +31,13 @@
 }
 
 .case-info {
-    grid-column: 1;
-    grid-row: 2;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
 }
 
-.case-images {
-    grid-column: 2;
-    grid-row: 2;
-}
-
 .for-the-nerds {
-    grid-column: 1 / -1;
-    grid-row: 3;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-}
-
-@media (max-width: 860px) {
-    .case {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-
-    .case-header,
-    .case-info,
-    .case-images,
-    .for-the-nerds {
-        grid-column: 1;
-        grid-row: auto;
-    }
 }

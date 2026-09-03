@@ -74,14 +74,6 @@
     margin: 0;
 }
 
-.services-card-examples {
-    margin: 0;
-    opacity: 1;
-    /*font-size: 0.8rem;*/
-    font-weight: 600;
-    color: var(--color-accent-deep);
-}
-
 .services-card-inline-link {
     color: var(--color-accent-deep);
     text-decoration: underline;

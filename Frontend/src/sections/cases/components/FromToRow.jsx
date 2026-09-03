@@ -1,4 +1,4 @@
-import './FromToRow.css'
+import '../../../App.css';
 
 function formatDate(value) {
     const parsed = new Date(value);
@@ -9,5 +9,5 @@ function formatDate(value) {
 }
 
 export default function FromToRow({ from, to }) {
-    return (<span className="case-dates">{formatDate(from)} — {formatDate(to)}</span>);
+    return (<p className="highlight">{formatDate(from)} -- {formatDate(to)}</p>);
 }

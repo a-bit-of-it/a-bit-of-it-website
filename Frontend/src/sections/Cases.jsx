@@ -12,7 +12,7 @@ export default function Cases () {
         <div className="cases">
             <div className="section-inner">
                 <h1 className="header" id="cases">{t('cases.header')}</h1>
-                <p className="subtitle">{t('services.header')} </p>
+                <p className="subtitle">{t('cases.subtitle')} </p>
                 <LegoHouseCase/>
                 <LegoMaterialComplianceCase/>
                 <LEGOSuperMarioCase/>

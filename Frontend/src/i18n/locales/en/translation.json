@@ -16,6 +16,7 @@
 
   "cases": {
     "header": "Problems we've already solved",
+    "subtitle": "Our people have been part in creating amazing projects.",
     "geeks": "For the geeks",
     "technology-used": "Technologies used",
     "legohouse":
@@ -27,7 +28,7 @@
   },
   
   "services": {
-    "header": "Got a problem you need solved?",
+    "header": "Need a problem solved?",
     "subtitle": "No problem is too small or too big. You bring us the problem, we bring you the solution.",
     "ai": {
       "title": "AI systems",
@@ -57,7 +58,7 @@
 
   "get-in-touch": {
     "header": "Get in touch",
-    "subheader": "Got a project in mind? Tell us about it! We will get back to you within 24 hours.",
+    "subtitle": "Got a project in mind? Tell us about it! We will get back to you within 24 hours.",
     "name": "Name",
     "email": "Email",
     "inquiry": "Inquiry",

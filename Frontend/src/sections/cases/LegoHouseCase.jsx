@@ -11,7 +11,7 @@ export default function LegoHouseCase() {
             from="2023-03-01"
             to="2025-02-01"
             title={t('cases.legohouse.header')}
-            images={["/CaseTEMP.jpg", "/CaseTEMP.jpg"]}
+            images={["/FishDesigner.jpg", "/MoodMixer.jpg"]}
             summary={t('cases.legohouse.summary')}
             tech={t('cases.legohouse.tech')}
             techStack={[UnityTech, AspDotNetTech, AzureTech, RabbitMqTech, MsSqlTech]}

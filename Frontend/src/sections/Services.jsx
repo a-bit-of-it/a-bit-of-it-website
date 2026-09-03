@@ -101,7 +101,7 @@ export default function Services () {
                         <p>{t('services.website.p1')}</p>
                         <p>{t('services.website.p2')}</p>
                         {loadTimeMs !== null && (
-                            <p className="services-card-examples">{t('services.website.load-time', { time: loadTimeMs })}</p>
+                            <p className="highlight">{t('services.website.load-time', { time: loadTimeMs })}</p>
                         )}
                         <p>{t('services.website.p3')}</p>
                         <button type="button" className="services-card-cta btn-secondary" onClick={() => handleSelect('website')}>
