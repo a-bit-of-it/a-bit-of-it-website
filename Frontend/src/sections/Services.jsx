@@ -61,9 +61,9 @@ export default function Services () {
 
     return (
         <div className="services" >
-            <div className="section-inner">
-                <h1 className="header" id="services">{t('services.header')} </h1>
-                <p className="subtitle">{t('services.subtitle')}</p>
+            <div className="section">
+                <h1 className="section-header" id="services">{t('services.header')} </h1>
+                <p className="section-subtitle">{t('services.subtitle')}</p>
 
                 <div className="services-grid">
                     <div className="services-card services-card--ai">

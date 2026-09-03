@@ -3,48 +3,11 @@
     flex-direction: column;
 }
 
-
-
-.header {
-    color: var(--color-ink);
-    margin: 0;
-    line-height: 1;
-}
-
-.subtitle {
-    margin: 0;
-    opacity: 0.75;
-    line-height: 1.6;
-}
-
 .highlight {
     margin: 0;
     opacity: 1;
     font-weight: 600;
     color: var(--color-accent-deep);
-}
-
-.section-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.app > *:last-child {
-    min-height: 100vh;
-}
-
-@media (max-width: 560px) {
-    .section-inner {
-        /*padding: 1rem 1rem;*/
-    }
-
-    .app > *:first-child > .section-inner {
-        /*padding-top: 1rem;*/
-    }
 }
 
 body {

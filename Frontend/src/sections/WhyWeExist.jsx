@@ -51,9 +51,9 @@ export default function WhyWeExist () {
     {/*</p>*/}
     return (
         <div className="why-we-exist">
-            <div className="section-inner">
-                <h1 className="header" id="why-we-exist">{t('why-we-exist.header')}</h1>
-                <p className="subtitle">We are a small team from Aalborg, Denmark, who wants to enable cool people build their cool ideas. We give small business owners, selling clothes out of their garage, the website of their dreams.
+            <div className="section">
+                <h1 className="section-header" id="why-we-exist">{t('why-we-exist.header')}</h1>
+                <p className="section-subtitle">We are a small team from Aalborg, Denmark, who wants to enable cool people build their cool ideas. We give small business owners, selling clothes out of their garage, the website of their dreams.
                     We give the 500 person company, working to eliminate poverty, a state of the art cashflow system.
                     We solve real problems, large and small, then step out of their way. </p>
                 <div className = "values">

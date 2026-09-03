@@ -10,7 +10,9 @@ export default function LegoHouseCase() {
             icons={[LegoIcon, LegoHouseIcon]}
             title={t('cases.legohouse.header')}
             images={["/FishDesigner.jpg", "/MoodMixer.jpg"]}
-            summary={t('cases.legohouse.summary')}
+            backgroundImage="/LEGOHouse.jpg"
+            problem={t('cases.legohouse.problem')}
+            solution={t('cases.legohouse.solution')}
             tech={t('cases.legohouse.tech')}
             techStack={[UnityTech, AspDotNetTech, AzureTech, RabbitMqTech, MsSqlTech]}
         />

@@ -46,10 +46,13 @@
     "header": "Projekter",
     "geeks": "For nørder",
     "technology-used": "Anvendt teknologi",
+    "problem": "Problem",
+    "solution": "Løsning",
     "legohouse":
     {
       "header": "Digital genopbygning af LEGO House",
-      "summary": "...",
+      "problem": "...",
+      "solution": "...",
       "tech": "..."
     }
   },
