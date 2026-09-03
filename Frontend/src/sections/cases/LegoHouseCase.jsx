@@ -8,11 +8,11 @@ export default function LegoHouseCase() {
     return (
         <Case
             icons={[LegoIcon, LegoHouseIcon]}
-            from="2023-03-01"
-            to="2025-02-01"
             title={t('cases.legohouse.header')}
-            images={["/CaseTEMP.jpg", "/CaseTEMP.jpg"]}
-            summary={t('cases.legohouse.summary')}
+            images={["/FishDesigner.jpg", "/MoodMixer.jpg"]}
+            backgroundImage="/LEGOHouse.jpg"
+            problem={t('cases.legohouse.problem')}
+            solution={t('cases.legohouse.solution')}
             tech={t('cases.legohouse.tech')}
             techStack={[UnityTech, AspDotNetTech, AzureTech, RabbitMqTech, MsSqlTech]}
         />

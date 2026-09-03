@@ -1,7 +1,8 @@
 import './Cases.css'
+import './Sections.css'
 import LegoHouseCase from "./cases/LegoHouseCase.jsx";
-import LegoMaterialComplianceCase from "./cases/LegoMaterialComplianceCase.jsx";
 import LEGOSuperMarioCase from "./cases/LegoSuperMarioCase.jsx";
+import LegoMaterialComplianceCase from "./cases/LegoMaterialComplianceCase.jsx";
 import ChemoMetecCase from "./cases/ChemoMetecCase.jsx";
 import {useTranslation} from "react-i18next";
 
@@ -10,11 +11,12 @@ export default function Cases () {
 
     return (
         <div className="cases">
-            <div className="section-inner">
-                <h1 id="cases">{t('cases.header')}</h1>
+            <div className="section">
+                <h1 className="section-header" id="cases">{t('cases.header')}</h1>
+                <p className="section-subtitle">{t('cases.subtitle')} </p>
                 <LegoHouseCase/>
-                <LegoMaterialComplianceCase/>
                 <LEGOSuperMarioCase/>
+                <LegoMaterialComplianceCase/>
                 <ChemoMetecCase/>
             </div>
         </div>

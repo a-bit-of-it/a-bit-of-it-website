@@ -6,6 +6,7 @@ import Cases from "./sections/Cases.jsx";
 import Services from "./sections/Services.jsx";
 import GetInTouch from "./sections/GetInTouch.jsx";
 import WhyWeExist from "./sections/WhyWeExist.jsx";
+import Sections from "./sections/Sections.jsx";
 
 function App() {
   return (
@@ -14,10 +15,7 @@ function App() {
           <Hero/>
           <div className="app">
               <InquiryProvider>
-                  <Cases/>
-                  <Services/>
-                  <GetInTouch/>
-                  <WhyWeExist/>
+                  <Sections/>
               </InquiryProvider>
           </div>
       </>

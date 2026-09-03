@@ -2,12 +2,6 @@
     background-color: var(--color-cream);
 }
 
-.services-subtitle {
-    margin: 0;
-    opacity: 0.75;
-    line-height: 1.6;
-}
-
 .services-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -78,14 +72,6 @@
 
 .ai-examples p {
     margin: 0;
-}
-
-.services-card-examples {
-    margin: 0;
-    opacity: 1;
-    /*font-size: 0.8rem;*/
-    font-weight: 600;
-    color: var(--color-accent-deep);
 }
 
 .services-card-inline-link {

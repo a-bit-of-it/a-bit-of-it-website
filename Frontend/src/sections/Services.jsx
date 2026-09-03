@@ -1,4 +1,5 @@
 import './Services.css'
+import '../App.css'
 import { Trans, useTranslation } from "react-i18next";
 import {scrollToSection, scrollToSectionOnClick} from "../scrollToSection.js";
 import {useInquiry} from "../InquiryContext.jsx";
@@ -60,9 +61,9 @@ export default function Services () {
 
     return (
         <div className="services" >
-            <div className="section-inner">
-                <h1 id="services">{t('services.header')} </h1>
-                <p className="services-subtitle">{t('services.subtitle')}</p>
+            <div className="section">
+                <h1 className="section-header" id="services">{t('services.header')} </h1>
+                <p className="section-subtitle">{t('services.subtitle')}</p>
 
                 <div className="services-grid">
                     <div className="services-card services-card--ai">
@@ -100,7 +101,7 @@ export default function Services () {
                         <p>{t('services.website.p1')}</p>
                         <p>{t('services.website.p2')}</p>
                         {loadTimeMs !== null && (
-                            <p className="services-card-examples">{t('services.website.load-time', { time: loadTimeMs })}</p>
+                            <p className="highlight">{t('services.website.load-time', { time: loadTimeMs })}</p>
                         )}
                         <p>{t('services.website.p3')}</p>
                         <button type="button" className="services-card-cta btn-secondary" onClick={() => handleSelect('website')}>

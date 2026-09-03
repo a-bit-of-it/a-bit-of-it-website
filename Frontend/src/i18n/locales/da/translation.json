@@ -1,4 +1,6 @@
 ﻿{
+  "name": "a bit of IT",
+
   "banner": {
     "cases": "Projekter",
     "who-we-are": "Hvem er vi",
@@ -6,11 +8,10 @@
   },
   
   "hero": {
-    "kicker": "Cool people. Cool tech.",
     "headline1": "Vi sælger ikke software.",
     "headline2": "Vi løser problemer.",
-    "subline": "Siden her er ved at blive bygget",
-    "cta": "Se hvad vi har skabt"
+    "subline": "",
+    "cta": "Lad os løse dit"
   },
 
   "services": {
@@ -45,17 +46,20 @@
     "header": "Projekter",
     "geeks": "For nørder",
     "technology-used": "Anvendt teknologi",
+    "problem": "Problem",
+    "solution": "Løsning",
     "legohouse":
     {
       "header": "Digital genopbygning af LEGO House",
-      "summary": "...",
+      "problem": "...",
+      "solution": "...",
       "tech": "..."
     }
   },
 
   "get-in-touch": {
     "header": "Kontakt os",
-    "cta": "Har du et projekt i tankerne eller har du bare lyst til at sige hej? Send os en besked og vi vender tilbage inden for 24 timer.",
+    "subheader": "Har du et projekt i tankerne eller har du bare lyst til at sige hej? Send os en besked og vi vender tilbage inden for 24 timer.",
     "name": "Navn",
     "email": "Email",
     "inquiry": "Besked",

@@ -11,7 +11,7 @@ export default function Banner() {
     return (
         <header className={`banner${hidden ? ' banner--hidden' : ''}`}>
             <div className="banner-content">
-                <a href="#" className="banner-logo">a bit of IT</a>
+                <a href="#" className="banner-logo">{t('name')}</a>
                 <div className="banner-actions">
                     <nav className="navigation">
                         <a href="#cases" onClick={scrollToSectionOnClick('cases')}>{t('banner.cases')}</a>

@@ -45,24 +45,18 @@ export default function WhyWeExist () {
             text: "We believe in working from home. Excellent problem solving skills require no office or daily commute. It requires trust",
         },
     ];
-
+    {/*<p className="why-we-exist-subtitle">*/}
+    {/*    /!*{t('why-we-exist.subtitle')}*!/*/}
+    {/*    /!*<Trans i18nKey="why-we-exist.subtitle" components={{ missionLink: <Link to="/mission"/> }} />*!/*/}
+    {/*</p>*/}
     return (
         <div className="why-we-exist">
-            <div className="section-inner">
-                <h1 id="why-we-exist">{t('why-we-exist.header')}</h1>
-                {/*<p className="why-we-exist-subtitle">*/}
-                {/*    /!*{t('why-we-exist.subtitle')}*!/*/}
-                {/*    /!*<Trans i18nKey="why-we-exist.subtitle" components={{ missionLink: <Link to="/mission"/> }} />*!/*/}
-                {/*</p>*/}
+            <div className="section">
+                <h1 className="section-header" id="why-we-exist">{t('why-we-exist.header')}</h1>
+                <p className="section-subtitle">We are a small team from Aalborg, Denmark, who wants to enable cool people build their cool ideas. We give small business owners, selling clothes out of their garage, the website of their dreams.
+                    We give the 500 person company, working to eliminate poverty, a state of the art cashflow system.
+                    We solve real problems, large and small, then step out of their way. </p>
                 <div className = "values">
-                    <p>
-                        We are a small team from Aalborg, Denmark, who wants to enable cool people build their cool ideas.
-                    </p>
-                    <p>
-                        We give small business owners, selling clothes out of their garage, the website of their dreams.
-                        We give the 500 person company, working to eliminate poverty, a state of the art cashflow system. 
-                        We solve real problems, large and small, then step out of their way. 
-                    </p>
                     <div className = "value">
                         <h3>Transparency</h3>
                         <p>We believe in developing honest software and showing transparency in our work.
@@ -88,16 +82,16 @@ export default function WhyWeExist () {
 
                 
 
-                {/*<div className="team-grid">*/}
-                {/*    {team.map(({ key, image, bioValues }) => (*/}
-                {/*        <div className="team-card" key={key}>*/}
-                {/*            <img className="team-card-photo" src={image} alt={t(`why-we-exist.${key}.name`)} />*/}
-                {/*            <h3>{t(`why-we-exist.${key}.name`)}</h3>*/}
-                {/*            <span className="team-card-role">{t(`why-we-exist.${key}.role`)}</span>*/}
-                {/*            <p>{t(`why-we-exist.${key}.bio`, bioValues)}</p>*/}
-                {/*        </div>*/}
-                {/*    ))}*/}
-                {/*</div>*/}
+                <div className="team-grid">
+                    {team.map(({ key, image, bioValues }) => (
+                        <div className="team-card" key={key}>
+                            <img className="team-card-photo" src={image} alt={t(`why-we-exist.${key}.name`)} />
+                            <h3>{t(`why-we-exist.${key}.name`)}</h3>
+                            <span className="team-card-role">{t(`why-we-exist.${key}.role`)}</span>
+                            <p>{t(`why-we-exist.${key}.bio`, bioValues)}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     );
