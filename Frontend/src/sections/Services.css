@@ -2,12 +2,6 @@
     background-color: var(--color-cream);
 }
 
-.services-subtitle {
-    margin: 0;
-    opacity: 0.75;
-    line-height: 1.6;
-}
-
 .services-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;

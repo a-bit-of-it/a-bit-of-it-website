@@ -3,8 +3,18 @@
     flex-direction: column;
 }
 
-.app > *:last-child {
-    min-height: 100vh;
+
+
+.header {
+    color: var(--color-ink);
+    margin: 0;
+    line-height: 1;
+}
+
+.subtitle {
+    margin: 0;
+    opacity: 0.75;
+    line-height: 1.6;
 }
 
 .section-inner {
@@ -16,10 +26,8 @@
     gap: 1.5rem;
 }
 
-.app h1 {
-    color: var(--color-ink);
-    margin: 0;
-    line-height: 1;
+.app > *:last-child {
+    min-height: 100vh;
 }
 
 @media (max-width: 560px) {

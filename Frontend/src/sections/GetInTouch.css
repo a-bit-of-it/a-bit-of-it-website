@@ -3,12 +3,6 @@
     background-color: var(--color-cream);
 }
 
-.contact-us-subtitle {
-    margin: 0;
-    opacity: 0.75;
-    line-height: 1.6;
-}
-
 .contact-us-form {
     display: flex;
     flex-direction: column;

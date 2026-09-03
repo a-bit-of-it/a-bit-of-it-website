@@ -61,8 +61,8 @@ export default function GetInTouch () {
         <div className="contact-us" id="contact">
             <div className="section-inner">
                 <h1>{t('get-in-touch.header')}</h1>
-                <p className="contact-us-subtitle">
-                    {t('get-in-touch.cta')}
+                <p className="contact-us-subheader">
+                    {t('get-in-touch.subheader')}
                 </p>
 
                 <form className="contact-us-form" onSubmit={handleSubmit} noValidate>
