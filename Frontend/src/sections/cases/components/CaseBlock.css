@@ -20,3 +20,9 @@
     line-height: 1.6;
     opacity: 0.85;
 }
+
+.case-block-link {
+    color: var(--color-accent-deep);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}

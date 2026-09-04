@@ -20,7 +20,7 @@ export default function ForTheNerds({ text, children }) {
                     <div className="for-the-nerds-panel">
                         <span className="for-the-nerds-technology-used">{t('cases.technology-used')}:</span>
                         {children}
-                        <span className="for-the-nerds-text">{text}</span>
+                        <p className="for-the-nerds-text">{text}</p>
                     </div>
                 </div>
             </div>
