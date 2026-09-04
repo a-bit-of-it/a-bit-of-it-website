@@ -59,31 +59,6 @@
     border-color: var(--color-accent);
 }
 
-.banner-cta {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.55rem 1.25rem;
-    border-radius: 999px;
-    background-color: var(--color-accent-deep);
-    color: var(--color-cream);
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-decoration: none;
-    line-height: 1;
-    transition: background-color 0.2s ease, transform 0.1s ease;
-}
-
-.banner-cta:hover,
-.banner-cta:focus-visible {
-    background-color: color-mix(in srgb, var(--color-accent-deep) 75%, black);
-}
-
-.banner-cta:active {
-    transform: scale(0.98);
-}
-
 .banner-menu-toggle {
     display: none;
     flex-direction: column;
@@ -111,25 +86,12 @@
 }
 
 @media (max-width: 560px) {
-    .banner-content {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        grid-template-areas: "logo toggle";
-        align-items: center;
-        gap: 0.85rem 1rem;
-        padding: 1rem;
-    }
-
-    .banner-logo {
-        grid-area: logo;
-    }
-
+    /*Hide full screen components*/
     .banner-actions {
         display: none;
     }
 
     .banner-menu-toggle {
-        grid-area: toggle;
         display: flex;
     }
 
@@ -138,10 +100,5 @@
         flex-direction: column;
         gap: 1.25rem;
         padding: 0 1rem 1.25rem;
-    }
-
-    .banner-mobile-menu .navigation {
-        flex-direction: column;
-        gap: 1rem;
     }
 }
