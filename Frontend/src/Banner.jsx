@@ -2,7 +2,7 @@ import './Banner.css'
 import LanguageSwitch from './LanguageSwitch.jsx'
 import {useTranslation} from "react-i18next";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useHideOnScroll } from "./useHideOnScroll.js";
 
 export default function Banner() {
@@ -13,6 +13,12 @@ export default function Banner() {
     function closeMenu() {
         setMenuOpen(false);
     }
+
+    useEffect(() => {
+        if (hidden) {
+            closeMenu();
+        }
+    }, [hidden]);
 
     return (
         <header className={`banner${hidden ? ' banner--hidden' : ''}`}>
