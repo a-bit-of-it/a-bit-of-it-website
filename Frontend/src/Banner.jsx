@@ -17,6 +17,18 @@ export default function Banner() {
     return (
         <header className={`banner${hidden ? ' banner--hidden' : ''}`}>
             <div className="banner-content">
+                <BannerButtons/>
+                <Hamburger/>
+            </div>
+            {menuOpen && (
+                <HamburgerMenu/>
+            )}
+        </header>
+    );
+
+    function BannerButtons () {
+        return (
+            <>
                 <Link to="/" className="banner-logo" onClick={closeMenu}>{t('name')}</Link>
                 <div className="banner-actions">
                     <nav className="navigation">
@@ -25,6 +37,13 @@ export default function Banner() {
                     <Link to="/contact" className="banner-cta">{t('banner.get-in-touch')}</Link>
                     <LanguageSwitch />
                 </div>
+            </>
+        )
+    }
+
+    function Hamburger () {
+        return (
+            <>
                 <button
                     type="button"
                     className="banner-menu-toggle"
@@ -36,8 +55,13 @@ export default function Banner() {
                     <span className="banner-menu-bar" />
                     <span className="banner-menu-bar" />
                 </button>
-            </div>
-            {menuOpen && (
+            </>
+        )
+    }
+
+    function HamburgerMenu () {
+        return (
+            <>
                 <div className="banner-mobile-menu">
                     <nav className="navigation">
                         <Link to="/purpose" onClick={closeMenu}>{t('banner.why-we-exist')}</Link>
@@ -45,7 +69,7 @@ export default function Banner() {
                     <Link to="/contact" className="banner-cta" onClick={closeMenu}>{t('banner.get-in-touch')}</Link>
                     <LanguageSwitch />
                 </div>
-            )}
-        </header>
-    );
+            </>
+        )
+    }
 }
