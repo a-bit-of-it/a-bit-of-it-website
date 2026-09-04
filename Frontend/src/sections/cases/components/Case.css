@@ -36,9 +36,14 @@
     align-items: flex-end;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 560px) {
+    .case {
+        padding: 1rem 1rem 1rem;
+        border-radius: 0.75rem;
+    }
     .case-header {
         flex-wrap: wrap;
         gap: 1rem;
     }
 }
+
