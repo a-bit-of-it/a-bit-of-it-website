@@ -21,8 +21,8 @@ export default function Banner() {
                 <div className="banner-actions">
                     <nav className="navigation">
                         <Link to="/purpose">{t('banner.why-we-exist')}</Link>
-                        <Link to="/contact">{t('banner.get-in-touch')}</Link>
                     </nav>
+                    <Link to="/contact" className="banner-cta">{t('banner.get-in-touch')}</Link>
                     <LanguageSwitch />
                 </div>
                 <button
@@ -41,8 +41,8 @@ export default function Banner() {
                 <div className="banner-mobile-menu">
                     <nav className="navigation">
                         <Link to="/purpose" onClick={closeMenu}>{t('banner.why-we-exist')}</Link>
-                        <Link to="/contact" onClick={closeMenu}>{t('banner.get-in-touch')}</Link>
                     </nav>
+                    <Link to="/contact" className="banner-cta" onClick={closeMenu}>{t('banner.get-in-touch')}</Link>
                     <LanguageSwitch />
                 </div>
             )}
