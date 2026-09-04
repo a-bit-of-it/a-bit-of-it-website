@@ -90,10 +90,3 @@
 .contact-us-status-error {
     color: #b3261e;
 }
-
-@media (max-width: 560px) {
-    .contact-us-row {
-        flex-direction: column;
-        gap: 1.25rem;
-    }
-}

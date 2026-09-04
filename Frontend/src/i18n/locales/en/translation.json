@@ -65,6 +65,7 @@
     "subtitle": "Got a project in mind? Tell us about it! We will get back to you within 24 hours.",
     "name": "Name",
     "email": "Email",
+    "company": "Company",
     "inquiry": "Inquiry",
     "send": "Send message",
     "sending": "Sending...",

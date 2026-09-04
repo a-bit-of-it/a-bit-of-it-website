@@ -55,10 +55,11 @@ export default function GetInTouch () {
 
         setStatus("submitting");
         try {
-            await submitContact({ name, email, inquiry });
+            await submitContact({ name, email, company, inquiry });
             setStatus("success");
             setName("");
             setEmail("");
+            setCompany("");
             setInquiry("");
         } catch (error) {
             console.error(error);
