@@ -57,20 +57,17 @@
 }
 
 .for-the-nerds-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
     margin-top: 0.75rem;
     padding: 1.25rem 1.5rem;
     border-radius: 1rem;
     background-color: color-mix(in srgb, currentColor 6%, transparent);
 }
 
-.for-the-nerds-technology-used {
-    display: block;
-    font-weight: 600;
-    font-size: 0.9rem;
-}
-
 .for-the-nerds-text {
-    margin: 0.5rem 0 0;
+    margin: 0;
     opacity: 0.85;
     line-height: 1.6;
     white-space: pre-line;

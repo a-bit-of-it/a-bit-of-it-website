@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     gap: 1rem;
     margin: 0;
-    padding: 0.75rem 0 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -13,4 +13,22 @@
     align-items: center;
     gap: 0.5rem;
     padding: 0.5rem;
+}
+
+.tech-stack-icon {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 560px) {
+    .tech-stack-item {
+        gap: 0.4rem;
+        padding: 0.3rem;
+        font-size: 0.85rem;
+    }
+
+    .tech-stack-icon {
+        width: 26px;
+        height: 26px;
+    }
 }
