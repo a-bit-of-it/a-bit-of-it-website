@@ -1,3 +1,3 @@
 namespace Api.Models;
 
-public record ContactRequest(string Name, string Email, string Inquiry);
+public record ContactRequest(string Name, string Email, string? Company, string Inquiry);

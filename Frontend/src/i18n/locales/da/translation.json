@@ -63,6 +63,7 @@
     "subheader": "Har du et projekt i tankerne eller har du bare lyst til at sige hej? Send os en besked og vi vender tilbage inden for 24 timer.",
     "name": "Navn",
     "email": "Email",
+    "company": "Virksomhed",
     "inquiry": "Besked",
     "send": "Send besked",
     "sending": "Sender...",

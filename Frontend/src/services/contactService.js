@@ -5,13 +5,13 @@ export async function getWeatherForecast() {
   return data;
 }
 
-export async function submitContact({ name, email, inquiry }) {
+export async function submitContact({ name, email, company, inquiry }) {
   const response = await fetch("/api/contact", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ name, email, inquiry }),
+    body: JSON.stringify({ name, email, company, inquiry }),
   });
 
   if (!response.ok) {

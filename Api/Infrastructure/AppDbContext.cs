@@ -13,6 +13,7 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
         {
             entity.Property(e => e.Name).IsRequired().HasMaxLength(200);
             entity.Property(e => e.Email).IsRequired().HasMaxLength(320);
+            entity.Property(e => e.Company).HasMaxLength(320);
             entity.Property(e => e.Inquiry).IsRequired().HasMaxLength(10000);
         });
     }

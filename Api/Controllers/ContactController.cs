@@ -23,7 +23,7 @@ public class ContactController (ContactService contactService) : ControllerBase
             || string.IsNullOrWhiteSpace(request.Inquiry))
             return BadRequest();
 
-        await contactService.CreateContactAsync(request.Name, request.Email, request.Inquiry);
+        await contactService.CreateContactAsync(request.Name, request.Email, request.Company, request.Inquiry);
         
         return Ok();
     }
