@@ -1,7 +1,8 @@
 import {AspDotNetTech, AzureTech, MsSqlTech, RabbitMqTech, UnityTech} from "./components/TechStack.jsx";
 import Case from "./components/Case.jsx";
-import {Trans, useTranslation} from "react-i18next";
+import {useTranslation} from "react-i18next";
 import {LegoHouseIcon, LegoIcon} from "../../Icons.jsx";
+import TransLink from "../../TransLink.jsx";
 
 export default function LegoHouseCase() {
     const { t } = useTranslation();
@@ -13,18 +14,10 @@ export default function LegoHouseCase() {
             backgroundImage="/LEGOHouse.jpg"
             problem={t('cases.legohouse.problem')}
             solution={
-                <Trans
+                <TransLink
                     i18nKey="cases.legohouse.solution"
-                    components={{
-                        linkedin: (
-                            <a
-                                className="case-block-link"
-                                href="https://www.linkedin.com/posts/soandersen_oneteam-legohouse-ultimateexperience-activity-7291816053238648833-UDJm"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            />
-                        )
-                    }}
+                    href="https://www.linkedin.com/posts/soandersen_oneteam-legohouse-ultimateexperience-activity-7291816053238648833-UDJm"
+                    className="case-block-link"
                 />
             }
             tech={t('cases.legohouse.tech')}
