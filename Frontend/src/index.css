@@ -9,6 +9,10 @@
     --color-accent-tint: #e6e9fb;
 }
 
+html {
+    overflow-anchor: none; /*Prevents the browser from silently shifting scroll position on reflow, which used to be misread as a manual scroll and falsely trigger the banner's auto-hide*/
+}
+
 body {
     font-family: Poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
     background-color: var(--color-ink); /*Fixes the white background behind the reappearing banner*/
