@@ -14,3 +14,21 @@
     gap: 0.5rem;
     padding: 0.5rem;
 }
+
+.tech-stack-icon {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 560px) {
+    .tech-stack-item {
+        gap: 0.4rem;
+        padding: 0.3rem;
+        font-size: 0.85rem;
+    }
+
+    .tech-stack-icon {
+        width: 26px;
+        height: 26px;
+    }
+}

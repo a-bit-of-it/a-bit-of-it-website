@@ -17,6 +17,7 @@ export function TechItem({ icon, name })
     return (
         <li className="tech-stack-item">
             <img
+                className="tech-stack-icon"
                 src={`${TECH_ICON_PATH}/${icon}`}
                 alt={name}
                 width={40}
