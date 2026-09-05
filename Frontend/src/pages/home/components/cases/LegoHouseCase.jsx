@@ -10,7 +10,7 @@ export default function LegoHouseCase() {
         <Case
             icons={[LegoIcon, LegoHouseIcon]}
             title={t('cases.legohouse.header')}
-            images={["/FishDesigner.jpg", "/MoodMixer.jpg"]}
+            images={["/LEGOHouse.jpg", "/FishDesigner.jpg", "/MoodMixer.jpg"]}
             problem={t('cases.legohouse.problem')}
             solution={
                 <TransLink
