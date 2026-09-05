@@ -1,6 +1,7 @@
 import {useState} from "react";
 import './Contact.css';
-import {useTranslation} from "react-i18next";
+import {Trans, useTranslation} from "react-i18next";
+import {Link} from "react-router-dom";
 import {submitContact} from "../../services/contactService.js";
 import SectionHeading from "../../components/SectionHeading.jsx";
 import {isValidEmail} from "../../utilities/isValidEmail.js";
@@ -125,6 +126,9 @@ export default function Contact() {
                         {status === "error" && (
                             <span className="contact-us-status-error"> {t('get-in-touch.something-went-wrong')}</span>
                         )}
+                    </p>
+                    <p className="contact-us-privacy-note">
+                        <Trans i18nKey="get-in-touch.privacy-notice" components={{ a: <Link to="/privacy-policy" /> }} />
                     </p>
                 </form>
             </div>

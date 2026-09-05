@@ -41,16 +41,16 @@ export default function Purpose() {
                     </div>
                 </div>
 
-                <div className="team-grid">
-                    {team.map(({ key, image, bioValues }) => (
-                        <div className="team-card" key={key}>
-                            <img className="team-card-photo" src={image} alt={t(`our-purpose.${key}.name`)} />
-                            <h3>{t(`our-purpose.${key}.name`)}</h3>
-                            <span className="team-card-role">{t(`our-purpose.${key}.role`)}</span>
-                            <p>{t(`our-purpose.${key}.bio`, bioValues)}</p>
-                        </div>
-                    ))}
-                </div>
+                {/*<div className="team-grid">*/}
+                {/*    {team.map(({ key, image, bioValues }) => (*/}
+                {/*        <div className="team-card" key={key}>*/}
+                {/*            <img className="team-card-photo" src={image} alt={t(`our-purpose.${key}.name`)} />*/}
+                {/*            <h3>{t(`our-purpose.${key}.name`)}</h3>*/}
+                {/*            <span className="team-card-role">{t(`our-purpose.${key}.role`)}</span>*/}
+                {/*            <p>{t(`our-purpose.${key}.bio`, bioValues)}</p>*/}
+                {/*        </div>*/}
+                {/*    ))}*/}
+                {/*</div>*/}
             </div>
         </div>
     );

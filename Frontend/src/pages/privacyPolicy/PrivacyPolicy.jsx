@@ -1,9 +1,17 @@
-﻿import SectionHeading from "../../components/SectionHeading.jsx";
+﻿import {useTranslation} from "react-i18next";
+import SectionHeading from "../../components/SectionHeading.jsx";
 
 export default function PrivacyPolicy() {
+    const { t } = useTranslation();
+
     return (
         <div className="privacy-policy">
-            <SectionHeading header="Privacy Policy" subtitle="When using our contact forms individuals provide their name, email, company affiliation and message content. We use that information to schedule meetings or engage in further conversation. We retain the data only as long as necessary to handle the inquiry and communication."/>
+            <div className="section">
+                <SectionHeading header={t('privacy-policy.header')} subtitle=""/>
+                <p>{t('privacy-policy.p1')}</p>
+                <p>{t('privacy-policy.p2')}</p>
+                <p>{t('privacy-policy.p3')}</p>
+            </div>
         </div>
     );
 }

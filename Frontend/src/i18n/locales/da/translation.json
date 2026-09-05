@@ -88,7 +88,8 @@
     "sent": "Tak! Vi har modtaget din besked.",
     "something-went-wrong": "Noget gik galt. Prøv igen.",
     "field-required": "Dette felt er påkrævet.",
-    "invalid-email": "Indtast venligst en gyldig e-mailadresse."
+    "invalid-email": "Indtast venligst en gyldig e-mailadresse.",
+    "privacy-notice": "Du kan se, hvordan vi behandler personoplysninger, i vores <a>privatlivspolitik</a>."
   },
 
   "our-purpose": {
@@ -102,7 +103,7 @@
       },
       "fairness":
       {
-        "header": "Fair",
+        "header": "Retfærdighed",
         "text": "..."
       },
       "freedom":
@@ -121,5 +122,12 @@
       "role": "En god dreng",
       "bio": "Står for moralsk opbakning, snackpauser og grundig test af kontorgulvet."
     }
+  },
+
+  "privacy-policy": {
+    "header": "Privatlivspolitik",
+    "p1": "Når du bruger vores kontaktformularer, oplyser du dit navn, din e-mail, virksomhedstilknytning og indholdet af din besked.",
+    "p2": "Vi bruger disse oplysninger til at aftale møder eller fortsætte dialogen.",
+    "p3": "Vi opbevarer kun oplysningerne, så længe det er nødvendigt for at håndtere henvendelsen og kommunikationen."
   }
 }

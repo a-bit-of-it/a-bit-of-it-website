@@ -86,7 +86,8 @@
     "sent": "Thank you! We have received your inquiry.",
     "something-went-wrong": "Something went wrong, please try again.",
     "field-required": "This field is required.",
-    "invalid-email": "Please enter a valid email address."
+    "invalid-email": "Please enter a valid email address.",
+    "privacy-notice": "You can view how we process personal data in our <a>Privacy Policy</a>."
   },
   
   "our-purpose": {
@@ -119,5 +120,12 @@
       "role": "A good boy",
       "bio": "Lumi, meaning light, is our guiding star. He doesn't know much of IT, but he is always there and reminds os of what is important in life."
     }
+  },
+
+  "privacy-policy": {
+    "header": "Privacy Policy",
+    "p1": "When using our contact forms individuals provide their name, email, company affiliation and message content.",
+    "p2": "We use that information to schedule meetings or engage in further conversation.",
+    "p3": "We retain the data only as long as necessary to handle the inquiry and communication."
   }
 }
