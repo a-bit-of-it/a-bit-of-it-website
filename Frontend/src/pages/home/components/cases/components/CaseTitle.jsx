@@ -1,5 +1,5 @@
 import './CaseTitle.css'
-import { useFitText } from "../../../useFitText.js";
+import {useFitText} from "../../../../../useFitText.js";
 
 export default function CaseTitle({title}) {
     const ref = useFitText();

@@ -1,0 +1,17 @@
+﻿.section-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.section-header {
+    color: var(--color-ink);
+    margin: 0;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.section-subtitle {
+    margin: 0;
+    opacity: 0.75;
+}

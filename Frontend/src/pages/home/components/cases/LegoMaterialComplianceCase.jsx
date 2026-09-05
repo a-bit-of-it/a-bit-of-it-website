@@ -1,6 +1,6 @@
 import {AspDotNetTech, AzureTech, MsSqlTech, ReactTech} from "./components/TechStack.jsx";
 import Case from "./components/Case.jsx";
-import {LegoIcon} from "../../Icons.jsx";
+import {LegoIcon} from "../../../../Icons.jsx";
 
 export default function LegoMaterialComplianceCase() {
     return (

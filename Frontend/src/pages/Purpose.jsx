@@ -1,7 +1,7 @@
 import './Purpose.css';
-import SectionHeading from "../sections/SectionHeading.jsx";
 import GithubLink from "../GithubLink.jsx";
 import {useTranslation} from "react-i18next";
+import SectionHeading from "../components/SectionHeading.jsx";
 
 const MATHIAS_START_DATE = new Date(2018, 8, 1);
 

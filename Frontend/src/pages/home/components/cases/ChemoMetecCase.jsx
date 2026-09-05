@@ -1,6 +1,6 @@
 import Case from "./components/Case.jsx";
 import {AiTech, PostgreSqlTech, PythonTech, ReactTech} from "./components/TechStack.jsx";
-import {ChemoMetecIcon} from "../../Icons.jsx";
+import {ChemoMetecIcon} from "../../../../Icons.jsx";
 
 export default function ChemoMetecCase() {
     return (

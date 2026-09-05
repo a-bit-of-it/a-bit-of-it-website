@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./GetInTouch.css";
 import {useTranslation} from "react-i18next";
 import {submitContact} from "../services/contactService.js";
-import SectionHeading from "./SectionHeading.jsx";
+import SectionHeading from "../components/SectionHeading.jsx";
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 

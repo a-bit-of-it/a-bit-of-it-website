@@ -1,6 +1,6 @@
 import {BluetoothTech, UnityTech} from "./components/TechStack.jsx";
 import Case from "./components/Case.jsx";
-import {LegoIcon, SuperMarioIcon} from "../../Icons.jsx";
+import {LegoIcon, SuperMarioIcon} from "../../../../Icons.jsx";
 
 export default function LEGOSuperMarioCase() {
     return (
