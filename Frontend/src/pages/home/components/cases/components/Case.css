@@ -3,9 +3,6 @@
     flex-direction: column;
     gap: clamp(1.5rem, 3vw, 2.5rem);
     padding: 1.75rem 2.5rem 2.5rem;
-    border-radius: 1.75rem;
-    background-color: #ffffff;
-    border: 1px solid color-mix(in srgb, var(--color-ink) 10%, transparent);
 }
 
 .case-header {
@@ -39,7 +36,6 @@
 @media (max-width: 560px) {
     .case {
         padding: 1rem 1rem 1rem;
-        border-radius: 0.75rem;
     }
     .case-header {
         flex-direction: column;

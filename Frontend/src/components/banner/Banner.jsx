@@ -71,7 +71,7 @@ export default function Banner() {
             <>
                 <div className="banner-mobile-menu">
                     <nav className="navigation">
-                        <Link to="/purpose" onClick={closeMenu}>{t('banner.why-we-exist')}</Link>
+                        <Link to="/purpose" onClick={closeMenu}>{t('banner.our-purpose')}</Link>
                     </nav>
                     <Link to="/contact" className="btn-primary" onClick={closeMenu}>{t('banner.get-in-touch')}</Link>
                     <LanguageSwitch />

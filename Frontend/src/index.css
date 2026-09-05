@@ -76,3 +76,15 @@ body {
 .btn-secondary:active {
     transform: scale(0.98);
 }
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid color-mix(in srgb, var(--color-ink) 10%, transparent);
+    border-radius: 1.75rem;
+}
+
+@media (max-width: 560px) {
+    .card {
+        border-radius: 0.75rem;
+    }
+}

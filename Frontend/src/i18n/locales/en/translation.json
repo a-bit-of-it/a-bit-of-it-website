@@ -110,15 +110,10 @@
         "text": "We believe that excellent problem solving skills require no office or daily commute. It requires trust. We enable those who choose to work for us with the freedom of working from wherever they like."
       }
     },
-    "mathias": {
-      "name": "Mathias",
-      "role": "Problem solver",
-      "bio": "Mathias loves technology and has solved problems for exactly {{X}} years, {{Y}} months and {{Z}} days...\nYes, we really did count!"
-    },
     "lumi": {
       "name": "Lumi",
       "role": "A good boy",
-      "bio": "Lumi, meaning light, is our guiding star. He doesn't know much of IT, but he is always there and reminds os of what is important in life."
+      "bio": "Lumi, meaning light, is our guiding star. He doesn't know much of IT but he encourages us to do better and reminds us what is most important in our lives."
     }
   },
 

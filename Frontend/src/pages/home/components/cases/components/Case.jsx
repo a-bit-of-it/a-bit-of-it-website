@@ -10,7 +10,7 @@ import CaseImages from "./CaseImages.jsx";
 export default function Case({ icons, title, tech, techStack, problem, solution, images }) {
     return (
         <article
-            className="case">
+            className="case card">
             <div className="case-header">
                 <CaseTitle title={title} />
                 <IconRow>
