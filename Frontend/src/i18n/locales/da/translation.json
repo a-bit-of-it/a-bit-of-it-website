@@ -27,10 +27,10 @@
     },
     "lego-super-mario":
     {
-      "header": "...",
-      "problem": "...",
-      "solution": "...",
-      "tech": "..."
+      "header": "LEGO Super Mario companion-app",
+      "problem": "LEGO har altid haft fokus på læring igennem leg. I et samarbejde mellem LEGO og Nintendo blev LEGO Super Mario skabt. I centrum af oplevelsen står LEGO-figurerne Mario, Luigi og Peach. Fyldt med elektronik gjorde disse figurer det muligt at skabe en helt ny type leg, hvor deres indbyggede scannere kunne interagere med unikke genstande, fjendetyper og forhindringer fra Super Mario-universet. At lære brugerne at bruge deres nye figurer kunne dog ikke klares med klassiske papirmanualer.",
+      "solution": "LEGO Super Mario-appen supplerede brugerens fysiske oplevelse. Gennem tutorial-videoer, byggevejledninger og onboarding-forløb lærte appen brugerne, hvordan de skulle bruge deres LEGO-figurer, og hvordan de skulle interagere med de unikke elementer i de LEGO-sæt, de havde købt. Appen indeholdt også en fællesskabssektion, hvor brugere anonymt kunne interagere med hinanden gennem udvalgt brugergenereret indhold og ugentlige udfordringer.",
+      "tech": "Appen skulle understøtte både 2D- og 3D-grafik. Den er bygget i Unity game engine og benyttede en lang række funktioner, som LEGO allerede havde udviklet til deres andre apps. Appen og dens LEGO-figurer kommunikerer via Bluetooth Low Energy-protokollen."
     },
     "lego-material-and-compliance":
     {
