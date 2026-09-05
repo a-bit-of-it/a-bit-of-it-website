@@ -1,9 +1,10 @@
 import {useState} from "react";
 import './Contact.css';
-import {Trans, useTranslation} from "react-i18next";
+import {useTranslation} from "react-i18next";
 import {Link} from "react-router-dom";
 import {submitContact} from "../../services/contactService.js";
 import SectionHeading from "../../components/SectionHeading.jsx";
+import TransText from "../../components/TransText.jsx";
 import {isValidEmail} from "../../utilities/isValidEmail.js";
 
 export default function Contact() {
@@ -128,7 +129,7 @@ export default function Contact() {
                         )}
                     </p>
                     <p className="contact-us-privacy-note">
-                        <Trans i18nKey="get-in-touch.privacy-notice" components={{ a: <Link to="/privacy-policy" /> }} />
+                        <TransText i18nKey="get-in-touch.privacy-notice" components={{ a: <Link to="/privacy-policy" /> }} />
                     </p>
                 </form>
             </div>
