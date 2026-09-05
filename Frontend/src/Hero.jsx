@@ -7,12 +7,10 @@ export default function Hero() {
 
     return (
         <section className="hero">
-            <div className="hero-content">
-                <h1 className="hero-headline">
-                    <span>{t('hero.headline1')}</span>
-                    <span>{t('hero.headline2')}</span>
-                </h1>
-            </div>
+            <h1 className="hero-headline">
+                <span>{t('hero.headline1')}</span>
+                <span>{t('hero.headline2')}</span>
+            </h1>
         </section>
     );
 }
