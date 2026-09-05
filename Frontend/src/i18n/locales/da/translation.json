@@ -21,9 +21,9 @@
     "legohouse":
     {
       "header": "Digital genopbygning af LEGO House",
-      "problem": "...",
-      "solution": "...",
-      "tech": "..."
+      "problem": "LEGO House i Billund åbnede i 2017 med over 30 softwareoplevelser centreret omkring den fysiske LEGO-klods. Softwaren var utilstrækkelig og havde en negativ indvirkning på gæsteoplevelsen: nedbrud og fejl betød, at gæsterne ofte gik skuffede derfra. Play Agents, som skulle skabe en god oplevelse, brugte for meget tid på at afhjælpe tekniske problemer og bede IT-afdelingen om hjælp.",
+      "solution": "Oplevelser, der var dårligt bygget, måtte laves om. Ved at bruge den software, der virkede, og forbedre eller udskifte den, der ikke gjorde, gennemgik LEGO House en digital genopbygning. Med pålidelig software har Play Agents nu mere tid til gæsteinteraktion og sjov. Ved at forbinde alle oplevelser til en fælles platform er Play Agents i stand til selv at håndtere grundlæggende software- og hardwarefejl. Med et enkelt tryk i en iOS-app kan Play Agents styre edge-enheder og spare timer dagligt. <a>Gæster og LEGO House er gladere end nogensinde.</a>",
+      "tech": "De fleste oplevelser lagde stor vægt på 3D-grafik, og Unity game engine havde gode værktøjer, en fair pris, blev allerede brugt i LEGO og understøtter et programmeringssprog, vi er rigtig gode til: C#.\n\nDen fælles platform var skrevet i C#/ASP.NET, og i centrum stod en begivenhedsdrevet RabbitMQ-service, der muliggjorde gæste-check-in via NFC, foto-/videooptagelse, observability, interaktion med edge-enheder samt automatisk opstart/nedlukning for at spare strøm.\n\nAlt blev hostet i Azure med Container Apps, Blob Storage og MSSQL-databaser, bortset fra Unity-instanserne på selve enhederne."
     },
     "lego-super-mario":
     {
