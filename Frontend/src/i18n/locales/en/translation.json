@@ -13,7 +13,7 @@
 
   "cases": {
     "header": "Problems we've already solved",
-    "subtitle": "Our people have been part of creating amazing projects.",
+    "subtitle": "It is the people behind <highlight>a bit of IT</highlight> that have been part of creating these amazing projects.",
     "geeks": "For the geeks",
     "technology-used": "Technologies used",
     "problem": "Problem",
@@ -28,9 +28,9 @@
     "lego-super-mario":
     {
       "header": "LEGO Super Mario Companion App",
-      "problem": "...",
-      "solution": "...",
-      "tech": "..."
+      "problem": "LEGO has always had a focus on learning through play. In a collaboration between LEGO and Nintendo, LEGO Super Mario was born. At the center of the experience: the Mario, Luigi and Peach LEGO figures. Filled with electronics, these figures could enable a whole new type of play using their built-in scanners to interact with unique items, enemy types and obstacles from the Super Mario Universe. However, teaching users how to use their new figures couldn't be done through classical paper manuals.",
+      "solution": "The LEGO Super Mario app complimented the user's physical experience. Through tutorial videos, building instructions and onboarding flows the app would teach its users how to use their LEGO figures and how to interact with the unique items of the LEGO sets they've purchased. The app included a community section where users could interact anonymously with each other through curated user generated content and weekly challenges.",
+      "tech": "The app had to support both 2D and 3D graphics. It is built in the Unity game engine and interacted with a large set of features that LEGO had already built for their other apps. The app and its LEGO figures communicates via the Bluetooth low energy protocol."
     },
     "lego-material-and-compliance":
     {
