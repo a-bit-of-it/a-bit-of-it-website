@@ -78,7 +78,7 @@
 
   "get-in-touch": {
     "header": "Kontakt os",
-    "subheader": "Har du et projekt i tankerne eller har du bare lyst til at sige hej? Send os en besked og vi vender tilbage inden for 24 timer.",
+    "subtitle": "Har du et projekt i tankerne eller har du bare lyst til at sige hej? Send os en besked og vi vender tilbage inden for 24 timer.",
     "name": "Navn",
     "email": "Email",
     "company": "Virksomhed",
@@ -95,14 +95,26 @@
     "header": "Vores formål",
     "subtitle": "...",
     "values": {
-      "transparency": "...",
-      "fairness":"...",
-      "freedom": "..."
+      "transparency":
+      {
+        "header": "Gennemsigtighed",
+        "text": "..."
+      },
+      "fairness":
+      {
+        "header": "Fair",
+        "text": "..."
+      },
+      "freedom":
+      {
+        "header": "Frihed",
+        "text": "..."
+      }
     },
     "mathias": {
       "name": "Mathias",
       "role": "Problemløser",
-      "bio": "Mathias bygger softwaren og har mere end {{X}} år, {{Y}} måneder og {{Z}} dages erfaring...\nJa, vi talte efter!"
+      "bio": "Mathias elsker teknologi og har løst problemer i lige præcis {{X}} år, {{Y}} måneder og {{Z}} dages...\nJa, vi talte efter!"
     },
     "lumi": {
       "name": "Lumi",

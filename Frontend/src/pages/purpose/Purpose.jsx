@@ -40,33 +40,23 @@ export default function Purpose() {
                 <SectionHeading
                     id="our-purpose"
                     header={t('our-purpose.header')}
-                    subtitle={
-                        "We are a small team from Aalborg, Denmark, who wants to enable cool people build their cool ideas. We give small business owners, selling clothes out of their garage, the website of their dreams. " +
-                        "We give the 500 person company, working to eliminate poverty, a state of the art cashflow system. " +
-                        "We solve real problems, large and small, then step out of their way."
-                    }
+                    subtitle={t('our-purpose.subtitle')}
                 />
                 <div className = "values">
                     <div className = "value">
-                        <h3>Transparency</h3>
-                        <p>We believe in developing honest software and showing transparency in our work.
-                            We invite everyone with technical interest to scrutinize the code behind our solutions.</p>
+                        <h3>{t('our-purpose.values.transparency.header')}</h3>
+                        <p>{t('our-purpose.values.transparency.text')}</p>
                         <GithubLink/>
                     </div>
 
                     <div className = "value">
-                        <h3>Fairness</h3>
-                        <p>
-                            We believe the value created by our work should be shared fairly.
-                            A fair model means better value for customers and better compensation for those that choose to work for us.
-                        </p>
+                        <h3>{t('our-purpose.values.fairness.header')}</h3>
+                        <p>{t('our-purpose.values.fairness.text')}</p>
                     </div>
 
                     <div className = "value">
-                        <h3>Freedom</h3>
-                        <p> We believe that excellent problem solving skills require no office or daily commute.
-                            It requires trust.
-                            We enable those who choose to work for us with the freedom of working from wherever they like.</p>
+                        <h3>{t('our-purpose.values.freedom.header')}</h3>
+                        <p>{t('our-purpose.values.freedom.text')}</p>
                     </div>
                 </div>
 

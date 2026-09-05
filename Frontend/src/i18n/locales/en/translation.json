@@ -94,16 +94,28 @@
   
   "our-purpose": {
     "header": "Our purpose",
-    "subtitle": "We are a small Danish team. We want to enable cool people to realize their cool ideas - solve real problems, then step out of their way.",
+    "subtitle":  "We are a small team from Aalborg, Denmark, who wants to enable cool people build their cool ideas. We give small business owners, selling clothes out of their garage, the website of their dreams. We give the 500 person company, working to eliminate poverty, a state of the art cashflow system. We solve real problems, large and small, then step out of their way.",
     "values": {
-      "transparency": "...",
-      "fairness":"...",
-      "freedom": "..."
+      "transparency":
+      {
+        "header": "Transparency",
+        "text": "We believe in developing honest software and showing transparency in our work. We invite everyone with technical interest to scrutinize the code behind our solutions."
+      },
+      "fairness":
+      {
+        "header": "Fairness",
+        "text": " We believe the value created by our work should be shared fairly. A fair model means better value for customers and better compensation for those that choose to work for us."
+      },
+      "freedom":
+      {
+        "header": "Freedom",
+        "text": "We believe that excellent problem solving skills require no office or daily commute. It requires trust. We enable those who choose to work for us with the freedom of working from wherever they like."
+      }
     },
     "mathias": {
       "name": "Mathias",
       "role": "Problem solver",
-      "bio": "Mathias loves technology and has solved problems for exactly {{X}} years, {{Y}} months and {{Z}} days...\nYes we really did count!"
+      "bio": "Mathias loves technology and has solved problems for exactly {{X}} years, {{Y}} months and {{Z}} days...\nYes, we really did count!"
     },
     "lumi": {
       "name": "Lumi",
