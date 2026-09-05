@@ -13,7 +13,7 @@ export default function ChemoMetecCase() {
             images={[]}
             problem={t('cases.chemometec.problem')}
             solution={t('cases.chemometec.solution')}
-            tech={'cases.chemometec.tech'}
+            tech={t('cases.chemometec.tech')}
             techStack={[ReactTech, PythonTech, PostgreSqlTech, AiTech]}
         />
     );

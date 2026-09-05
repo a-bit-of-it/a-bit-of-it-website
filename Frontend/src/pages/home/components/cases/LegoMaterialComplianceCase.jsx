@@ -13,7 +13,7 @@ export default function LegoMaterialComplianceCase() {
             images={[]}
             problem={t('cases.lego-material-and-compliance.problem')}
             solution={t('cases.lego-material-and-compliance.solution')}
-            tech={'cases.lego-material-and-compliance.tech'}
+            tech={t('cases.lego-material-and-compliance.tech')}
             techStack={[ReactTech, AspDotNetTech, MsSqlTech, AzureTech]}
         />
     );

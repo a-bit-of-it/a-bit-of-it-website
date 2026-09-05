@@ -13,7 +13,7 @@ export default function LEGOSuperMarioCase() {
             images={["/LSMApp.jpg"]}
             problem={t('cases.lego-super-mario.problem')}
             solution={t('cases.lego-super-mario.solution')}
-            tech={'cases.lego-super-mario.tech'}
+            tech={t('cases.lego-super-mario.tech')}
             techStack={[UnityTech, BluetoothTech]}
         />
     );
