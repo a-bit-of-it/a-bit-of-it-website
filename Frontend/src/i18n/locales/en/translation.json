@@ -2,17 +2,13 @@
   "name": "a bit of IT",
   
   "banner": {
-    "cases": "Cases",
     "why-we-exist": "Our purpose",
-    "get-in-touch": "Get in touch",
-    "menu": "Menu"
+    "get-in-touch": "Get in touch"
   },
   
   "hero": {
     "headline1": "We do not build software",
-    "headline2": "We solve problems",
-    "subline": "",
-    "cta": "Let's solve yours" 
+    "headline2": "We solve problems"
   },
 
   "cases": {

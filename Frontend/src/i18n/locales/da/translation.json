@@ -2,17 +2,29 @@
   "name": "a bit of IT",
 
   "banner": {
-    "cases": "Projekter",
     "who-we-are": "Hvem er vi",
-    "get-in-touch": "Kontakt os",
-    "menu": "Menu"
+    "get-in-touch": "Kontakt os"
   },
   
   "hero": {
-    "headline1": "Vi sælger ikke software.",
-    "headline2": "Vi løser problemer.",
-    "subline": "",
-    "cta": "Lad os løse dit"
+    "headline1": "Vi bygger ikke software",
+    "headline2": "Vi løser problemer"
+  },
+
+  "cases": {
+    "header": "Problemer vi allerede har løst",
+    "subtitle": "...",
+    "geeks": "For nørder",
+    "technology-used": "Teknologier",
+    "problem": "Problemet",
+    "solution": "Løsningen",
+    "legohouse":
+    {
+      "header": "Digital genopbygning af LEGO House",
+      "problem": "...",
+      "solution": "...",
+      "tech": "..."
+    }
   },
 
   "services": {
@@ -41,21 +53,6 @@
     },
     "select-cta": "Det her vil jeg gerne have løst",
     "cta": "Lad os tale om jeres projekt"
-  },
-
-  "cases": {
-    "header": "Projekter",
-    "geeks": "For nørder",
-    "technology-used": "Anvendt teknologi",
-    "problem": "Problem",
-    "solution": "Løsning",
-    "legohouse":
-    {
-      "header": "Digital genopbygning af LEGO House",
-      "problem": "...",
-      "solution": "...",
-      "tech": "..."
-    }
   },
 
   "get-in-touch": {
