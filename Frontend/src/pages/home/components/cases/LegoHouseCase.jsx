@@ -1,8 +1,8 @@
 import {AspDotNetTech, AzureTech, MsSqlTech, RabbitMqTech, UnityTech} from "./components/TechStack.jsx";
 import Case from "./components/Case.jsx";
 import {useTranslation} from "react-i18next";
-import {LegoHouseIcon, LegoIcon} from "../../Icons.jsx";
-import TransLink from "../../TransLink.jsx";
+import {LegoHouseIcon, LegoIcon} from "../../../../Icons.jsx";
+import TransLink from "../../../../components/TransLink.jsx";
 
 export default function LegoHouseCase() {
     const { t } = useTranslation();
@@ -11,7 +11,6 @@ export default function LegoHouseCase() {
             icons={[LegoIcon, LegoHouseIcon]}
             title={t('cases.legohouse.header')}
             images={["/FishDesigner.jpg", "/MoodMixer.jpg"]}
-            backgroundImage="/LEGOHouse.jpg"
             problem={t('cases.legohouse.problem')}
             solution={
                 <TransLink

@@ -2,7 +2,7 @@
   "name": "a bit of IT",
 
   "banner": {
-    "who-we-are": "Hvem er vi",
+    "our-purpose": "Vores formål",
     "get-in-touch": "Kontakt os"
   },
   
@@ -24,12 +24,33 @@
       "problem": "...",
       "solution": "...",
       "tech": "..."
+    },
+    "lego-super-mario":
+    {
+      "header": "...",
+      "problem": "...",
+      "solution": "...",
+      "tech": "..."
+    },
+    "lego-material-and-compliance":
+    {
+      "header": "...",
+      "problem": "...",
+      "solution": "...",
+      "tech": "..."
+    },
+    "chemometec":
+    {
+      "header": "...",
+      "problem": "...",
+      "solution": "...",
+      "tech": "..."
     }
   },
 
   "services": {
-    "header": "Hvad vi kan gøre for dig",
-    "subtitle": "Vores projekter viser store, ambitiøse løsninger, men meget af vores arbejde er langt mindre i omfang. Uanset om du er en lokal virksomhed, der har brug for en hjemmeside, eller en smartere måde at bruge jeres data på, hjælper vi gerne.",
+    "header": "Har I også et problem, der skal løses?",
+    "subtitle": "...",
     "website": {
       "title": "Hjemmesider",
       "p1": "Har du måske den perfekte hjemmeside i tankerne, men mangler bare nogen til at bygge den?",
@@ -57,7 +78,7 @@
 
   "get-in-touch": {
     "header": "Kontakt os",
-    "subheader": "Har du et projekt i tankerne eller har du bare lyst til at sige hej? Send os en besked og vi vender tilbage inden for 24 timer.",
+    "subtitle": "Har du et projekt i tankerne eller har du bare lyst til at sige hej? Send os en besked og vi vender tilbage inden for 24 timer.",
     "name": "Navn",
     "email": "Email",
     "company": "Virksomhed",
@@ -70,17 +91,34 @@
     "invalid-email": "Indtast venligst en gyldig e-mailadresse."
   },
 
-  "why-we-exist": {
-    "header": "Hvorfor vi findes",
-    "subtitle": "Lille team, stort engagement. Her er hvem der faktisk sidder bag skærmen. Du kan læse mere om vores mission <missionLink>her</missionLink>.",
+  "our-purpose": {
+    "header": "Vores formål",
+    "subtitle": "...",
+    "values": {
+      "transparency":
+      {
+        "header": "Gennemsigtighed",
+        "text": "..."
+      },
+      "fairness":
+      {
+        "header": "Fair",
+        "text": "..."
+      },
+      "freedom":
+      {
+        "header": "Frihed",
+        "text": "..."
+      }
+    },
     "mathias": {
       "name": "Mathias",
-      "role": "Stifter & udvikler",
-      "bio": "Mathias bygger softwaren og har mere end {{X}} år, {{Y}} måneder og {{Z}} dage erfaring...\nJa, vi talte efter!"
+      "role": "Problemløser",
+      "bio": "Mathias elsker teknologi og har løst problemer i lige præcis {{X}} år, {{Y}} måneder og {{Z}} dages...\nJa, vi talte efter!"
     },
     "lumi": {
       "name": "Lumi",
-      "role": "Chief Morale Officer",
+      "role": "En god dreng",
       "bio": "Står for moralsk opbakning, snackpauser og grundig test af kontorgulvet."
     }
   }

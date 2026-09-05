@@ -1,26 +1,16 @@
-import { useEffect, useState } from "react";
-import "./GetInTouch.css";
+import {useState} from "react";
+import './Contact.css';
 import {useTranslation} from "react-i18next";
-import {submitContact} from "../services/contactService.js";
-import {useInquiry} from "../InquiryContext.jsx";
-import SectionHeading from "./SectionHeading.jsx";
+import {submitContact} from "../../services/contactService.js";
+import SectionHeading from "../../components/SectionHeading.jsx";
+import {isValidEmail} from "../../utilities/isValidEmail.js";
 
-const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-export default function GetInTouch () {
+export default function Contact() {
     const { t } = useTranslation();
-    const { inquiry, setInquiry, inquiryRef } = useInquiry();
-
-    useEffect(() => {
-        if (inquiry) {
-            inquiryRef.current?.focus({ preventScroll: true });
-            inquiryRef.current?.select();
-        }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
+    const [inquiry, setInquiry] = useState("");
     const [company, setCompany] = useState("");
     const [status, setStatus] = useState("idle");
     const [errors, setErrors] = useState({});
@@ -40,7 +30,7 @@ export default function GetInTouch () {
         if (!name.trim()) nextErrors.name = t('get-in-touch.field-required');
         if (!email.trim()) {
             nextErrors.email = t('get-in-touch.field-required');
-        } else if (!EMAIL_PATTERN.test(email)) {
+        } else if (!isValidEmail(email)) {
             nextErrors.email = t('get-in-touch.invalid-email');
         }
         return nextErrors;
@@ -66,7 +56,7 @@ export default function GetInTouch () {
             setStatus("error");
         }
     }
-
+    
     return (
         <div className="contact-us" id="contact">
             <div className="section">
@@ -77,7 +67,6 @@ export default function GetInTouch () {
                     <label className={`contact-us-field${errors.inquiry ? ' contact-us-field--invalid' : ''}`}>
                         <span>{t('get-in-touch.inquiry')} <span className="contact-us-required" aria-hidden="true">*</span></span>
                         <textarea
-                            ref={inquiryRef}
                             value={inquiry}
                             onChange={(event) => { setInquiry(event.target.value); clearError('inquiry'); }}
                             required

@@ -3,7 +3,7 @@ import LanguageSwitch from './LanguageSwitch.jsx'
 import {useTranslation} from "react-i18next";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { useHideOnScroll } from "./useHideOnScroll.js";
+import {useHideOnScroll} from "../../utilities/useHideOnScroll.js";
 
 export default function Banner() {
     const { t } = useTranslation();
@@ -14,6 +14,7 @@ export default function Banner() {
         setMenuOpen(false);
     }
 
+    // Closes the menu if scrolling down while it is opened
     useEffect(() => {
         if (hidden) {
             closeMenu();
@@ -38,7 +39,7 @@ export default function Banner() {
                 <Link to="/" className="banner-logo" onClick={closeMenu}>{t('name')}</Link>
                 <div className="banner-actions">
                     <nav className="navigation">
-                        <Link to="/purpose">{t('banner.why-we-exist')}</Link>
+                        <Link to="/purpose">{t('banner.our-purpose')}</Link>
                     </nav>
                     <Link to="/contact" className="btn-primary">{t('banner.get-in-touch')}</Link>
                     <LanguageSwitch />

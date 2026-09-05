@@ -7,7 +7,7 @@ import CaseProblem from "./CaseProblem.jsx";
 import CaseSolution from "./CaseSolution.jsx";
 import CaseImages from "./CaseImages.jsx";
 
-export default function Case({ icons, title, tech, techStack, problem, solution, images, backgroundImage }) {
+export default function Case({ icons, title, tech, techStack, problem, solution, images }) {
     return (
         <article
             className="case">

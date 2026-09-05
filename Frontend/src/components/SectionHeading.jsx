@@ -1,4 +1,5 @@
-import { useFitText } from "../useFitText.js";
+import './SectionHeading.css';
+import {useFitText} from "../utilities/useFitText.js";
 
 export default function SectionHeading({ id, header, subtitle }) {
     const ref = useFitText();
