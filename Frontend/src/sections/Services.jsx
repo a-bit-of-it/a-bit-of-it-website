@@ -1,9 +1,7 @@
 import './Services.css'
 import '../App.css'
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
-import {scrollToSectionOnClick} from "../scrollToSection.js";
-import {useInquiry} from "../InquiryContext.jsx";
 import {usePageLoadTime} from "../usePageLoadTime.js";
 import SectionHeading from "./SectionHeading.jsx";
 
@@ -53,12 +51,10 @@ function ResearchIcon() {
 
 export default function Services () {
     const { t } = useTranslation();
-    const { selectInquiry } = useInquiry();
     const loadTimeMs = usePageLoadTime();
     const navigate = useNavigate();
 
     function handleSelect(key) {
-        // selectInquiry(t(`services.${key}.prefill`));
         navigate('/contact');
     }
 

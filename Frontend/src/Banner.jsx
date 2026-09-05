@@ -14,6 +14,7 @@ export default function Banner() {
         setMenuOpen(false);
     }
 
+    // Closes the menu if scrolling down while it is opened
     useEffect(() => {
         if (hidden) {
             closeMenu();

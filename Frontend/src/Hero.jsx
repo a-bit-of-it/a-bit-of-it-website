@@ -1,6 +1,5 @@
 import './Hero.css'
 import { useTranslation } from 'react-i18next';
-import { scrollToSectionOnClick } from "./scrollToSection.js";
 
 export default function Hero() {
     const { t } = useTranslation();
