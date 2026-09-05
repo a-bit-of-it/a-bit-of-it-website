@@ -3,8 +3,7 @@ import './Contact.css';
 import {useTranslation} from "react-i18next";
 import {submitContact} from "../../services/contactService.js";
 import SectionHeading from "../../components/SectionHeading.jsx";
-
-const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+import {isValidEmail} from "../../utilities/isValidEmail.js";
 
 export default function Contact() {
     const { t } = useTranslation();
@@ -31,7 +30,7 @@ export default function Contact() {
         if (!name.trim()) nextErrors.name = t('get-in-touch.field-required');
         if (!email.trim()) {
             nextErrors.email = t('get-in-touch.field-required');
-        } else if (!EMAIL_PATTERN.test(email)) {
+        } else if (!isValidEmail(email)) {
             nextErrors.email = t('get-in-touch.invalid-email');
         }
         return nextErrors;
