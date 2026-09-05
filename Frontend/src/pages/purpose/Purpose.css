@@ -1,3 +1,15 @@
+.purpose {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.lumi-wrapper {
+    max-width: 1200px;
+    margin: auto auto 0;
+    padding: 1.5rem 1.5rem 2rem;
+}
+
 .values-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -36,8 +48,8 @@
 
 .lumi-photo {
     flex-shrink: 0;
-    width: 96px;
-    height: 96px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -45,6 +57,8 @@
 .lumi-info {
     display: flex;
     flex-direction: column;
+    flex: 1;
+    min-width: 0;
     gap: 0.35rem;
 }
 
@@ -56,7 +70,7 @@
 .lumi-role {
     align-self: flex-start;
     padding: 0.2rem 0.65rem;
-    border-radius: 999px;
+    border-radius: 5px;
     background-color: var(--color-accent-tint);
     color: var(--color-accent-deep);
     font-size: 0.7rem;

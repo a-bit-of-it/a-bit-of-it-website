@@ -31,9 +31,11 @@ export default function Purpose() {
                         <p>{t('our-purpose.values.freedom.text')}</p>
                     </div>
                 </div>
+            </div>
 
+            <div className="lumi-wrapper">
                 <div className="lumi-card card">
-                    <img className="lumi-photo" src="/LumiWithTongueCropped.jpg" alt={t('our-purpose.lumi.name')} />
+                    <img className="lumi-photo" src="/Lumi.jpg" alt={t('our-purpose.lumi.name')} />
                     <div className="lumi-info">
                         <h3>{t('our-purpose.lumi.name')}</h3>
                         <span className="lumi-role">{t('our-purpose.lumi.role')}</span>

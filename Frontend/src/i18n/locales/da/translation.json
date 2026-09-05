@@ -112,15 +112,10 @@
         "text": "..."
       }
     },
-    "mathias": {
-      "name": "Mathias",
-      "role": "Problemløser",
-      "bio": "Mathias elsker teknologi og har løst problemer i lige præcis {{X}} år, {{Y}} måneder og {{Z}} dages...\nJa, vi talte efter!"
-    },
     "lumi": {
       "name": "Lumi",
       "role": "En god dreng",
-      "bio": "Står for moralsk opbakning, snackpauser og grundig test af kontorgulvet."
+      "bio": "Lumi betyder lys. Han ved meget lidt om IT, men han opfordrer os til at gøre et godt stykke arbejde og minder os om det, der er vigtigst i vores liv."
     }
   },
 
