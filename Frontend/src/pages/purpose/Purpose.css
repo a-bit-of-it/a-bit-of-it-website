@@ -1,8 +1,3 @@
-.purpose {
-    flex: 1;
-    background-color: var(--color-cream);
-}
-
 .values-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));

@@ -12,13 +12,16 @@
     font-size: 0.85rem;
     font-weight: 600;
     text-decoration: none;
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
-.github-link:hover,
-.github-link:focus-visible {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 24px -10px rgba(10, 10, 10, 0.4);
+.github-link:hover:not(:disabled),
+.github-link:focus-visible:not(:disabled) {
+    background-color: color-mix(in srgb, var(--color-cream) 75%, black);
+}
+
+.github-link:active:not(:disabled) {
+    transform: scale(0.98);
 }
 
 .github-link-icon {

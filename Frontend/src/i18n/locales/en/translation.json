@@ -56,7 +56,6 @@
       "example1": "An AI accounting agent that reconciles invoices and flags anomalies before your bookkeeper even logs in.",
       "example2": "An AI support agent that answers the repeat questions instantly, day or night, so your team only handles the tricky ones.",
       "example3": "An AI research agent that turns a stack of documents into clean, searchable answers in seconds.",
-      "prefill": "Hi, I'm interested in using AI to make my day-to-day work easier. Here's what I'd like to automate or improve: ",
       "cta": "Help me create an AI system..."
     },
     "website": {
@@ -64,7 +63,6 @@
       "p1": "Perhaps you have the perfect website in mind but just need someone to build it for you?",
       "p2": "Maybe you have heard of tools like WordPress or Shopify and are interested in managing your own website?",
       "p3": "Regardless of your needs, let us take care of the technical part and help you on your way.",
-      "prefill": "Hi, I'd like a beautiful website for my business. Here's a bit about what I'm looking for: ",
       "load-time": "If you need a fast website, we can help too. This one only took {{time}}ms to load.",
       "cta": "Help me build a website that..."
     },
@@ -72,7 +70,6 @@
       "title": "Custom solutions",
       "p1": "Got something specific in mind? Our speciality is building something unique.",
       "p2": "Take a look at the other unique problems we have already solved - then let's talk about yours.",
-      "prefill": "Hi, I have a custom project in mind that doesn't quite fit a category. Here's what I'm thinking: ",
       "cta": "Show me what you've built"
     }
   },
@@ -89,7 +86,8 @@
     "sent": "Thank you! We have received your inquiry.",
     "something-went-wrong": "Something went wrong, please try again.",
     "field-required": "This field is required.",
-    "invalid-email": "Please enter a valid email address."
+    "invalid-email": "Please enter a valid email address.",
+    "privacy-notice": "You can view how we process personal data in our <a>Privacy Policy</a>."
   },
   
   "our-purpose": {
@@ -122,5 +120,12 @@
       "role": "A good boy",
       "bio": "Lumi, meaning light, is our guiding star. He doesn't know much of IT, but he is always there and reminds os of what is important in life."
     }
+  },
+
+  "privacy-policy": {
+    "header": "Privacy Policy",
+    "p1": "When using our contact forms individuals provide their name, email, company affiliation and message content.",
+    "p2": "We use that information to schedule meetings or engage in further conversation.",
+    "p3": "We retain the data only as long as necessary to handle the inquiry and communication."
   }
 }

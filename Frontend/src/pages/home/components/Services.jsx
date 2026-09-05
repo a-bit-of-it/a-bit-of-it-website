@@ -1,5 +1,4 @@
 import './Services.css'
-// import '../App.css'
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import {AccountingIcon, AgentIcon, ResearchIcon} from "../../../Icons.jsx";
