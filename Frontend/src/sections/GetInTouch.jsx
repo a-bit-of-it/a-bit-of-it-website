@@ -11,6 +11,7 @@ export default function GetInTouch () {
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
+    const [inquiry, setInquiry] = useState("");
     const [company, setCompany] = useState("");
     const [status, setStatus] = useState("idle");
     const [errors, setErrors] = useState({});
@@ -67,7 +68,6 @@ export default function GetInTouch () {
                     <label className={`contact-us-field${errors.inquiry ? ' contact-us-field--invalid' : ''}`}>
                         <span>{t('get-in-touch.inquiry')} <span className="contact-us-required" aria-hidden="true">*</span></span>
                         <textarea
-                            ref={inquiryRef}
                             value={inquiry}
                             onChange={(event) => { setInquiry(event.target.value); clearError('inquiry'); }}
                             required

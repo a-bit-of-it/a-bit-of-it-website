@@ -2,7 +2,7 @@
   "name": "a bit of IT",
 
   "banner": {
-    "who-we-are": "Hvem er vi",
+    "our-purpose": "Vores formål",
     "get-in-touch": "Kontakt os"
   },
   
@@ -24,11 +24,32 @@
       "problem": "...",
       "solution": "...",
       "tech": "..."
+    },
+    "lego-super-mario":
+    {
+      "header": "...",
+      "problem": "...",
+      "solution": "...",
+      "tech": "..."
+    },
+    "material-and-compliance":
+    {
+      "header": "...",
+      "problem": "...",
+      "solution": "...",
+      "tech": "..."
+    },
+    "chemometec":
+    {
+      "header": "...",
+      "problem": "...",
+      "solution": "...",
+      "tech": "..."
     }
   },
 
   "services": {
-    "header": "Hvad vi kan gøre for dig",
+    "header": "Har I også et problem, der skal løses?",
     "subtitle": "Vores projekter viser store, ambitiøse løsninger, men meget af vores arbejde er langt mindre i omfang. Uanset om du er en lokal virksomhed, der har brug for en hjemmeside, eller en smartere måde at bruge jeres data på, hjælper vi gerne.",
     "website": {
       "title": "Hjemmesider",

@@ -39,7 +39,7 @@ export default function Banner() {
                 <Link to="/" className="banner-logo" onClick={closeMenu}>{t('name')}</Link>
                 <div className="banner-actions">
                     <nav className="navigation">
-                        <Link to="/purpose">{t('banner.why-we-exist')}</Link>
+                        <Link to="/purpose">{t('banner.our-purpose')}</Link>
                     </nav>
                     <Link to="/contact" className="btn-primary">{t('banner.get-in-touch')}</Link>
                     <LanguageSwitch />
