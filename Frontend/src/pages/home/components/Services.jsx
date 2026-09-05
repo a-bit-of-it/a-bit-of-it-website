@@ -2,9 +2,9 @@ import './Services.css'
 // import '../App.css'
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
-import {usePageLoadTime} from "../../../usePageLoadTime.js";
 import {AccountingIcon, AgentIcon, ResearchIcon} from "../../../Icons.jsx";
 import SectionHeading from "../../../components/SectionHeading.jsx";
+import {usePageLoadTime} from "../../../utilities/usePageLoadTime.js";
 
 export default function Services () {
     const { t } = useTranslation();

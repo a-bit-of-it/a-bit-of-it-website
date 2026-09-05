@@ -3,7 +3,7 @@ import LanguageSwitch from './LanguageSwitch.jsx'
 import {useTranslation} from "react-i18next";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { useHideOnScroll } from "./useHideOnScroll.js";
+import {useHideOnScroll} from "../../utilities/useHideOnScroll.js";
 
 export default function Banner() {
     const { t } = useTranslation();

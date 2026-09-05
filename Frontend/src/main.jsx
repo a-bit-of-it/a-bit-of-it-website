@@ -5,7 +5,7 @@ import './index.css'
 import './i18n'
 import App from './App.jsx'
 import Footer from "./Footer.jsx";
-import Banner from "./Banner.jsx";
+import Banner from "./components/banner/Banner.jsx";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
