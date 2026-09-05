@@ -95,6 +95,11 @@
   "our-purpose": {
     "header": "Our purpose",
     "subtitle": "We are a small Danish team. We want to enable cool people to realize their cool ideas - solve real problems, then step out of their way.",
+    "values": {
+      "transparency": "...",
+      "fairness":"...",
+      "freedom": "..."
+    },
     "mathias": {
       "name": "Mathias",
       "role": "Problem solver",
@@ -102,7 +107,7 @@
     },
     "lumi": {
       "name": "Lumi",
-      "role": "Morale booster",
+      "role": "A good boy",
       "bio": "Lumi, meaning light, is our guiding star. He doesn't know much of IT, but he is always there and reminds os of what is important in life."
     }
   }

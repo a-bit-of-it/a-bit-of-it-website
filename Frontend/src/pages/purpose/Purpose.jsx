@@ -1,7 +1,8 @@
 import './Purpose.css';
-import GithubLink from "../GithubLink.jsx";
 import {useTranslation} from "react-i18next";
-import SectionHeading from "../components/SectionHeading.jsx";
+import SectionHeading from "../../components/SectionHeading.jsx";
+import GithubLink from "./components/GithubLink.jsx";
+
 
 const MATHIAS_START_DATE = new Date(2018, 8, 1);
 
@@ -34,11 +35,11 @@ export default function Purpose() {
     ];
     
     return (
-        <div className="why-we-exist">
+        <div className="purpose">
             <div className="section">
                 <SectionHeading
-                    id="why-we-exist"
-                    header={t('why-we-exist.header')}
+                    id="our-purpose"
+                    header={t('our-purpose.header')}
                     subtitle={
                         "We are a small team from Aalborg, Denmark, who wants to enable cool people build their cool ideas. We give small business owners, selling clothes out of their garage, the website of their dreams. " +
                         "We give the 500 person company, working to eliminate poverty, a state of the art cashflow system. " +
@@ -72,10 +73,10 @@ export default function Purpose() {
                 <div className="team-grid">
                     {team.map(({ key, image, bioValues }) => (
                         <div className="team-card" key={key}>
-                            <img className="team-card-photo" src={image} alt={t(`why-we-exist.${key}.name`)} />
-                            <h3>{t(`why-we-exist.${key}.name`)}</h3>
-                            <span className="team-card-role">{t(`why-we-exist.${key}.role`)}</span>
-                            <p>{t(`why-we-exist.${key}.bio`, bioValues)}</p>
+                            <img className="team-card-photo" src={image} alt={t(`our-purpose.${key}.name`)} />
+                            <h3>{t(`our-purpose.${key}.name`)}</h3>
+                            <span className="team-card-role">{t(`our-purpose.${key}.role`)}</span>
+                            <p>{t(`our-purpose.${key}.bio`, bioValues)}</p>
                         </div>
                     ))}
                 </div>

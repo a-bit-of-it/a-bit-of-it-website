@@ -1,17 +1,5 @@
-.why-we-exist {
-    /*background: linear-gradient(to bottom, var(--color-cream), var(--color-accent-tint) 2.5rem);*/
+.purpose {
     background-color: var(--color-cream);
-}
-
-.why-we-exist-subtitle {
-    margin: 0;
-    /*max-width: 60ch;*/
-    opacity: 0.75;
-    line-height: 1.6;
-}
-
-.values {
-
 }
 
 .values-grid {

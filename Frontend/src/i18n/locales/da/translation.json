@@ -91,17 +91,22 @@
     "invalid-email": "Indtast venligst en gyldig e-mailadresse."
   },
 
-  "why-we-exist": {
-    "header": "Hvorfor vi findes",
-    "subtitle": "Lille team, stort engagement. Her er hvem der faktisk sidder bag skærmen. Du kan læse mere om vores mission <missionLink>her</missionLink>.",
+  "our-purpose": {
+    "header": "Vores formål",
+    "subtitle": "...",
+    "values": {
+      "transparency": "...",
+      "fairness":"...",
+      "freedom": "..."
+    },
     "mathias": {
       "name": "Mathias",
-      "role": "Stifter & udvikler",
-      "bio": "Mathias bygger softwaren og har mere end {{X}} år, {{Y}} måneder og {{Z}} dage erfaring...\nJa, vi talte efter!"
+      "role": "Problemløser",
+      "bio": "Mathias bygger softwaren og har mere end {{X}} år, {{Y}} måneder og {{Z}} dages erfaring...\nJa, vi talte efter!"
     },
     "lumi": {
       "name": "Lumi",
-      "role": "Chief Morale Officer",
+      "role": "En god dreng",
       "bio": "Står for moralsk opbakning, snackpauser og grundig test af kontorgulvet."
     }
   }

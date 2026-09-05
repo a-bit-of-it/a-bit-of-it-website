@@ -1,12 +1,12 @@
-import { useState } from "react";
-import "./GetInTouch.css";
+import {useState} from "react";
+import './Contact.css';
 import {useTranslation} from "react-i18next";
-import {submitContact} from "../services/contactService.js";
-import SectionHeading from "../components/SectionHeading.jsx";
+import {submitContact} from "../../services/contactService.js";
+import SectionHeading from "../../components/SectionHeading.jsx";
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-export default function GetInTouch () {
+export default function Contact() {
     const { t } = useTranslation();
 
     const [name, setName] = useState("");
@@ -57,7 +57,7 @@ export default function GetInTouch () {
             setStatus("error");
         }
     }
-
+    
     return (
         <div className="contact-us" id="contact">
             <div className="section">

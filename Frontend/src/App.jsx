@@ -1,8 +1,8 @@
 import './App.css'
 import { Routes, Route } from "react-router-dom";
-import Purpose from "./pages/Purpose.jsx";
-import Contact from "./pages/Contact.jsx";
 import Home from "./pages/home/Home.jsx";
+import Purpose from "./pages/purpose/Purpose.jsx";
+import Contact from "./pages/contact/Contact.jsx";
 
 function App() {
     return (
