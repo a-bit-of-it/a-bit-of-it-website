@@ -9,13 +9,22 @@ function detectLanguageFromDomain(): 'en' | 'da' {
     return 'en';
 }
 
+const initialLanguage = detectLanguageFromDomain();
+document.documentElement.lang = initialLanguage;
+
 i18n
     .use(initReactI18next)
     .init({
         resources: { en: { translation: en }, da: { translation: da } },
-        lng: detectLanguageFromDomain(),
+        lng: initialLanguage,
         fallbackLng: 'en',
         interpolation: { escapeValue: false },
     });
+
+// Keeps <html lang> correct when changeLanguage() is called directly,
+// e.g. on domains that aren't recognized as either .dk or .com.
+i18n.on('languageChanged', (lng) => {
+    document.documentElement.lang = lng;
+});
 
 export default i18n;

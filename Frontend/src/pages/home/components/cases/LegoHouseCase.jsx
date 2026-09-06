@@ -10,7 +10,11 @@ export default function LegoHouseCase() {
         <Case
             icons={[LegoIcon, LegoHouseIcon]}
             title={t('cases.legohouse.header')}
-            images={["/LEGOHouse.jpg", "/FishDesigner.jpg", "/MoodMixer.jpg"]}
+            images={[
+                { src: "/LEGOHouse.jpg", alt: t('cases.legohouse.images.exterior') },
+                { src: "/FishDesigner.jpg", alt: t('cases.legohouse.images.fish-designer') },
+                { src: "/MoodMixer.jpg", alt: t('cases.legohouse.images.mood-mixer') },
+            ]}
             problem={t('cases.legohouse.problem')}
             solution={
                 <TransText

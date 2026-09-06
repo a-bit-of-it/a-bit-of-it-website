@@ -23,14 +23,22 @@
       "header": "Digital rebuild of LEGO House",
       "problem": "LEGO House in Billund, Denmark, opened in 2017 with 30+ software experiences centered around the physical LEGO brick. The software was inadequate and had a negative impact on the guest experience: crashes and errors meant that customers often left disappointed. Play Agents, who were meant to facilitate a great experience, spent too much time mitigating technical issues and asking the IT department for assistance.",
       "solution": "Experiences that were inadequately built had to be remade. By taking the software that worked, improving or replacing what didn't, LEGO House underwent a digital rebuild. With reliable software, Play Agents now have more time for guest interactions and fun. Connecting every experience to a shared platform, Play Agents are empowered to handle basic software and hardware failures themselves. At the touch of a button, using an iOS app, Play Agents can manage edge devices, saving hours daily. <a>Guests and LEGO House are happier than ever.</a>",
-      "tech": "Most experiences had heavy emphasis on 3D graphics and the Unity game engine had great toolsets, fair pricing, already used within LEGO and supports a programming language we are really good at: C#.\n\nThe shared platform was written in C#/ASP.NET and at the center was an event-driven RabbitMQ service enabling guest-checkins via NFC, photo/video capture, observability, edge device interaction and automatic startup/shutdown power-savings.\n\nEverything was hosted in Azure, using Container Apps, Blob storage, and MSSQL databases, except the on-device Unity instances."
+      "tech": "Most experiences had heavy emphasis on 3D graphics and the Unity game engine had great toolsets, fair pricing, already used within LEGO and supports a programming language we are really good at: C#.\n\nThe shared platform was written in C#/ASP.NET and at the center was an event-driven RabbitMQ service enabling guest-checkins via NFC, photo/video capture, observability, edge device interaction and automatic startup/shutdown power-savings.\n\nEverything was hosted in Azure, using Container Apps, Blob storage, and MSSQL databases, except the on-device Unity instances.",
+      "images": {
+        "exterior": "Aerial view of LEGO House in Billund, its roof built from oversized LEGO bricks in blue, teal, pink, red and yellow.",
+        "fish-designer": "The Fish Designer experience: a wall of screens showing an animated underwater world built from LEGO models, where guests' custom-designed fish swim.",
+        "mood-mixer": "The Mood Mixer experience: a LEGO-brick tower with a touchscreen grid of icons that guests use to mix the mood of the LEGO creation."
+      }
     },
     "lego-super-mario":
     {
       "header": "LEGO Super Mario Companion App",
       "problem": "LEGO has always had a focus on learning through play. In a collaboration between LEGO and Nintendo, LEGO Super Mario was born. At the center of the experience: the Mario, Luigi and Peach LEGO figures. Filled with electronics, these figures could enable a whole new type of play using their built-in scanners to interact with unique items, enemy types and obstacles from the Super Mario Universe. However, teaching users how to use their new figures couldn't be done through classical paper manuals.",
       "solution": "A companion app. The LEGO Super Mario app complimented the user's physical experience. Through tutorial videos, building instructions and onboarding flows the app would teach its users how to use their LEGO figures and how to interact with the unique items of the LEGO sets they've purchased. The app included a community section where users could interact anonymously with each other through curated user generated content and weekly challenges.",
-      "tech": "The app had to support both 2D and 3D graphics. It is built in the Unity game engine and interacted with a large set of features that LEGO had already built for their other apps. The app and its LEGO figures communicates via the Bluetooth low energy protocol."
+      "tech": "The app had to support both 2D and 3D graphics. It is built in the Unity game engine and interacted with a large set of features that LEGO had already built for their other apps. The app and its LEGO figures communicates via the Bluetooth low energy protocol.",
+      "images": {
+        "app": "The LEGO Super Mario companion app on a phone, showing Mario and Peach on the home screen in front of Mario Kart sets."
+      }
     },
     "lego-material-and-compliance":
     {
@@ -44,7 +52,7 @@
       "header": "Turning leads into sales",
       "problem": "ChemoMetec is a leading manufacturer of cell analysis equipment. Amongst many things, they scout the internet for potential buyers of their equipment by reading news headlines, picking out those that seem relevant, thoroughly reading them, researching the involved companies, scoring them to understand their sales potential and then, finally, reaching out to begin a potential sale. This is a time consuming and error prone process and it is very likely, that many high value leads are left unnoticed.",
       "solution": "An agentic AI system analyzing news articles, researching the involved companies, and highlighting their potential sales value. Each week hundreds of leads are passing through the system, being analyzed by AI agents and scored. High scoring leads signal companies that are in an appropriate sector of the market and have enough funding for state of the art cell analysis equipment. ChemoMetec assigns the leads amongst their colleagues and they begin approaching the involved companies - all without having to do days of research before hand.",
-      "tech": "A cron job periodically scans the internet for news. Each news is passed through an AI pipeline written in Python. This pipeline contains stages with specialized AI agents all working together to score each news from 0 - 100. Passing through each stage, an agent acts as a gatekeeper for its assigned area on responsibility. One agent researches the involved company, deeming it either interested or not in buying cell analysis equipment. Another agent investigates their financial status and so on. At the end of the pipeline, each relevant lead is saved to a Postgres database, including its score, and importantly the rationale behind the scoring. A frontend written in React fetches the leads via an API and displays them for ChemoMetec to work on."
+      "tech": "A cron job periodically scans the internet for news. Each news is passed through an AI pipeline written in Python. This pipeline contains stages with specialized AI agents all working together to score each news from 0 - 100. Passing through each stage, an agent acts as a gatekeeper for its assigned area of responsibility.\n\nOne agent researches the involved company, deeming it either interested or not in buying cell analysis equipment. Another agent investigates their financial status and so on. At the end of the pipeline, each relevant lead is saved to a Postgres database, including its score, and importantly the rationale behind the scoring. A frontend written in React fetches the leads via an API and displays them for ChemoMetec to work on."
     }
   },
   
@@ -55,22 +63,19 @@
       "title": "AI systems",
       "example1": "An AI accounting agent that reconciles invoices and flags anomalies before your bookkeeper even logs in.",
       "example2": "An AI support agent that answers the repeat questions instantly, day or night, so your team only handles the tricky ones.",
-      "example3": "An AI research agent that turns a stack of documents into clean, searchable answers in seconds.",
-      "cta": "Help me create an AI system..."
+      "example3": "An AI research agent that turns a stack of documents into clean, searchable answers in seconds."
     },
     "website": {
       "title": "Websites",
       "p1": "Perhaps you have the perfect website in mind but just need someone to build it for you?",
       "p2": "Maybe you have heard of tools like WordPress or Shopify and are interested in managing your own website?",
       "p3": "Regardless of your needs, let us take care of the technical part and help you on your way.",
-      "load-time": "If you need a fast website, we can help too. This one only took {{time}}ms to load.",
-      "cta": "Help me build a website that..."
+      "load-time": "If you need a fast website, we can help too. This one only took {{time}}ms to load."
     },
     "bespoke": {
       "title": "Custom solutions",
       "p1": "Got something specific in mind? Our speciality is building something unique.",
-      "p2": "Take a look at the other unique problems we have already solved - then let's talk about yours.",
-      "cta": "Show me what you've built"
+      "p2": "Take a look at the other unique problems we have already solved - then let's talk about yours."
     }
   },
 
@@ -113,7 +118,7 @@
     "lumi": {
       "name": "Lumi",
       "role": "A good boy",
-      "bio": "Lumi, meaning light, is our guiding star. He doesn't know much of IT but he encourages us to do better and reminds us what is most important in our lives."
+      "bio": "Lumi, meaning light, is our guiding star. He doesn't know much of IT but he encourages us to do better and reminds us of what is most important in our lives."
     }
   },
 
@@ -122,5 +127,24 @@
     "p1": "When using our contact forms individuals provide their name, email, company affiliation and message content.",
     "p2": "We use that information to schedule meetings or engage in further conversation.",
     "p3": "We retain the data only as long as necessary to handle the inquiry and communication."
+  },
+
+  "seo": {
+    "home": {
+      "title": "Home - a bit of IT",
+      "description": "A small software team from Aalborg, Denmark building custom websites, AI systems, and bespoke software solutions."
+    },
+    "purpose": {
+      "title": "Our purpose - a bit of IT",
+      "description": "Transparency, fairness and freedom: the values behind how a bit of IT builds software for its clients."
+    },
+    "contact": {
+      "title": "Get in touch - a bit of IT",
+      "description": "Have a project in mind? Contact a bit of IT and we will get back to you within 24 hours."
+    },
+    "privacy-policy": {
+      "title": "Privacy Policy - a bit of IT",
+      "description": "How a bit of IT collects, uses and retains personal data submitted through our contact forms."
+    }
   }
 }

@@ -1,6 +1,6 @@
 import './Services.css'
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
+import {Link} from "react-router-dom";
 import {AccountingIcon, AgentIcon, ResearchIcon} from "../../../Icons.jsx";
 import SectionHeading from "../../../components/SectionHeading.jsx";
 import {usePageLoadTime} from "../../../utilities/usePageLoadTime.js";
@@ -8,11 +8,6 @@ import {usePageLoadTime} from "../../../utilities/usePageLoadTime.js";
 export default function Services () {
     const { t } = useTranslation();
     const loadTimeMs = usePageLoadTime();
-    const navigate = useNavigate();
-
-    function handleSelect() {
-        navigate('/contact');
-    }
 
     return (
         <div className="services" >
@@ -53,9 +48,9 @@ export default function Services () {
                         )}
                         <p>{t('services.website.p3')}</p>
                     </div>
-                    <button type="button" className="services-card-cta btn-primary" onClick={() => handleSelect()}>
+                    <Link to="/contact" className="services-card-cta btn-primary">
                         {t('get-in-touch.header')}
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>

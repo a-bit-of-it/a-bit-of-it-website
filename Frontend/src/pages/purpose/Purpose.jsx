@@ -1,6 +1,7 @@
 import './Purpose.css';
 import {useTranslation} from "react-i18next";
 import SectionHeading from "../../components/SectionHeading.jsx";
+import PageMeta from "../../components/PageMeta.jsx";
 import GithubLink from "./components/GithubLink.jsx";
 
 export default function Purpose() {
@@ -8,6 +9,7 @@ export default function Purpose() {
 
     return (
         <div className="purpose">
+            <PageMeta title={t('seo.purpose.title')} description={t('seo.purpose.description')} />
             <div className="section">
                 <SectionHeading
                     id="our-purpose"
