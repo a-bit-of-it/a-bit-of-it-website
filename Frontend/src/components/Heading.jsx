@@ -4,9 +4,9 @@ import {useFitText} from "../utilities/useFitText.js";
 function Heading({ id, header, subtitle, level: Level = 'h1' }) {
     const ref = useFitText();
     return (
-        <div className="section-heading">
-            <Level ref={ref} className="section-header" id={id}>{header}</Level>
-            <p className="section-subtitle">{subtitle}</p>
+        <div className="heading">
+            <Level ref={ref} className="heading-title" id={id}>{header}</Level>
+            <p className="heading-subtitle">{subtitle}</p>
         </div>
     );
 }
