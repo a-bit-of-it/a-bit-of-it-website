@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://a-bit-of-it.dk/</loc></url>
-  <url><loc>https://a-bit-of-it.dk/purpose</loc></url>
-  <url><loc>https://a-bit-of-it.dk/contact</loc></url>
-  <url><loc>https://a-bit-of-it.dk/privacy-policy</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://a-bit-of-it.dk/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-bit-of-it.com/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://a-bit-of-it.dk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a-bit-of-it.com/"/>
+  </url>
+  <url>
+    <loc>https://a-bit-of-it.dk/purpose</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-bit-of-it.com/purpose"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://a-bit-of-it.dk/purpose"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a-bit-of-it.com/purpose"/>
+  </url>
+  <url>
+    <loc>https://a-bit-of-it.dk/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-bit-of-it.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://a-bit-of-it.dk/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a-bit-of-it.com/contact"/>
+  </url>
+  <url>
+    <loc>https://a-bit-of-it.dk/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-bit-of-it.com/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://a-bit-of-it.dk/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a-bit-of-it.com/privacy-policy"/>
+  </url>
 </urlset>

@@ -1,6 +1,6 @@
 import './Purpose.css';
 import {useTranslation} from "react-i18next";
-import SectionHeading from "../../components/SectionHeading.jsx";
+import {H1Heading} from "../../components/Heading.jsx";
 import PageMeta from "../../components/PageMeta.jsx";
 import GithubLink from "./components/GithubLink.jsx";
 
@@ -11,25 +11,25 @@ export default function Purpose() {
         <div className="purpose">
             <PageMeta title={t('seo.purpose.title')} description={t('seo.purpose.description')} />
             <div className="section">
-                <SectionHeading
+                <H1Heading
                     id="our-purpose"
                     header={t('our-purpose.header')}
                     subtitle={t('our-purpose.subtitle')}
                 />
                 <div className="values-grid">
                     <div className="values-card card">
-                        <h3>{t('our-purpose.values.transparency.header')}</h3>
+                        <h2>{t('our-purpose.values.transparency.header')}</h2>
                         <p>{t('our-purpose.values.transparency.text')}</p>
                         <GithubLink/>
                     </div>
 
                     <div className="values-card card">
-                        <h3>{t('our-purpose.values.fairness.header')}</h3>
+                        <h2>{t('our-purpose.values.fairness.header')}</h2>
                         <p>{t('our-purpose.values.fairness.text')}</p>
                     </div>
 
                     <div className="values-card card">
-                        <h3>{t('our-purpose.values.freedom.header')}</h3>
+                        <h2>{t('our-purpose.values.freedom.header')}</h2>
                         <p>{t('our-purpose.values.freedom.text')}</p>
                     </div>
                 </div>
@@ -39,7 +39,7 @@ export default function Purpose() {
                 <div className="lumi-card card">
                     <img className="lumi-photo" src="/Lumi.jpg" alt={t('our-purpose.lumi.name')} />
                     <div className="lumi-info">
-                        <h3>{t('our-purpose.lumi.name')}</h3>
+                        <h2>{t('our-purpose.lumi.name')}</h2>
                         <span className="lumi-role">{t('our-purpose.lumi.role')}</span>
                         <p>{t('our-purpose.lumi.bio')}</p>
                     </div>

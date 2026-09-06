@@ -23,7 +23,7 @@
     gap: 0.5rem;
 }
 
-.values-card h3 {
+.values-card h2 {
     margin: 0;
     font-size: 1.05rem;
 }
@@ -62,7 +62,7 @@
     gap: 0.35rem;
 }
 
-.lumi-info h3 {
+.lumi-info h2 {
     margin: 0;
     font-size: 1.05rem;
 }
