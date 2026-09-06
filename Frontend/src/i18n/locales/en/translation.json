@@ -44,7 +44,7 @@
       "header": "Turning leads into sales",
       "problem": "ChemoMetec is a leading manufacturer of cell analysis equipment. Amongst many things, they scout the internet for potential buyers of their equipment by reading news headlines, picking out those that seem relevant, thoroughly reading them, researching the involved companies, scoring them to understand their sales potential and then, finally, reaching out to begin a potential sale. This is a time consuming and error prone process and it is very likely, that many high value leads are left unnoticed.",
       "solution": "An agentic AI system analyzing news articles, researching the involved companies, and highlighting their potential sales value. Each week hundreds of leads are passing through the system, being analyzed by AI agents and scored. High scoring leads signal companies that are in an appropriate sector of the market and have enough funding for state of the art cell analysis equipment. ChemoMetec assigns the leads amongst their colleagues and they begin approaching the involved companies - all without having to do days of research before hand.",
-      "tech": "A cron job periodically scans the internet for news. Each news is passed through an AI pipeline written in Python. This pipeline contains stages with specialized AI agents all working together to score each news from 0 - 100. Passing through each stage, an agent acts as a gatekeeper for its assigned area on responsibility. One agent researches the involved company, deeming it either interested or not in buying cell analysis equipment. Another agent investigates their financial status and so on. At the end of the pipeline, each relevant lead is saved to a Postgres database, including its score, and importantly the rationale behind the scoring. A frontend written in React fetches the leads via an API and displays them for ChemoMetec to work on."
+      "tech": "A cron job periodically scans the internet for news. Each news is passed through an AI pipeline written in Python. This pipeline contains stages with specialized AI agents all working together to score each news from 0 - 100. Passing through each stage, an agent acts as a gatekeeper for its assigned area of responsibility.\n\nOne agent researches the involved company, deeming it either interested or not in buying cell analysis equipment. Another agent investigates their financial status and so on. At the end of the pipeline, each relevant lead is saved to a Postgres database, including its score, and importantly the rationale behind the scoring. A frontend written in React fetches the leads via an API and displays them for ChemoMetec to work on."
     }
   },
   
@@ -113,7 +113,7 @@
     "lumi": {
       "name": "Lumi",
       "role": "A good boy",
-      "bio": "Lumi, meaning light, is our guiding star. He doesn't know much of IT but he encourages us to do better and reminds us what is most important in our lives."
+      "bio": "Lumi, meaning light, is our guiding star. He doesn't know much of IT but he encourages us to do better and reminds us of what is most important in our lives."
     }
   },
 
