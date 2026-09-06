@@ -29,22 +29,22 @@
     {
       "header": "LEGO Super Mario Companion App",
       "problem": "LEGO has always had a focus on learning through play. In a collaboration between LEGO and Nintendo, LEGO Super Mario was born. At the center of the experience: the Mario, Luigi and Peach LEGO figures. Filled with electronics, these figures could enable a whole new type of play using their built-in scanners to interact with unique items, enemy types and obstacles from the Super Mario Universe. However, teaching users how to use their new figures couldn't be done through classical paper manuals.",
-      "solution": "The LEGO Super Mario app complimented the user's physical experience. Through tutorial videos, building instructions and onboarding flows the app would teach its users how to use their LEGO figures and how to interact with the unique items of the LEGO sets they've purchased. The app included a community section where users could interact anonymously with each other through curated user generated content and weekly challenges.",
+      "solution": "A companion app. The LEGO Super Mario app complimented the user's physical experience. Through tutorial videos, building instructions and onboarding flows the app would teach its users how to use their LEGO figures and how to interact with the unique items of the LEGO sets they've purchased. The app included a community section where users could interact anonymously with each other through curated user generated content and weekly challenges.",
       "tech": "The app had to support both 2D and 3D graphics. It is built in the Unity game engine and interacted with a large set of features that LEGO had already built for their other apps. The app and its LEGO figures communicates via the Bluetooth low energy protocol."
     },
     "lego-material-and-compliance":
     {
-      "header": "Ensuring the LEGO brick's quality",
-      "problem": "...",
-      "solution": "...",
+      "header": "Ensuring the quality of the LEGO brick",
+      "problem": "LEGO has always prioritized quality and when a brick is (re)designed, has its colors or materials changed, the brick must pass a series of tests before it is allowed to be put on store shelves. Tests are carried out by their in-house testing department as well as by 3rd party testers. Tests are reviewed to ensure they follow proper test methodologies. LEGO needed a system to organize decades worth of test documents, make them easily searchable and aid the testers and reviewers in their daily work.",
+      "solution": "An internal website for logging and categorizing all of LEGO's test data. It supported reusable test suites, guiding testers through each test, and producing a PDF report for both reviewers and audit purposes.",
       "tech": "..."
     },
     "chemometec":
     {
-      "header": "...",
-      "problem": "...",
-      "solution": "...",
-      "tech": "..."
+      "header": "Turning leads into sales",
+      "problem": "ChemoMetec is a leading manufacturer of cell analysis equipment. Amongst many things, they scout the internet for potential buyers of their equipment by reading news headlines, picking out those that seem relevant, thoroughly reading them, researching the involved companies, scoring them to understand their sales potential and then, finally, reaching out to begin a potential sale. This is a time consuming and error prone process and it is very likely, that many high value leads are left unnoticed.",
+      "solution": "An agentic AI system analyzing news articles, researching the involved companies, and highlighting their potential sales value. Each week hundreds of leads are passing through the system, being analyzed by AI agents and scored. High scoring leads signal companies that are in an appropriate sector of the market and have enough funding for state of the art cell analysis equipment. ChemoMetec assigns the leads amongst their colleagues and they begin approaching the involved companies - all without having to do days of research before hand.",
+      "tech": "A cron job periodically scans the internet for news. Each news is passed through an AI pipeline written in Python. This pipeline contains stages with specialized AI agents all working together to score each news from 0 - 100. Passing through each stage, an agent acts as a gatekeeper for its assigned area on responsibility. One agent researches the involved company, deeming it either interested or not in buying cell analysis equipment. Another agent investigates their financial status and so on. At the end of the pipeline, each relevant lead is saved to a Postgres database, including its score, and importantly the rationale behind the scoring. A frontend written in React fetches the leads via an API and displays them for ChemoMetec to work on."
     }
   },
   
