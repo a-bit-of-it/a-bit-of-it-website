@@ -3,7 +3,7 @@ import './Contact.css';
 import {useTranslation} from "react-i18next";
 import {Link} from "react-router-dom";
 import {submitContact} from "../../services/contactService.js";
-import SectionHeading from "../../components/SectionHeading.jsx";
+import {H1Heading} from "../../components/Heading.jsx";
 import PageMeta from "../../components/PageMeta.jsx";
 import TransText from "../../components/TransText.jsx";
 import {isValidEmail} from "../../utilities/isValidEmail.js";
@@ -64,7 +64,7 @@ export default function Contact() {
         <div className="contact-us" id="contact">
             <PageMeta title={t('seo.contact.title')} description={t('seo.contact.description')} />
             <div className="section">
-                <SectionHeading header={t('get-in-touch.header')} subtitle={t('get-in-touch.subtitle')} />
+                <H1Heading header={t('get-in-touch.header')} subtitle={t('get-in-touch.subtitle')} />
 
                 <form className="contact-us-form" onSubmit={handleSubmit} noValidate>
 

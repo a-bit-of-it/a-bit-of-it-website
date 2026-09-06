@@ -2,7 +2,7 @@ import './Services.css'
 import { useTranslation } from "react-i18next";
 import {Link} from "react-router-dom";
 import {AccountingIcon, AgentIcon, ResearchIcon} from "../../../Icons.jsx";
-import SectionHeading from "../../../components/SectionHeading.jsx";
+import {H2Heading} from "../../../components/Heading.jsx";
 import {usePageLoadTime} from "../../../utilities/usePageLoadTime.js";
 
 export default function Services () {
@@ -12,7 +12,7 @@ export default function Services () {
     return (
         <div className="services" >
             <div className="section">
-                <SectionHeading id="services" header={t('services.header')} subtitle={t('services.subtitle')} />
+                <H2Heading id="services" header={t('services.header')} subtitle={t('services.subtitle')} />
 
                 <div className="services-grid">
                     <div className="services-card services-card--ai">
