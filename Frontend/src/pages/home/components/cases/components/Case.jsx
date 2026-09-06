@@ -22,7 +22,7 @@ export default function Case({ icons, title, tech, techStack, problem, solution,
             <div className="case-info">
                 <CaseProblem text={problem} />
                 <CaseSolution text={solution} />
-                <CaseImages images={images} />
+                {images.length > 0 && <CaseImages images={images} />} 
             </div>
             <ForTheNerds text={tech}>
                 <TechStack>
