@@ -122,5 +122,24 @@
     "p1": "When using our contact forms individuals provide their name, email, company affiliation and message content.",
     "p2": "We use that information to schedule meetings or engage in further conversation.",
     "p3": "We retain the data only as long as necessary to handle the inquiry and communication."
+  },
+
+  "seo": {
+    "home": {
+      "title": "Home - a bit of IT",
+      "description": "A small software team from Aalborg, Denmark building custom websites, AI systems, and bespoke software solutions."
+    },
+    "purpose": {
+      "title": "Our purpose - a bit of IT",
+      "description": "Transparency, fairness and freedom: the values behind how a bit of IT builds software for its clients."
+    },
+    "contact": {
+      "title": "Get in touch - a bit of IT",
+      "description": "Have a project in mind? Contact a bit of IT and we will get back to you within 24 hours."
+    },
+    "privacy-policy": {
+      "title": "Privacy Policy - a bit of IT",
+      "description": "How a bit of IT collects, uses and retains personal data submitted through our contact forms."
+    }
   }
 }

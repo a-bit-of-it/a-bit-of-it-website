@@ -124,5 +124,24 @@
     "p1": "Når du bruger vores kontaktformularer, oplyser du dit navn, din e-mail, virksomhedstilknytning og indholdet af din besked.",
     "p2": "Vi bruger disse oplysninger til at aftale møder eller fortsætte dialogen.",
     "p3": "Vi opbevarer kun oplysningerne, så længe det er nødvendigt for at håndtere henvendelsen og kommunikationen."
+  },
+
+  "seo": {
+    "home": {
+      "title": "Hjem - a bit of IT",
+      "description": "Et lille softwareteam fra Aalborg, der bygger skræddersyede hjemmesider, AI-systemer og specialløsninger."
+    },
+    "purpose": {
+      "title": "Vores formål - a bit of IT",
+      "description": "Gennemsigtighed, retfærdighed og frihed: værdierne bag den måde a bit of IT bygger software."
+    },
+    "contact": {
+      "title": "Kontakt os - a bit of IT",
+      "description": "Har du et projekt i tankerne? Kontakt a bit of IT, og vi vender tilbage inden for 24 timer."
+    },
+    "privacy-policy": {
+      "title": "Privatlivspolitik - a bit of IT",
+      "description": "Hvordan a bit of IT indsamler, bruger og opbevarer personoplysninger indsendt via vores kontaktformularer."
+    }
   }
 }
