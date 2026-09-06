@@ -46,3 +46,24 @@ describe('i18n language detection', () => {
         expect(i18n.language).toBe('en');
     });
 });
+
+describe('<html lang> syncing', () => {
+    it('sets the initial html lang to match the dk domain', async () => {
+        await importI18nWithHostname('www.abitofit.dk');
+        expect(document.documentElement.lang).toBe('da');
+    });
+
+    it('sets the initial html lang to match the com domain', async () => {
+        await importI18nWithHostname('www.abitofit.com');
+        expect(document.documentElement.lang).toBe('en');
+    });
+
+    it('updates html lang when the language changes afterwards', async () => {
+        const i18n = await importI18nWithHostname('localhost');
+        expect(document.documentElement.lang).toBe('en');
+
+        await i18n.changeLanguage('da');
+
+        expect(document.documentElement.lang).toBe('da');
+    });
+});

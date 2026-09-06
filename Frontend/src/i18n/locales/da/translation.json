@@ -23,14 +23,22 @@
       "header": "Digital genopbygning af LEGO House",
       "problem": "LEGO House i Billund åbnede i 2017 med over 30 softwareoplevelser centreret omkring den fysiske LEGO-klods. Softwaren var utilstrækkelig og havde en negativ indvirkning på gæsteoplevelsen: nedbrud og fejl betød, at gæsterne ofte gik skuffede derfra. Play Agents, som skulle skabe en god oplevelse, brugte for meget tid på at afhjælpe tekniske problemer og bede IT-afdelingen om hjælp.",
       "solution": "Oplevelser, der var dårligt bygget, måtte laves om. Ved at bruge den software, der virkede, og forbedre eller udskifte den, der ikke gjorde, gennemgik LEGO House en digital genopbygning. Med pålidelig software har Play Agents nu mere tid til gæsteinteraktion og sjov. Ved at forbinde alle oplevelser til en fælles platform er Play Agents i stand til selv at håndtere grundlæggende software- og hardwarefejl. Med et enkelt tryk i en iOS-app kan Play Agents styre edge-enheder og spare timer dagligt. <a>Gæster og LEGO House er gladere end nogensinde.</a>",
-      "tech": "De fleste oplevelser lagde stor vægt på 3D-grafik, og Unity game engine havde gode værktøjer, en fair pris, blev allerede brugt i LEGO og understøtter et programmeringssprog, vi er rigtig gode til: C#.\n\nDen fælles platform var skrevet i C#/ASP.NET, og i centrum stod en begivenhedsdrevet RabbitMQ-service, der muliggjorde gæste-check-in via NFC, foto-/videooptagelse, observability, interaktion med edge-enheder samt automatisk opstart/nedlukning for at spare strøm.\n\nAlt blev hostet i Azure med Container Apps, Blob Storage og MSSQL-databaser, bortset fra Unity-instanserne på selve enhederne."
+      "tech": "De fleste oplevelser lagde stor vægt på 3D-grafik, og Unity game engine havde gode værktøjer, en fair pris, blev allerede brugt i LEGO og understøtter et programmeringssprog, vi er rigtig gode til: C#.\n\nDen fælles platform var skrevet i C#/ASP.NET, og i centrum stod en begivenhedsdrevet RabbitMQ-service, der muliggjorde gæste-check-in via NFC, foto-/videooptagelse, observability, interaktion med edge-enheder samt automatisk opstart/nedlukning for at spare strøm.\n\nAlt blev hostet i Azure med Container Apps, Blob Storage og MSSQL-databaser, bortset fra Unity-instanserne på selve enhederne.",
+      "images": {
+        "exterior": "Luftfoto af LEGO House i Billund, hvor taget er bygget af kæmpe LEGO-klodser i blå, grøn, pink, rød og gul.",
+        "fish-designer": "Fish Designer-oplevelsen: en væg af skærme, der viser en animeret undervandsverden bygget af LEGO, hvor gæsternes selvdesignede fisk svømmer rundt.",
+        "mood-mixer": "Mood Mixer-oplevelsen: et LEGO-klodstårn med en berøringsskærm fyldt med ikoner, som gæster bruger til at mixe humøret på deres LEGO-skabning."
+      }
     },
     "lego-super-mario":
     {
       "header": "LEGO Super Mario companion-app",
       "problem": "LEGO har altid haft fokus på læring igennem leg. I et samarbejde mellem LEGO og Nintendo blev LEGO Super Mario skabt. I centrum af oplevelsen står LEGO-figurerne Mario, Luigi og Peach. Fyldt med elektronik gjorde disse figurer det muligt at skabe en helt ny type leg, hvor deres indbyggede scannere kunne interagere med unikke genstande, fjendetyper og forhindringer fra Super Mario-universet. At lære brugerne at bruge deres nye figurer kunne dog ikke klares med klassiske papirmanualer.",
       "solution": "LEGO Super Mario-appen supplerede brugerens fysiske oplevelse. Gennem tutorial-videoer, byggevejledninger og onboarding-forløb lærte appen brugerne, hvordan de skulle bruge deres LEGO-figurer, og hvordan de skulle interagere med de unikke elementer i de LEGO-sæt, de havde købt. Appen indeholdt også en fællesskabssektion, hvor brugere anonymt kunne interagere med hinanden gennem udvalgt brugergenereret indhold og ugentlige udfordringer.",
-      "tech": "Appen skulle understøtte både 2D- og 3D-grafik. Den er bygget i Unity game engine og benyttede en lang række funktioner, som LEGO allerede havde udviklet til deres andre apps. Appen og dens LEGO-figurer kommunikerer via Bluetooth Low Energy-protokollen."
+      "tech": "Appen skulle understøtte både 2D- og 3D-grafik. Den er bygget i Unity game engine og benyttede en lang række funktioner, som LEGO allerede havde udviklet til deres andre apps. Appen og dens LEGO-figurer kommunikerer via Bluetooth Low Energy-protokollen.",
+      "images": {
+        "app": "LEGO Super Mario companion-appen på en telefon, der viser Mario og Peach sammen på forsiden foran flere Mario Kart-sæt."
+      }
     },
     "lego-material-and-compliance":
     {
@@ -56,23 +64,19 @@
       "p1": "Har du måske den perfekte hjemmeside i tankerne, men mangler bare nogen til at bygge den?",
       "p2": "Eller har du hørt om værktøjer som WordPress eller Shopify og er interesseret i selv at administrere din hjemmeside?",
       "p3": "Uanset dine behov, så klarer vi den tekniske del og hjælper dig godt på vej.",
-      "prefill": "Hej, jeg vil gerne have en flot hjemmeside til min virksomhed. Her er lidt om hvad jeg leder efter: ",
       "load-time": "Vil du have en hurtig hjemmeside? Denne side tog kun {{time}} ms om at loade."
     },
     "ai": {
       "title": "AI-systemer",
       "example1": "En AI-bogholderagent, der afstemmer fakturaer og markerer uregelmæssigheder, før din bogholder overhovedet er logget på.",
       "example2": "En AI-supportagent, der svarer på de gentagne spørgsmål med det samme, dag og nat, så jeres team kun skal håndtere de svære.",
-      "example3": "En AI-researchagent, der forvandler en bunke dokumenter til rene, søgbare svar på få sekunder.",
-      "prefill": "Hej, jeg er interesseret i at bruge AI til at gøre min hverdag lettere. Her er hvad jeg gerne vil automatisere eller forbedre: "
+      "example3": "En AI-researchagent, der forvandler en bunke dokumenter til rene, søgbare svar på få sekunder."
     },
     "bespoke": {
       "title": "Skræddersyede løsninger",
       "p1": "Har du noget specifikt i tankerne, der ikke passer ind i en kategori? Fortæl os om det — det er som regel den sjove del.",
-      "p2": "Vi har genopbygget softwaren bag LEGO House, bygget en bluetooth-forbundet companion-app til LEGO's samarbejde med Nintendo, og leveret et AI-system, der omdanner branchenyheder til salgsemner for en producent af medicinsk udstyr.",
-      "prefill": "Hej, jeg har et specifikt projekt i tankerne, der ikke rigtig passer ind i en kategori. Her er hvad jeg tænker: "
+      "p2": "Vi har genopbygget softwaren bag LEGO House, bygget en bluetooth-forbundet companion-app til LEGO's samarbejde med Nintendo, og leveret et AI-system, der omdanner branchenyheder til salgsemner for en producent af medicinsk udstyr."
     },
-    "select-cta": "Det her vil jeg gerne have løst",
     "cta": "Lad os tale om jeres projekt"
   },
 
