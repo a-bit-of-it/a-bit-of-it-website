@@ -30,7 +30,8 @@
 .for-the-nerds {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
+    margin-top: calc(1.5rem - clamp(1.5rem, 3vw, 2.5rem));
 }
 
 @media (max-width: 560px) {
