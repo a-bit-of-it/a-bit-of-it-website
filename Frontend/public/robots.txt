@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://a-bit-of-it.com/sitemap.xml
+Sitemap: https://a-bit-of-it.dk/sitemap.xml
