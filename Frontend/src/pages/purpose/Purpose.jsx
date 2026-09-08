@@ -37,18 +37,20 @@ export default function Purpose() {
                         <p>{t('our-purpose.values.freedom.text')}</p>
                     </div>
                 </div>
-            </div>
+                <div className="grounded">
+                    <H2Heading id="values" header={t('our-purpose.keeping-us-grounded.header')} subtitle={t('our-purpose.keeping-us-grounded.subtitle')}/>
 
-            <div className="lumi-wrapper">
-                <div className="lumi-card card">
-                    <img className="lumi-photo" src="/Lumi.jpg" alt={t('our-purpose.lumi.name')} />
-                    <div className="lumi-info">
-                        <h2>{t('our-purpose.lumi.name')}</h2>
-                        <span className="lumi-role">{t('our-purpose.lumi.role')}</span>
-                        <p>{t('our-purpose.lumi.bio')}</p>
+                    <div className="lumi-card card">
+                        <img className="lumi-photo" src="/Lumi.jpg" alt={t('our-purpose.keeping-us-grounded.lumi.name')} />
+                        <div className="lumi-info">
+                            <h2>{t('our-purpose.keeping-us-grounded.lumi.name')}</h2>
+                            <p className="lumi-role-line">{t('our-purpose.keeping-us-grounded.lumi.role-name')}: <span className="lumi-role">{t('our-purpose.keeping-us-grounded.lumi.role')}</span></p>
+                            <p>{t('our-purpose.keeping-us-grounded.lumi.bio')}</p>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
     );
 }

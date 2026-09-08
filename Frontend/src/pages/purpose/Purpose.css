@@ -4,6 +4,18 @@
     flex-direction: column;
 }
 
+.purpose .section {
+    flex: 1;
+    padding-bottom: 2rem;
+}
+
+.grounded {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: auto;
+}
+
 .lumi-wrapper {
     max-width: 1200px;
     margin: auto auto 0;
@@ -68,8 +80,14 @@
     font-size: 1.05rem;
 }
 
-.lumi-role {
+.lumi-role-line {
     align-self: flex-start;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.lumi-role {
     padding: 0.2rem 0.65rem;
     border-radius: 5px;
     background-color: var(--color-accent-tint);
@@ -94,7 +112,7 @@
         text-align: center;
     }
 
-    .lumi-role {
+    .lumi-role-line {
         align-self: center;
     }
 }
