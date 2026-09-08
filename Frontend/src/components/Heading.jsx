@@ -11,10 +11,10 @@ function Heading({ id, header, subtitle, level: Level = 'h1' }) {
     );
 }
 
-export function H1Heading(props) {
-    return <Heading {...props} level="h1" />;
+export function H1Heading({id, header, subtitle}) {
+    return <Heading id={id} header={header} subtitle={subtitle} level="h1" />;
 }
 
-export function H2Heading(props) {
-    return <Heading {...props} level="h2" />;
+export function H2Heading({id, header, subtitle}) {
+    return <Heading id={id} header={header} subtitle={subtitle} level="h2" />;
 }

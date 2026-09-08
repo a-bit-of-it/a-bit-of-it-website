@@ -57,25 +57,24 @@
   },
   
   "services": {
-    "header": "Need your problem solved, too?",
+    "header": "Need a problem solved?",
     "subtitle": "No problem is too small or too big. You bring us the problem, we bring you the solution.",
     "ai": {
       "title": "AI systems",
-      "example1": "An AI accounting agent that reconciles invoices and flags anomalies before your bookkeeper even logs in.",
-      "example2": "An AI support agent that answers the repeat questions instantly, day or night, so your team only handles the tricky ones.",
-      "example3": "An AI research agent that turns a stack of documents into clean, searchable answers in seconds."
+      "example1": "Tired of chasing invoices and hoping nothing slips through? An AI agent reconciles them overnight and flags anomalies before your bookkeeper logs in.",
+      "example2": "Answering the same five questions every day? An AI agent handles the repeat ones instantly, day or night, so your team only touches the ones that actually need a human.",
+      "example3": "Drowning in documents you don't have time to read? An AI agent turns the whole stack into clean, searchable answers in seconds."
     },
     "website": {
       "title": "Websites",
-      "p1": "Perhaps you have the perfect website in mind but just need someone to build it for you?",
-      "p2": "Maybe you have heard of tools like WordPress or Shopify and are interested in managing your own website?",
-      "p3": "Regardless of your needs, let us take care of the technical part and help you on your way.",
+      "p1": "Do you have the perfect website in mind but don't have the time, or interest, to build it yourself?",
+      "p2": "Would you want to manage the website contents yourself? We hand you the keys to something like WordPress or Shopify.",
+      "p3": "Either way, we handle the technical headache so you don't have to.",
       "load-time": "If you need a fast website, we can help too. This one only took {{time}}ms to load."
     },
     "bespoke": {
       "title": "Custom solutions",
-      "p1": "Got something specific in mind? Our speciality is building something unique.",
-      "p2": "Take a look at the other unique problems we have already solved - then let's talk about yours."
+      "p1": "Got a completely different problem? Those are our favourite."
     }
   },
 
@@ -97,7 +96,7 @@
   
   "our-purpose": {
     "header": "Our purpose",
-    "subtitle":  "We are a small team from Aalborg, Denmark, who wants to enable cool people build their cool ideas. We give small business owners, selling clothes out of their garage, the website of their dreams. We give the 500 person company, working to eliminate poverty, a state of the art cashflow system. We solve real problems, large and small, then step out of their way.",
+    "subtitle":  "We are a small team from Aalborg, Denmark. Our purpose is to help cool people carry out their cool ideas. \n\nWe give small business owners, selling clothes out of their garage, the website of their dreams. We give the 500 person company, working to eliminate poverty, a state of the art cashflow system. We solve real problems, large and small, then step out of their way.",
     "values": {
       "transparency":
       {

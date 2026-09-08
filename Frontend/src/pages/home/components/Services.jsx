@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import {Link} from "react-router-dom";
 import {AiIcon, CustomIcon, WebsiteIcon} from "../../../Icons.jsx";
 import {H2Heading} from "../../../components/Heading.jsx";
+import Eyebrow from "../../../components/Eyebrow.jsx";
 import {usePageLoadTime} from "../../../utilities/usePageLoadTime.js";
 
 export default function Services () {
@@ -15,10 +16,10 @@ export default function Services () {
                 <H2Heading id="services" header={t('services.header')} subtitle={t('services.subtitle')} />
 
                 <div className="services-grid">
-                    <div className="services-card services-card--ai">
+                    <div className="services-card services-card--ai card">
                         <div className="services-card-header">
                             <AiIcon />
-                            <h3>{t('services.ai.title')}</h3>
+                            <Eyebrow level="h3">{t('services.ai.title')}</Eyebrow>
                         </div>
                         <div className="ai-examples">
                             <div className="ai-example">
@@ -33,26 +34,24 @@ export default function Services () {
                         </div>
                     </div>
 
-                    <div className="services-card services-card--bespoke">
+                    <div className="services-card services-card--bespoke card">
                         <div className="services-card-header">
                             <CustomIcon />
-                            <h3>{t('services.bespoke.title')}</h3>
+                            <Eyebrow level="h3">{t('services.bespoke.title')}</Eyebrow>
                         </div>
                         <p>{t('services.bespoke.p1')}</p>
-                        <p>{t('services.bespoke.p2')}</p>
                     </div>
 
-                    <div className="services-card services-card--website">
+                    <div className="services-card services-card--website card">
                         <div className="services-card-header">
                             <WebsiteIcon />
-                            <h3>{t('services.website.title')}</h3>
+                            <Eyebrow level="h3">{t('services.website.title')}</Eyebrow>
                         </div>
                         <p>{t('services.website.p1')}</p>
                         <p>{t('services.website.p2')}</p>
                         {loadTimeMs !== null && (
                             <p className="highlight">{t('services.website.load-time', { time: loadTimeMs })}</p>
                         )}
-                        <p>{t('services.website.p3')}</p>
                     </div>
                 </div>
 
