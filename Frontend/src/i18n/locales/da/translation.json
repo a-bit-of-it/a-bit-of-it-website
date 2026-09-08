@@ -64,7 +64,7 @@
       "p1": "Ved du præcis, hvilken hjemmeside du vil have, men mangler tid — eller tålmodighed — til at bygge den selv?",
       "p2": "Eller vil du hellere selv stå for den, når den er i luften? Vi kan give dig nøglerne til noget som WordPress eller Shopify.",
       "p3": "Uanset hvad, klarer vi det tekniske besvær, så du ikke skal.",
-      "load-time": "Vil du have en hurtig hjemmeside? Denne side tog kun {{time}} ms om at loade."
+      "load-time": "Vil du have en hurtig hjemmeside? Denne side tog kun <highlight>{{time}} ms</highlight> om at loade."
     },
     "ai": {
       "title": "AI-systemer",

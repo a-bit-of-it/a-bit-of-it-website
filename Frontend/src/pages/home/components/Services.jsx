@@ -5,6 +5,7 @@ import {AiIcon, CustomIcon, WebsiteIcon} from "../../../Icons.jsx";
 import {H2Heading} from "../../../components/Heading.jsx";
 import Eyebrow from "../../../components/Eyebrow.jsx";
 import {usePageLoadTime} from "../../../utilities/usePageLoadTime.js";
+import TransText from "../../../components/TransText.jsx";
 
 export default function Services () {
     const { t } = useTranslation();
@@ -28,9 +29,9 @@ export default function Services () {
                             <div className="ai-example">
                                 <p>{t('services.ai.example2')}</p>
                             </div>
-                            <div className="ai-example">
-                                <p>{t('services.ai.example3')}</p>
-                            </div>
+                            {/*<div className="ai-example">*/}
+                            {/*    <p>{t('services.ai.example3')}</p>*/}
+                            {/*</div>*/}
                         </div>
                     </div>
 
@@ -50,7 +51,13 @@ export default function Services () {
                         <p>{t('services.website.p1')}</p>
                         <p>{t('services.website.p2')}</p>
                         {loadTimeMs !== null && (
-                            <p className="highlight">{t('services.website.load-time', { time: loadTimeMs })}</p>
+                            <p>
+                                <TransText
+                                    i18nKey="services.website.load-time"
+                                    values={{ time: loadTimeMs }}
+                                    components={{ highlight: <span className="highlight" /> }}
+                                />
+                            </p>
                         )}
                     </div>
                 </div>

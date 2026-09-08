@@ -16,4 +16,5 @@
 .heading-subtitle {
     margin: 0;
     opacity: 0.75;
+    white-space: pre-line;
 }

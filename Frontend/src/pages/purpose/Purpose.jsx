@@ -1,6 +1,6 @@
 import './Purpose.css';
 import {useTranslation} from "react-i18next";
-import {H1Heading} from "../../components/Heading.jsx";
+import {H1Heading, H2Heading} from "../../components/Heading.jsx";
 import PageMeta from "../../components/PageMeta.jsx";
 import GithubLink from "./components/GithubLink.jsx";
 
@@ -16,6 +16,10 @@ export default function Purpose() {
                     header={t('our-purpose.header')}
                     subtitle={t('our-purpose.subtitle')}
                 />
+
+                <p>{t('our-purpose.text')}</p>
+                
+                <H2Heading id="values" header="Principles that guide us"/>
                 <div className="values-grid">
                     <div className="values-card card">
                         <h2>{t('our-purpose.values.transparency.header')}</h2>

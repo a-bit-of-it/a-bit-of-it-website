@@ -33,6 +33,7 @@
     opacity: 0.75;
     line-height: 1.6;
     font-size: 0.95rem;
+    white-space: pre-line;
 }
 
 .values-card .github-link {
