@@ -21,7 +21,7 @@
     "legohouse":
     {
       "header": "Digital rebuild of LEGO House",
-      "problem": "LEGO House in Billund, Denmark, opened in 2017 with 30+ software experiences centered around the physical LEGO brick. The software was inadequate and had a negative impact on the guest experience: crashes and errors meant that customers often left disappointed. Play Agents, who were meant to facilitate a great experience, spent too much time mitigating technical issues and asking the IT department for assistance.",
+      "problem": "LEGO House in Billund, Denmark, opened in 2017 with 30+ software experiences centered around the physical LEGO brick. After years, it was clear that the software was inadequate and had a negative impact on the guest experience: crashes and errors meant that customers often left disappointed. Play Agents, who were meant to facilitate a great experience, spent too much time mitigating technical issues and asking the IT department for assistance.",
       "solution": "Experiences that were inadequately built had to be remade. By taking the software that worked, improving or replacing what didn't, LEGO House underwent a digital rebuild. With reliable software, Play Agents now have more time for guest interactions and fun. Connecting every experience to a shared platform, Play Agents are empowered to handle basic software and hardware failures themselves. At the touch of a button, using an iOS app, Play Agents can manage edge devices, saving hours daily. <a>Guests and LEGO House are happier than ever.</a>",
       "tech": "Most experiences had heavy emphasis on 3D graphics and the Unity game engine had great toolsets, fair pricing, already used within LEGO and supports a programming language we are really good at: C#.\n\nThe shared platform was written in C#/ASP.NET and at the center was an event-driven RabbitMQ service enabling guest-checkins via NFC, photo/video capture, observability, edge device interaction and automatic startup/shutdown power-savings.\n\nEverything was hosted in Azure, using Container Apps, Blob storage, and MSSQL databases, except the on-device Unity instances.",
       "images": {
@@ -115,10 +115,15 @@
         "text": "We believe that excellent problem solving skills require no office or daily commute. It requires trust. We enable those who choose to work with us with the freedom of working from wherever they like and have a work-life balance befit for a modern society. We are remote first."
       }
     },
-    "lumi": {
-      "name": "Lumi",
-      "role": "A good boy",
-      "bio": "Lumi, meaning light, is our guiding star. He doesn't know much of IT but he encourages us to do better and reminds us of what is most important in our lives."
+    "keeping-us-grounded": {
+      "header": "Keeping us grounded",
+      "subtitle": "At the center of it all is our beloved morale booster.",
+      "lumi": {
+        "name": "Lumi",
+        "role-name": "Role",
+        "role": "A good boy",
+        "bio": "Lumi, meaning light, is our guiding star. He doesn't know much of IT but he encourages us to do better and reminds us of what is most important in our lives."
+      }
     }
   },
 

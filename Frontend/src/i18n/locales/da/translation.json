@@ -96,7 +96,7 @@
   "our-purpose": {
     "header": "Vores formål",
     "subtitle": "Vores formål er at hjælpe seje mennesker med at udleve deres ambitioner.",
-    "text": "Vi er et lille team fra Aalborg. Vi arbejder for at give små virksomheder, der sælger tøj ud af garagen i deres eget hjem, deres drømme-hjemmeside. Vi arbejder for at give kæmpe virksomheder, der arbejder for at bekæmpe fattigdom et moderne databehandlingssystem. Vi løser rigtige problemer, store som små og, så træder vi til side.",
+    "text": "Vi er et lille team fra Aalborg. Vi arbejder for at give små virksomheder, der sælger tøj ud af garagen i deres eget hjem deres drømme-hjemmeside. Vi arbejder for at give større virksomheder, der arbejder for at bekæmpe fattigdom et moderne databehandlingssystem. Vi løser rigtige problemer, store som små og, så træder vi til side.",
     "values": {
       "header": "Principper vi styrer efter",
       "transparency":
@@ -115,10 +115,16 @@
         "text": "Vi tror på at gode problemløsningsevner hverken behøver storrumskontorer eller daglig pendling. Det krøver blot tillid. Vi opfordrer alle dem, der vælger at arbejde sammen med os, til at arbejde fra hvor end de vil og skabe en work-life-balance, der passer vores moderne samfund. Vi er remote-first."
       }
     },
-    "lumi": {
-      "name": "Lumi",
-      "role": "En god dreng",
-      "bio": "Lumi betyder lys. Han ved meget lidt om IT, men han opfordrer os til at gøre et godt stykke arbejde og minder os om det, der er vigtigst i vores liv."
+    "keeping-us-grounded":
+    {
+      "header": "Holder os på \"sporet\"",
+      "subtitle": "I hjertet af det hele står vores elskede humørspreder.",
+      "lumi": {
+        "name": "Lumi",
+        "role-name": "Rolle",
+        "role": "En god dreng",
+        "bio": "Lumi betyder lys. Han ved meget lidt om IT, men han opfordrer os til at gøre et godt stykke arbejde og minder os om det, der er vigtigst i vores liv."
+      }
     }
   },
 
