@@ -58,26 +58,25 @@
 
   "services": {
     "header": "Har I også et problem, der skal løses?",
-    "subtitle": "...",
+    "subtitle": "Intet problem er for stort eller for småt. Du kommer til os med problemet, vi kommer til dig med løsningen.",
     "website": {
       "title": "Hjemmesider",
-      "p1": "Har du måske den perfekte hjemmeside i tankerne, men mangler bare nogen til at bygge den?",
-      "p2": "Eller har du hørt om værktøjer som WordPress eller Shopify og er interesseret i selv at administrere din hjemmeside?",
-      "p3": "Uanset dine behov, så klarer vi den tekniske del og hjælper dig godt på vej.",
-      "load-time": "Vil du have en hurtig hjemmeside? Denne side tog kun {{time}} ms om at loade."
+      "p1": "Ved du præcis, hvilken hjemmeside du vil have, men mangler tid — eller tålmodighed — til at bygge den selv?",
+      "p2": "Eller vil du hellere selv stå for den, når den er i luften? Vi kan give dig nøglerne til noget som WordPress eller Shopify.",
+      "p3": "Uanset hvad, klarer vi det tekniske besvær, så du ikke skal.",
+      "load-time": "Vil du have en hurtig hjemmeside? Denne side tog kun <highlight>{{time}} ms</highlight> om at loade."
     },
     "ai": {
       "title": "AI-systemer",
-      "example1": "En AI-bogholderagent, der afstemmer fakturaer og markerer uregelmæssigheder, før din bogholder overhovedet er logget på.",
-      "example2": "En AI-supportagent, der svarer på de gentagne spørgsmål med det samme, dag og nat, så jeres team kun skal håndtere de svære.",
-      "example3": "En AI-researchagent, der forvandler en bunke dokumenter til rene, søgbare svar på få sekunder."
+      "example1": "Træt af at jagte fakturaer og håbe, at intet glider igennem? En AI-agent afstemmer dem natten over og markerer uregelmæssigheder, før din bogholder overhovedet er logget på.",
+      "example2": "Svarer du på de samme fem spørgsmål hver dag? En AI-agent klarer de gentagne med det samme, dag og nat, så jeres team kun skal håndtere dem, der faktisk kræver et menneske.",
+      "example3": "Drukner du i dokumenter, du ikke har tid til at læse? En AI-agent forvandler hele bunken til rene, søgbare svar på få sekunder."
     },
     "bespoke": {
       "title": "Skræddersyede løsninger",
-      "p1": "Har du noget specifikt i tankerne, der ikke passer ind i en kategori? Fortæl os om det — det er som regel den sjove del.",
-      "p2": "Vi har genopbygget softwaren bag LEGO House, bygget en bluetooth-forbundet companion-app til LEGO's samarbejde med Nintendo, og leveret et AI-system, der omdanner branchenyheder til salgsemner for en producent af medicinsk udstyr."
-    },
-    "cta": "Lad os tale om jeres projekt"
+      "p1": "Har du et problem, der er så specifikt, at færdig software bare ikke passer? Det er præcis den slags problemer, vi kan lide.",
+      "p2": "Tag et kig på de andre unikke problemer, vi allerede har løst herunder — og lad os så tale om dit."
+    }
   },
 
   "get-in-touch": {

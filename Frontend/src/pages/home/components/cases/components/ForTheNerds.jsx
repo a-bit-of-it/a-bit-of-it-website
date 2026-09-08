@@ -1,6 +1,7 @@
 import './ForTheNerds.css';
 import {useState} from "react";
 import {useTranslation} from "react-i18next";
+import Eyebrow from "../../../../../components/Eyebrow.jsx";
 
 export default function ForTheNerds({ text, children }) {
     const { t } = useTranslation();
@@ -19,7 +20,7 @@ export default function ForTheNerds({ text, children }) {
                 <div className="for-the-nerds-collapse-inner">
                     <div className="for-the-nerds-panel">
                         <p className="for-the-nerds-text">{text}</p>
-                        <span className="case-block-header">{t('cases.technology-used')}:</span>
+                        <Eyebrow level="h4">{t('cases.technology-used')}</Eyebrow>
                         {children}
                     </div>
                 </div>
