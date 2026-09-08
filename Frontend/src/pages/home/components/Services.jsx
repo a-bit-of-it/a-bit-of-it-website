@@ -46,7 +46,6 @@ export default function Services () {
                             <Eyebrow level="h3">{t('services.website.title')}</Eyebrow>
                         </div>
                         <p>{t('services.website.p1')}</p>
-                        <p>{t('services.website.p2')}</p>
                         {loadTimeMs !== null && (
                             <p>
                                 <TransText
@@ -56,6 +55,7 @@ export default function Services () {
                                 />
                             </p>
                         )}
+                        <p>{t('services.website.p2')}</p>
                     </div>
                 </div>
 

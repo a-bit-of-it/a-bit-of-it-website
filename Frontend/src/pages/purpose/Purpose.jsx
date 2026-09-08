@@ -19,7 +19,7 @@ export default function Purpose() {
 
                 <p>{t('our-purpose.text')}</p>
                 
-                <H2Heading id="values" header="Principles that guide us"/>
+                <H2Heading id="values" header={t('our-purpose.values.header')}/>
                 <div className="values-grid">
                     <div className="values-card card">
                         <h2>{t('our-purpose.values.transparency.header')}</h2>

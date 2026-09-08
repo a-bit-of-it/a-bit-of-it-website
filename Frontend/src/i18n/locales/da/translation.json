@@ -13,7 +13,7 @@
 
   "cases": {
     "header": "Problemer der allerede er løst",
-    "subtitle": "Det er menneskerne bag <highlight>a bit of IT</highlight>, der har været med til at skabe disse fantastiske projekter",
+    "subtitle": "Det er menneskerne bag <highlight>a bit of IT</highlight>, der har været med til at skabe disse fantastiske projekter.",
     "geeks": "For nørder",
     "technology-used": "Teknologier",
     "problem": "Problemet",
@@ -21,9 +21,9 @@
     "legohouse":
     {
       "header": "Digital genopbygning af LEGO House",
-      "problem": "LEGO House i Billund åbnede i 2017 med over 30 softwareoplevelser centreret omkring den fysiske LEGO-klods. Softwaren var utilstrækkelig og havde en negativ indvirkning på gæsteoplevelsen: nedbrud og fejl betød, at gæsterne ofte gik skuffede derfra. Play Agents, som skulle skabe en god oplevelse, brugte for meget tid på at afhjælpe tekniske problemer og bede IT-afdelingen om hjælp.",
-      "solution": "Oplevelser, der var dårligt bygget, måtte laves om. Ved at bruge den software, der virkede, og forbedre eller udskifte den, der ikke gjorde, gennemgik LEGO House en digital genopbygning. Med pålidelig software har Play Agents nu mere tid til gæsteinteraktion og sjov. Ved at forbinde alle oplevelser til en fælles platform er Play Agents i stand til selv at håndtere grundlæggende software- og hardwarefejl. Med et enkelt tryk i en iOS-app kan Play Agents styre edge-enheder og spare timer dagligt. <a>Gæster og LEGO House er gladere end nogensinde.</a>",
-      "tech": "De fleste oplevelser lagde stor vægt på 3D-grafik, og Unity game engine havde gode værktøjer, en fair pris, blev allerede brugt i LEGO og understøtter et programmeringssprog, vi er rigtig gode til: C#.\n\nDen fælles platform var skrevet i C#/ASP.NET, og i centrum stod en begivenhedsdrevet RabbitMQ-service, der muliggjorde gæste-check-in via NFC, foto-/videooptagelse, observability, interaktion med edge-enheder samt automatisk opstart/nedlukning for at spare strøm.\n\nAlt blev hostet i Azure med Container Apps, Blob Storage og MSSQL-databaser, bortset fra Unity-instanserne på selve enhederne.",
+      "problem": "LEGO House i Billund åbnede i 2017 med over 30 softwareoplevelser centreret omkring den fysiske legoklods. Softwaren var utilstrækkelig og havde en negativ indvirkning på gæsteoplevelsen: nedbrud og fejl betød, at gæsterne ofte gik skuffede derfra. Play Agents, som skulle skabe en god oplevelse, brugte for meget tid på at afhjælpe tekniske problemer og bede IT-afdelingen om hjælp.",
+      "solution": "Oplevelser, der var dårligt bygget, måtte laves om. Ved at bruge den software, der virkede, og forbedre eller udskifte den, der ikke gjorde, gennemgik LEGO House en digital genopbygning. Med pålidelig software har Play Agents nu mere tid til gæsteinteraktion og sjov. Ved at forbinde alle oplevelser til en fælles platform er Play Agents i stand til selv at håndtere basale software- og hardwarefejl. Med et enkelt tryk i en iOS-app kan Play Agents styre edge-enheder og spare mange timer dagligt. <a>Gæster og LEGO House er gladere end nogensinde.</a>",
+      "tech": "De fleste oplevelser lagde stor vægt på 3D-grafik, og Unity havde gode værktøjer, en fair pris, blev allerede brugt i LEGO og understøtter et programmeringssprog, vi er rigtig gode til: C#.\n\nDen fælles platform var skrevet i C#/ASP.NET, og i centrum stod en event-driven RabbitMQ-service, der muliggjorde gæste-check-in via NFC, foto-/videooptagelse, observability, interaktion med edge-enheder samt automatisk opstart/nedlukning for at spare strøm.\n\nAlt blev hostet i Azure med Container Apps, Blob Storage og MSSQL-databaser, bortset fra Unity-instanserne på selve enhederne.",
       "images": {
         "exterior": "Luftfoto af LEGO House i Billund, hvor taget er bygget af kæmpe LEGO-klodser i blå, grøn, pink, rød og gul.",
         "fish-designer": "Fish Designer-oplevelsen: en væg af skærme, der viser en animeret undervandsverden bygget af LEGO, hvor gæsternes selvdesignede fisk svømmer rundt.",
@@ -35,47 +35,45 @@
       "header": "LEGO Super Mario companion-app",
       "problem": "LEGO har altid haft fokus på læring igennem leg. I et samarbejde mellem LEGO og Nintendo blev LEGO Super Mario skabt. I centrum af oplevelsen står LEGO-figurerne Mario, Luigi og Peach. Fyldt med elektronik gjorde disse figurer det muligt at skabe en helt ny type leg, hvor deres indbyggede scannere kunne interagere med unikke genstande, fjendetyper og forhindringer fra Super Mario-universet. At lære brugerne at bruge deres nye figurer kunne dog ikke klares med klassiske papirmanualer.",
       "solution": "LEGO Super Mario-appen supplerede brugerens fysiske oplevelse. Gennem tutorial-videoer, byggevejledninger og onboarding-forløb lærte appen brugerne, hvordan de skulle bruge deres LEGO-figurer, og hvordan de skulle interagere med de unikke elementer i de LEGO-sæt, de havde købt. Appen indeholdt også en fællesskabssektion, hvor brugere anonymt kunne interagere med hinanden gennem udvalgt brugergenereret indhold og ugentlige udfordringer.",
-      "tech": "Appen skulle understøtte både 2D- og 3D-grafik. Den er bygget i Unity game engine og benyttede en lang række funktioner, som LEGO allerede havde udviklet til deres andre apps. Appen og dens LEGO-figurer kommunikerer via Bluetooth Low Energy-protokollen.",
+      "tech": "Appen understøtter både 2D- og 3D-grafik. Den er bygget i Unity og benytter en lang række funktioner, som LEGO allerede havde udviklet til deres andre apps. Appen og dens LEGO-figurer kommunikerer via Bluetooth Low Energy-protokollen.",
       "images": {
         "app": "LEGO Super Mario companion-appen på en telefon, der viser Mario og Peach sammen på forsiden foran flere Mario Kart-sæt."
       }
     },
     "lego-material-and-compliance":
     {
-      "header": "...",
-      "problem": "...",
-      "solution": "...",
-      "tech": "..."
+      "header": "Kvalitetssikring af legoklodsen",
+      "problem": "LEGO har altid prioriteret kvalitet, og når en klods (gen)designes, får ny farve eller materiale, skal den igennem en række tests, før den må komme på hylderne i butikkerne. Testene udføres af LEGOs interne testafdeling samt af eksterne testfirmaer. Udførte tests bliver gennemgået for at sikre, at de følger korrekte testmetoder. LEGO havde brug for et system til at organisere årtiers testdokumenter, gøre dem let søgbare og hjælpe testere og reviewere i deres daglige arbejde.",
+      "solution": "En intern hjemmeside til at logge og kategorisere årtier af LEGOs testdata. Hjemmesiden understøtter testerne i deres hverdag. Den guider dem systematisk igennem udførelsen af hver test, sender automatisk tests til review, genererer PDF-rapporter til både reviewere og for auditeringsformål. Årtiers testdata er nu søgbar igennem en moderne brugergrænseflade.",
+      "tech": "Årtiers testdata, tidligere gemt i Microsoft SharePoint, skulle migreres til den nye løsning via et migreringsjob. De data, der let kunne konverteres til et struktureret dataformat, ligger nu i en Azure MSSQL-database, hvor de kan søges på. Data gemt som Word-dokumenter eller PDF'er kunne ikke let konverteres til struktureret data og ligger nu i Azure Blob Storage. Testere og reviewere arbejder med disse data, nye som gamle, gennem en frontend skrevet i React, der kommunikerer med et API skrevet i ASP.NET."
     },
     "chemometec":
     {
-      "header": "...",
-      "problem": "...",
-      "solution": "...",
-      "tech": "..."
+      "header": "Fra leads til salg",
+      "problem": "ChemoMetec er en førende producent af celleanalyseudstyr. En daglig arbejdsprocedure er at læse onlinenyheder for at finde potentielle købere. De onlinenyheder der virker relevante læses grundigt og de potentielle kunder undersøges nærmere og bliver rangeret efter bedst salgspotentiale. Til sidst tages der kontakt til virksomhederne for at indgå et muligt salg. Dette er en tidskrævende og fejlbehæftet proces og ofte bliver mange værdifulde leads overset.",
+      "solution": "Et agentbaseret AI-system, der analyserer nyhedsartikler, undersøger de involverede virksomheder og fremhæver deres salgspotentiale. Hver uge kører hundredvis af leads igennem systemet, hvor de bliver analyseret af AI-agenter og rangeret. Højt scorende leads peger på virksomheder, der befinder sig i den rette del af markedet og har midlerne til at investere i moderne celleanalyseudstyr. ChemoMetec fordeler disse leads blandt deres kolleger, som derefter begynder at kontakte virksomhederne uden at skulle bruge dage på forhåndsresearch.",
+      "tech": "Et cron job scanner løbende internettet for nyheder. Hver nyhed sendes igennem en AI-pipeline skrevet i Python. Denne pipeline består af flere trin med specialiserede AI-agenter, der arbejder sammen om at rangere hver nyhed fra 0-100. For hvert trin fungerer en agent som gatekeeper for sit eget ansvarsområde.\n\nEn agent undersøger den involverede virksomhed og vurderer, om den er interesseret i at købe celleanalyseudstyr. En anden agent undersøger deres økonomiske situation, og så videre. Til sidst i pipelinen gemmes hvert relevant lead i en Postgres-database, deriblandt dets rangering og, vigtigst af alt, begrundelsen bag rangeringen. En frontend skrevet i React henter leads via et API og viser dem, så ChemoMetec kan arbejde videre med dem."
     }
   },
 
   "services": {
-    "header": "Har I også et problem, der skal løses?",
-    "subtitle": "Intet problem er for stort eller for småt. Du kommer til os med problemet, vi kommer til dig med løsningen.",
+    "header": "Har du også et problem, der skal løses?",
+    "subtitle": "Intet problem er for stort eller for småt. Kom til os med problemet og vi kommer til dig med løsningen.",
     "website": {
       "title": "Hjemmesider",
-      "p1": "Ved du præcis, hvilken hjemmeside du vil have, men mangler tid — eller tålmodighed — til at bygge den selv?",
-      "p2": "Eller vil du hellere selv stå for den, når den er i luften? Vi kan give dig nøglerne til noget som WordPress eller Shopify.",
+      "p1": "Har du den perfekte hjemmside i tankerne, men mangler tiden eller interessen til at bygge den?",
+      "p2": "Vil du administrere hjemmesidens indhold selv? Vi kan give dig værktøjer, såsom WordPress eller Shopify og lære dig hvordan du bruger dem. Eller blot bare lad os håndtere det hele for dig",
       "p3": "Uanset hvad, klarer vi det tekniske besvær, så du ikke skal.",
-      "load-time": "Vil du have en hurtig hjemmeside? Denne side tog kun <highlight>{{time}} ms</highlight> om at loade."
+      "load-time": "Vil du have en hurtig hjemmeside? Så kan vi også hjælpe. Denne side tog kun <highlight>{{time}}ms</highlight> om at indlæse."
     },
     "ai": {
       "title": "AI-systemer",
-      "example1": "Træt af at jagte fakturaer og håbe, at intet glider igennem? En AI-agent afstemmer dem natten over og markerer uregelmæssigheder, før din bogholder overhovedet er logget på.",
-      "example2": "Svarer du på de samme fem spørgsmål hver dag? En AI-agent klarer de gentagne med det samme, dag og nat, så jeres team kun skal håndtere dem, der faktisk kræver et menneske.",
-      "example3": "Drukner du i dokumenter, du ikke har tid til at læse? En AI-agent forvandler hele bunken til rene, søgbare svar på få sekunder."
+      "example1": "Træt af at gøre det samme arbejde igen og igen, som intet har med din forretning at gøre? AI kan være fantastisk til at eliminere eller automatisere kedeligt arbejde og stadig holde dig underrettet, når der sker noget vigtigt.",
+      "example2": "Måske er du begravet i dokumenter eller data og har svært ved at håndtere det? Lad AI være din assistent og hjælpe dig med at organisere og forstå det hele."
     },
     "bespoke": {
       "title": "Skræddersyede løsninger",
-      "p1": "Har du et problem, der er så specifikt, at færdig software bare ikke passer? Det er præcis den slags problemer, vi kan lide.",
-      "p2": "Tag et kig på de andre unikke problemer, vi allerede har løst herunder — og lad os så tale om dit."
+      "p1": "Har du et helt andet problem? Det vil vi rigtig gerne hjælpe dig med at løse."
     }
   },
 
@@ -97,22 +95,24 @@
 
   "our-purpose": {
     "header": "Vores formål",
-    "subtitle": "...",
+    "subtitle": "Vores formål er at hjælpe seje mennesker med at udleve deres ambitioner.",
+    "text": "Vi er et lille team fra Aalborg. Vi arbejder for at give små virksomheder, der sælger tøj ud af garagen i deres eget hjem, deres drømme-hjemmeside. Vi arbejder for at give kæmpe virksomheder, der arbejder for at bekæmpe fattigdom et moderne databehandlingssystem. Vi løser rigtige problemer, store som små og, så træder vi til side.",
     "values": {
+      "header": "Principper vi styrer efter",
       "transparency":
       {
-        "header": "Gennemsigtighed",
-        "text": "..."
+        "header": "Troværdighed",
+        "text": "Vi tror på at udvikle ærlig software af god kvalitet og vise gennemsigtighed i alt det vi laver.\n\nVi opfordrer alle med teknisk interesse til at granske koden bag vores løsninger."
       },
       "fairness":
       {
         "header": "Retfærdighed",
-        "text": "..."
+        "text": "Vi tror på, at værdien af vores arbejde skal deles retfærdigt. En retfærdig model betyder lavere omkostninger for vores kunder samt bedre betaling for dem, der vælger at arbejde sammen med os. På den måde tiltrækker vi både de bedste talenter og flere kunder - en win-win-win."
       },
       "freedom":
       {
         "header": "Frihed",
-        "text": "..."
+        "text": "Vi tror på at gode problemløsningsevner hverken behøver storrumskontorer eller daglig pendling. Det krøver blot tillid. Vi opfordrer alle dem, der vælger at arbejde sammen med os, til at arbejde fra hvor end de vil og skabe en work-life-balance, der passer vores moderne samfund. Vi er remote-first."
       }
     },
     "lumi": {
@@ -136,7 +136,7 @@
     },
     "purpose": {
       "title": "Vores formål - a bit of IT",
-      "description": "Gennemsigtighed, retfærdighed og frihed: værdierne bag den måde a bit of IT bygger software."
+      "description": "Troværdighed, retfærdighed og frihed: værdierne bag den måde a bit of IT bygger software."
     },
     "contact": {
       "title": "Kontakt os - a bit of IT",

@@ -9,7 +9,7 @@ export default function LegoMaterialComplianceCase() {
     return (
         <Case
             icons={[LegoIcon]}
-            title="Ensuring the LEGO brick's quality"
+            title={t('cases.lego-material-and-compliance.header')}
             images={[]}
             problem={t('cases.lego-material-and-compliance.problem')}
             solution={t('cases.lego-material-and-compliance.solution')}

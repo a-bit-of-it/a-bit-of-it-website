@@ -15,7 +15,7 @@
     "header": "Problems already solved",
     "subtitle": "It is the people behind <highlight>a bit of IT</highlight> that have been part of creating these amazing projects.",
     "geeks": "For the geeks",
-    "technology-used": "Technologies used",
+    "technology-used": "Technologies",
     "problem": "Problem",
     "solution": "Solution",
     "legohouse":
@@ -43,8 +43,8 @@
     "lego-material-and-compliance":
     {
       "header": "Ensuring the quality of the LEGO brick",
-      "problem": "LEGO has always prioritized quality and when a brick is (re)designed, has its colors or materials changed, the brick must pass a series of tests before it is allowed to be put on store shelves. Tests are carried out by their in-house testing department as well as by 3rd party testers. Tests are reviewed to ensure they follow proper test methodologies. LEGO needed a system to organize decades worth of test documents, make them easily searchable and aid the testers and reviewers in their daily work.",
-      "solution": "An internal website for logging and categorizing all of LEGO's test data. It supported reusable test suites, guiding testers through each test, and producing a PDF report for both reviewers and audit purposes.",
+      "problem": "LEGO has always prioritized quality and when a brick is (re)designed, has its colors or materials changed, the brick must pass a series of tests before it is allowed to be put on store shelves. Tests are carried out by their in-house testing department as well as by 3rd party testers. Carried out tests are reviewed to ensure they follow proper test methodologies. LEGO needed a system to organize decades worth of test documents, make them easily searchable and aid the testers and reviewers in their daily work.",
+      "solution": "An internal website for logging and categorizing decades of LEGO's test data. The website supports LEGO's testers in their every day work. It systematically  guides testers through each test, automatically sends tests to external review, generates PDF reports for both reviewers and audit purposes. Decades of test data is now easily searchable through a modern UI.",
       "tech": "Decades of test data, previously stored in Microsoft SharePoint, had to be migrated to the new solution via a giant migration job. The data that was easily convertable to a structured data format is now stored in a Azure MSSQL database where the data can be queried. Data stored as Word documents or PDFs were not easily converted to structured data and are now stored in Azure Blob storage. Testers and reviewers interact with this data, new and old, through a frontend written in React interfacing with an API written in ASP.NET."
     },
     "chemometec":
@@ -67,7 +67,7 @@
     "website": {
       "title": "Websites",
       "p1": "Do you have the perfect website in mind but don't have the time, or interest, to build it yourself?",
-      "p2": "Would you want to manage the website contents yourself? We hand you the keys to something like WordPress or Shopify.",
+      "p2": "Would you want to manage the website contents yourself? We can setup tools such as WordPress or Shopify and teach you how to use it. Or simply let us handle everything for you.",
       "p3": "Either way, we handle the technical headache so you don't have to.",
       "load-time": "If you need a fast website, we can help too. This one only took <highlight>{{time}}ms</highlight> to load."
     },
@@ -96,23 +96,23 @@
   "our-purpose": {
     "header": "Our purpose",
     "subtitle": "Our purpose is to help cool people realize their ambitions.",
-    "text": "We are a small team from Aalborg, Denmark. We want to give the small business owner selling clothes out of their garage, their dream website. We want to give the mutli-million dollar company addressing poverty in poor countries, a state of the art data management system.\n\nWe solve real problems, large and small, then step out of their way.",
+    "text": "We are a small team from Aalborg, Denmark. We want to give the small business owner selling clothes out of their garage, their dream website. We want to give the giant company addressing poverty in poor countries, a state of the art data management system.\n\nWe solve real problems, large and small, then step out of their way.",
     "values": {
       "header": "Principles that guide us",
       "transparency":
       {
-        "header": "Transparency",
-        "text": "We believe in developing honest software and showing transparency in our work. \n\n We also invite everyone with technical interest to scrutinize the code behind our solutions."
+        "header": "Credibility",
+        "text": "We believe in developing honest software of excellent quality and showing transparency in everything we do. \n\n We also invite everyone with technical interest to scrutinize the code behind our solutions."
       },
       "fairness":
       {
         "header": "Fairness",
-        "text": " We believe that the value created by our work should be shared fairly. A fair model means better prices for our clients and better compensation for those that choose to work for us. As such, we attract top-talent and more clients - a win-win-win."
+        "text": " We believe that the value created by our work should be shared fairly. A fair model means lower costs for our clients and better compensation for those that choose to work with us. As such, we attract top-talent and more clients - a win-win-win."
       },
       "freedom":
       {
         "header": "Freedom",
-        "text": "We believe that excellent problem solving skills require no office or daily commute. It requires trust. We enable those who choose to work for us with the freedom of working from wherever they like and have a work-life balance befit for a modern society."
+        "text": "We believe that excellent problem solving skills require no office or daily commute. It requires trust. We enable those who choose to work with us with the freedom of working from wherever they like and have a work-life balance befit for a modern society. We are remote first."
       }
     },
     "lumi": {
@@ -136,7 +136,7 @@
     },
     "purpose": {
       "title": "Our purpose - a bit of IT",
-      "description": "Transparency, fairness and freedom: the values behind how a bit of IT builds software for its clients."
+      "description": "Credibility, fairness and freedom: the values behind how a bit of IT builds software for its clients."
     },
     "contact": {
       "title": "Get in touch - a bit of IT",

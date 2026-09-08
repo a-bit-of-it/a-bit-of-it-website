@@ -9,7 +9,7 @@ export default function LEGOSuperMarioCase() {
     return (
         <Case
             icons={[LegoIcon, SuperMarioIcon]}
-            title="LEGO Super Mario Companion App"
+            title={t('cases.lego-super-mario.header')}
             images={[{ src: "/LSMApp.jpg", alt: t('cases.lego-super-mario.images.app') }]}
             problem={t('cases.lego-super-mario.problem')}
             solution={t('cases.lego-super-mario.solution')}
