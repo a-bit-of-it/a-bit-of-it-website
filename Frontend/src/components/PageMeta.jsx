@@ -11,9 +11,9 @@ export default function PageMeta({ title, description }) {
         <>
             <title>{title}</title>
             <meta name="description" content={description} />
-            <link rel="alternate" hreflang="en" href={`${DOMAIN_BY_LANG.en}${pathname}`} />
-            <link rel="alternate" hreflang="da" href={`${DOMAIN_BY_LANG.da}${pathname}`} />
-            <link rel="alternate" hreflang="x-default" href={`${DOMAIN_BY_LANG.en}${pathname}`} />
+            <link rel="alternate" hrefLang="en" href={`${DOMAIN_BY_LANG.en}${pathname}`} />
+            <link rel="alternate" hrefLang="da" href={`${DOMAIN_BY_LANG.da}${pathname}`} />
+            <link rel="alternate" hrefLang="x-default" href={`${DOMAIN_BY_LANG.en}${pathname}`} />
         </>
     );
 }
