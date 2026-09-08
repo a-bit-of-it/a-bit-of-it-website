@@ -29,9 +29,6 @@ export default function Services () {
                             <div className="ai-example">
                                 <p>{t('services.ai.example2')}</p>
                             </div>
-                            {/*<div className="ai-example">*/}
-                            {/*    <p>{t('services.ai.example3')}</p>*/}
-                            {/*</div>*/}
                         </div>
                     </div>
 

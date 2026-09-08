@@ -45,7 +45,7 @@
       "header": "Ensuring the quality of the LEGO brick",
       "problem": "LEGO has always prioritized quality and when a brick is (re)designed, has its colors or materials changed, the brick must pass a series of tests before it is allowed to be put on store shelves. Tests are carried out by their in-house testing department as well as by 3rd party testers. Tests are reviewed to ensure they follow proper test methodologies. LEGO needed a system to organize decades worth of test documents, make them easily searchable and aid the testers and reviewers in their daily work.",
       "solution": "An internal website for logging and categorizing all of LEGO's test data. It supported reusable test suites, guiding testers through each test, and producing a PDF report for both reviewers and audit purposes.",
-      "tech": "..."
+      "tech": "Decades of test data, previously stored in Microsoft SharePoint, had to be migrated to the new solution via a giant migration job. The data that was easily convertable to a structured data format is now stored in a Azure MSSQL database where the data can be queried. Data stored as Word documents or PDFs were not easily converted to structured data and are now stored in Azure Blob storage. Testers and reviewers interact with this data, new and old, through a frontend written in React interfacing with an API written in ASP.NET."
     },
     "chemometec":
     {
