@@ -6,9 +6,8 @@
 
 .case-block-text {
     margin: 0;
-    font-size: 1.05rem;
     line-height: 1.6;
-    opacity: 0.85;
+    opacity: 0.75;
 }
 
 .case-block-link {

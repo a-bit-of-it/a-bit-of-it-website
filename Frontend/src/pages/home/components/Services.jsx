@@ -22,14 +22,8 @@ export default function Services () {
                             <AiIcon />
                             <Eyebrow level="h3">{t('services.ai.title')}</Eyebrow>
                         </div>
-                        <div className="ai-examples">
-                            <div className="ai-example">
-                                <p>{t('services.ai.example1')}</p>
-                            </div>
-                            <div className="ai-example">
-                                <p>{t('services.ai.example2')}</p>
-                            </div>
-                        </div>
+                        <p>{t('services.ai.example1')}</p>
+                        <p>{t('services.ai.example2')}</p>
                     </div>
 
                     <div className="services-card services-card--bespoke card">
@@ -37,7 +31,7 @@ export default function Services () {
                             <CustomIcon />
                             <Eyebrow level="h3">{t('services.bespoke.title')}</Eyebrow>
                         </div>
-                        <p>{t('services.bespoke.p1')}</p>
+                        <p>{t('services.bespoke.example1')}</p>
                     </div>
 
                     <div className="services-card services-card--website card">
@@ -45,17 +39,17 @@ export default function Services () {
                             <WebsiteIcon />
                             <Eyebrow level="h3">{t('services.website.title')}</Eyebrow>
                         </div>
-                        <p>{t('services.website.p1')}</p>
+                        <p>{t('services.website.example1')}</p>
                         {loadTimeMs !== null && (
                             <p>
                                 <TransText
-                                    i18nKey="services.website.load-time"
+                                    i18nKey="services.website.example2"
                                     values={{ time: loadTimeMs }}
                                     components={{ highlight: <span className="highlight" /> }}
                                 />
                             </p>
                         )}
-                        <p>{t('services.website.p2')}</p>
+                        <p>{t('services.website.example3')}</p>
                     </div>
                 </div>
 

@@ -39,8 +39,7 @@
     display: flex;
     padding: 1.5rem;
     flex-direction: column;
-    gap: 1rem;
-    transition: border-color 0.15s ease;
+    gap: 1.5rem;
 }
 
 .services-card:hover {
@@ -62,32 +61,10 @@
     font-size: 1.05rem;
 }
 
-.ai-examples {
-    display: flex;
-    flex-direction: column;
-    gap: 0.85rem;
-}
-
-.ai-example {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-}
-
-.ai-examples svg {
-    flex-shrink: 0;
-    color: var(--color-accent-deep);
-}
-
-.ai-examples p {
-    margin: 0;
-}
-
 .services-card p {
     margin: 0;
     opacity: 0.75;
     line-height: 1.6;
-    font-size: 0.95rem;
 }
 
 .services-cta {
