@@ -43,8 +43,8 @@
     "lego-material-and-compliance":
     {
       "header": "Ensuring the quality of the LEGO brick",
-      "problem": "LEGO has always prioritized quality and when a brick is (re)designed, has its colors or materials changed, the brick must pass a series of tests before it is allowed to be put on store shelves. Tests are carried out by their in-house testing department as well as by 3rd party testers. Carried out tests are reviewed to ensure they follow proper test methodologies. LEGO needed a system to organize decades worth of test documents, make them easily searchable and aid the testers and reviewers in their daily work.",
-      "solution": "An internal website for logging and categorizing decades of LEGO's test data. The website supports LEGO's testers in their every day work. It systematically  guides testers through each test, automatically sends tests to external review, generates PDF reports for both reviewers and audit purposes. Decades of test data is now easily searchable through a modern UI.",
+      "problem": "When a LEGO brick is (re)designed, has its colors or materials changed, the brick must pass a series of tests before it is allowed to be put on store shelves. Tests are carried out by their in-house testing department as well as by 3rd party testers. Carried out tests are reviewed to ensure they follow proper test methodologies. LEGO needed a system to organize decades worth of test documents, make them easily searchable and aid the testers and reviewers in their daily work.",
+      "solution": "An internal platform for logging and categorizing decades of test data and reports. The platform systematically guides testers through each test, and logs their outcomes. At the end of each test, PDF reports are automatically generated for review and audit purposes. Each PDF report serves as proof that the LEGO brick is either safe for the public or needs further iteration.",
       "tech": "Decades of test data, previously stored in Microsoft SharePoint, had to be migrated to the new solution via a giant migration job. The data that was easily convertable to a structured data format is now stored in a Azure MSSQL database where the data can be queried. Data stored as Word documents or PDFs were not easily converted to structured data and are now stored in Azure Blob storage. Testers and reviewers interact with this data, new and old, through a frontend written in React interfacing with an API written in ASP.NET."
     },
     "chemometec":
@@ -66,14 +66,13 @@
     },
     "website": {
       "title": "Websites",
-      "p1": "Do you have the perfect website in mind but don't have the time, or interest, to build it yourself?",
-      "p2": "Would you want to manage the website contents yourself? We can setup tools such as WordPress or Shopify and teach you how to use it. Or simply let us handle everything for you.",
-      "p3": "Either way, we handle the technical headache so you don't have to.",
-      "load-time": "If you need a fast website, we can help too. This one only took <highlight>{{time}}ms</highlight> to load."
+      "example1": "Do you have the perfect website in mind but don't have the time, or interest, to build it yourself?",
+      "example2": "If you need a fast website, we can help too. This one only took <highlight>{{time}}ms</highlight> to load.",
+      "example3": "Would you want to manage the website contents yourself? We can setup tools such as WordPress or Shopify and teach you how to use it. Or simply let us handle everything for you."
     },
     "bespoke": {
       "title": "Custom solutions",
-      "p1": "Got a completely unique problem? Those are our favourite and we would love to help you solve it."
+      "example1": "Got a completely unique problem? Those are our favourite and we would love to help you solve it."
     }
   },
 

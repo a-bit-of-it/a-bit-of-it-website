@@ -61,19 +61,18 @@
     "subtitle": "Intet problem er for stort eller for småt. Kom til os med problemet og vi kommer til dig med løsningen.",
     "website": {
       "title": "Hjemmesider",
-      "p1": "Har du den perfekte hjemmside i tankerne, men mangler tiden eller interessen til at bygge den?",
-      "p2": "Vil du administrere hjemmesidens indhold selv? Vi kan give dig værktøjer, såsom WordPress eller Shopify og lære dig hvordan du bruger dem. Eller blot bare lad os håndtere det hele for dig",
-      "p3": "Uanset hvad, klarer vi det tekniske besvær, så du ikke skal.",
-      "load-time": "Vil du have en hurtig hjemmeside? Så kan vi også hjælpe. Denne side tog kun <highlight>{{time}}ms</highlight> om at indlæse."
+      "example1": "Har du den perfekte hjemmside i tankerne, men mangler tiden eller interessen til at bygge den?",
+      "example2": "Vil du have en hurtig hjemmeside? Så kan vi også hjælpe. Denne side tog kun <highlight>{{time}}ms</highlight> om at indlæse.",
+      "example3": "Vil du administrere hjemmesidens indhold selv? Vi kan give dig værktøjer, såsom WordPress eller Shopify og lære dig hvordan du bruger dem. Eller blot bare lad os håndtere det hele for dig"
     },
     "ai": {
       "title": "AI-systemer",
       "example1": "Træt af at gøre det samme arbejde igen og igen, som intet har med din forretning at gøre? AI kan være fantastisk til at eliminere eller automatisere kedeligt arbejde og stadig holde dig underrettet, når der sker noget vigtigt.",
-      "example2": "Måske er du begravet i dokumenter eller data og har svært ved at håndtere det? Lad AI være din assistent og hjælpe dig med at organisere og forstå det hele."
+      "example2": "Måske du er begravet i dokumenter eller data og har svært ved at skabe overblik? Lad AI være din assistent og hjælpe dig med at organisere og forstå det hele."
     },
     "bespoke": {
       "title": "Skræddersyede løsninger",
-      "p1": "Har du et helt unikt problem? Det vil vi også rigtig gerne hjælpe dig med at løse."
+      "example1": "Har du et helt unikt problem? Det vil vi også rigtig gerne hjælpe dig med at løse."
     }
   },
 
