@@ -2,12 +2,15 @@
 
 namespace Api.Application;
 
-public class ContactService (INotificationService notificationService, IInquiryRepository inquiryRepository)
+public class ContactService (INotificationService notificationService, IInquiryRepository inquiryRepository, ILogger<ContactService> logger)
 {
     public async Task CreateContactAsync(string name, string email, string? company, string inquiry)
     {
+        logger.LogInformation("Creating new inquiry...");
         await inquiryRepository.AddAsync(new InquiryEntity { Name = name, Email = email, Company = company, Inquiry = inquiry, Timestamp = DateTime.UtcNow });
 
         await notificationService.Push("You got a new inquiry!");
+
+        logger.LogInformation("Inquiry created");
     }
 }
